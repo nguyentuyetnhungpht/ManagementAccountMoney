@@ -1,0 +1,1 @@
+SQLCMD -S DESKTOP-46DSVEV -E -i createDBQLSTK.sql

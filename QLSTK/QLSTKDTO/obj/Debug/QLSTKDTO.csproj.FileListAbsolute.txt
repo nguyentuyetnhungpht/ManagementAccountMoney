@@ -1,0 +1,12 @@
+C:\Users\Linh Satoh\source\repos\QLSTK\QLSTKDTO\bin\Debug\QLSTKDTO.dll
+C:\Users\Linh Satoh\source\repos\QLSTK\QLSTKDTO\bin\Debug\QLSTKDTO.pdb
+C:\Users\Linh Satoh\source\repos\QLSTK\QLSTKDTO\obj\Debug\QLSTKDTO.csproj.CoreCompileInputs.cache
+C:\Users\Linh Satoh\source\repos\QLSTK\QLSTKDTO\obj\Debug\QLSTKDTO.dll
+C:\Users\Linh Satoh\source\repos\QLSTK\QLSTKDTO\obj\Debug\QLSTKDTO.pdb
+C:\Users\Linh Satoh\source\repos\QLSTK\QLSTKDTO\obj\Debug\QLSTKDTO.csprojAssemblyReference.cache
+C:\Users\Linh Satoh\Desktop\QLSTK\QLSTKDTO\bin\Debug\QLSTKDTO.dll
+C:\Users\Linh Satoh\Desktop\QLSTK\QLSTKDTO\bin\Debug\QLSTKDTO.pdb
+C:\Users\Linh Satoh\Desktop\QLSTK\QLSTKDTO\obj\Debug\QLSTKDTO.csprojAssemblyReference.cache
+C:\Users\Linh Satoh\Desktop\QLSTK\QLSTKDTO\obj\Debug\QLSTKDTO.csproj.CoreCompileInputs.cache
+C:\Users\Linh Satoh\Desktop\QLSTK\QLSTKDTO\obj\Debug\QLSTKDTO.dll
+C:\Users\Linh Satoh\Desktop\QLSTK\QLSTKDTO\obj\Debug\QLSTKDTO.pdb
