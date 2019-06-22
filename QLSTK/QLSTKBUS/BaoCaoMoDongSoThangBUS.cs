@@ -15,6 +15,13 @@ namespace QLSTKBUS
         {
             this.bcDAL = new BaoCaoMoDongSoThangDAL();
         }
-       
+        public bool createBaoCaoThang(int Thang, int Nam)
+        {
+            return bcDAL.createBaoCaoMoDongSoThang(Thang, Nam);
+        }
+        public bool updateBaoCaoThang(int Thang, int Nam)
+        {
+            return bcDAL.upadteBaoCaoMoDongSoThang(Thang, Nam);
+        }
     }
 }

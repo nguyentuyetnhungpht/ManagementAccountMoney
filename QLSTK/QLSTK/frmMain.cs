@@ -1,4 +1,6 @@
-﻿using System;
+﻿using QLSTKBUS;
+using QLSTKDTO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -97,6 +99,62 @@ namespace QLSTK
             frmQLKH frm = new frmQLKH();
             frm.MdiParent = this;
             frm.Show();
+        }
+
+        private void tsTaoBaoCaoNgay_Click(object sender, EventArgs e)
+        {
+            BaoCaoDoanhSoNgayBUS bcBUS = new BaoCaoDoanhSoNgayBUS();
+            bool kq = bcBUS.createBaoCao();
+            if (kq == false)
+            {
+                MessageBox.Show("Không thể hoàn thành thao tác. Vui lòng kiểm tra lại dũ liệu");
+            }
+            else
+            {
+                MessageBox.Show("Báo cáo ngày được tạo thành công");
+            }
+        }
+
+        private void tsCapNhatBaoCaoNgay_Click(object sender, EventArgs e)
+        {
+            BaoCaoDoanhSoNgayBUS bcBUS = new BaoCaoDoanhSoNgayBUS();
+            bool kq = bcBUS.updateBaoCao();
+            if (kq == false)
+            {
+                MessageBox.Show("Không thể hoàn thành thao tác. Vui lòng kiểm tra lại dũ liệu");
+            }
+            else
+            {
+                MessageBox.Show("Báo cáo ngày được cập nhật thành công");
+            }
+        }
+
+        private void tstaoBaoCaoThang_Click(object sender, EventArgs e)
+        {
+            BaoCaoMoDongSoThangBUS bcBUS = new BaoCaoMoDongSoThangBUS();
+            bool kq = bcBUS.createBaoCaoThang(DateTime.Now.Month, DateTime.Now.Year);
+            if (kq == false)
+            {
+                MessageBox.Show("Không thể hoàn thành thao tác. Vui lòng kiểm tra lại dũ liệu");
+            }
+            else
+            {
+                MessageBox.Show("Báo cáo tháng được tạo thành công");
+            }
+        }
+
+        private void tsCapNhatBaoCaoThang_Click(object sender, EventArgs e)
+        {
+            BaoCaoMoDongSoThangBUS bcBUS = new BaoCaoMoDongSoThangBUS();
+            bool kq = bcBUS.updateBaoCaoThang(DateTime.Now.Month, DateTime.Now.Year);
+            if (kq == false)
+            {
+                MessageBox.Show("Không thể hoàn thành thao tác. Vui lòng kiểm tra lại dũ liệu");
+            }
+            else
+            {
+                MessageBox.Show("Báo cáo tháng được cập nhật thành công");
+            }
         }
     }
 }

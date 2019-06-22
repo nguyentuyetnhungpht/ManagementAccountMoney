@@ -20,17 +20,18 @@ namespace QLSTKDTO
         public double DTongChi { get => dTongChi; set => dTongChi = value; }
         public double DChenhLech { get => dChenhLech; set => dChenhLech = value; }
         public string StrMaLTK { get => strMaLTK; set => strMaLTK = value; }
-        public BaoCaoDoanhSoNgayDTO(string strMaLTK)
+        public BaoCaoDoanhSoNgayDTO(string MaLTK)
         {
+            strMaBCDSN = "x";
             strNgayBCDS = DateTime.Now.ToString();
             dTongThu = 0;
             dTongChi = 0;
             dChenhLech = 0;
-            this.strMaLTK = strMaLTK;
+            strMaLTK = MaLTK;
         }
         public BaoCaoDoanhSoNgayDTO()
         {
-            strNgayBCDS = DateTime.Now.ToString();
+            strNgayBCDS = DateTime.Now.Date.ToString();
             dTongThu = 0;
             dTongChi = 0;
             dChenhLech = 0;

@@ -182,5 +182,47 @@ namespace QLSTKDAL
             ltk.IKyHan = int.Parse(table.Rows[0][1].ToString());
             return ltk;
         }
+        public List<string> getListMaLTK()
+        {
+            string query = string.Empty;
+            query += "SELECT [MaLTK]";
+            query += "FROM [tblLoaiTietKiem]";
+
+            List<string> lsLoaiTietKiem = new List<string>();
+
+            using (SqlConnection con = new SqlConnection(ConnectionString))
+            {
+
+                using (SqlCommand cmd = new SqlCommand())
+                {
+                    cmd.Connection = con;
+                    cmd.CommandType = System.Data.CommandType.Text;
+                    cmd.CommandText = query;
+
+                    try
+                    {
+                        con.Open();
+                        SqlDataReader reader = null;
+                        reader = cmd.ExecuteReader();
+                        if (reader.HasRows == true)
+                        {
+                            while (reader.Read())
+                            {
+                                lsLoaiTietKiem.Add(reader["MaLTK"].ToString());
+                            }
+                        }
+
+                        con.Close();
+                        con.Dispose();
+                    }
+                    catch (Exception ex)
+                    {
+                        con.Close();
+                        return null;
+                    }
+                }
+            }
+            return lsLoaiTietKiem;
+        }
     }
 }

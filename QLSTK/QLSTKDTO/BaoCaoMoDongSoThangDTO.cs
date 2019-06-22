@@ -10,17 +10,27 @@ namespace QLSTKDTO
     {
         private string strMaBCMDST;
         private int iThangBCMDST;
-        private int iNgayBCMDST;
+        private int iNamBCDST;
+        private string strNgayBCMDST;
         private int iSoMo;
         private int iSoDong;
         private int iChenhLechSo;
-        private string strMaLTK;
         private string StrMaBCMDST { get => strMaBCMDST; set => strMaBCMDST = value; }
         public int IThangBCMDST { get => iThangBCMDST; set => iThangBCMDST = value; }
-        public int INgayBCMDST { get => iNgayBCMDST; set => iNgayBCMDST = value; }
+        public int INamBCDST { get => iNamBCDST; set => iNamBCDST = value; }
+        public string StrNgayBCMDST { get => strNgayBCMDST; set => strNgayBCMDST = value; }
         public int ISoMo { get => iSoMo; set => iSoMo = value; }
+        public int ISoDong { get => iSoDong; set => iSoDong = value; }
         public int IChenhLechSo { get => iChenhLechSo; set => iChenhLechSo = value; }
-        public string StrMaLTK { get => strMaLTK; set => strMaLTK = value; }
-        public BaoCaoMoDongSoThangDTO() { }
+        public BaoCaoMoDongSoThangDTO(DateTime dt)
+        {
+            strMaBCMDST = "x";
+            iThangBCMDST = dt.Month;
+            iNamBCDST = dt.Year;
+            strNgayBCMDST = dt.Date.ToString();
+            iSoMo = 0;
+            iSoDong = 0;
+            iChenhLechSo = 0;
+        }
     }
 }
