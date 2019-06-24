@@ -102,6 +102,7 @@
             this.btn_exit.Size = new System.Drawing.Size(24, 22);
             this.btn_exit.TabIndex = 68;
             this.btn_exit.UseVisualStyleBackColor = false;
+            this.btn_exit.Click += new System.EventHandler(this.Btn_exit_Click);
             // 
             // dataGridView1
             // 

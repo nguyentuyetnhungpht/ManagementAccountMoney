@@ -39,7 +39,7 @@
             this.lbKhachHang = new System.Windows.Forms.Label();
             this.lbMaSo = new System.Windows.Forms.Label();
             this.pnlPhieuGuiTien = new System.Windows.Forms.Panel();
-            this.btnThoat = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
             this.btnLuuVaXuatPhieu = new System.Windows.Forms.Button();
             this.pnlPhieuGuiTien.SuspendLayout();
             this.SuspendLayout();
@@ -67,7 +67,7 @@
             this.lblPhieuGuiTien.ForeColor = System.Drawing.Color.White;
             this.lblPhieuGuiTien.Location = new System.Drawing.Point(197, 3);
             this.lblPhieuGuiTien.Name = "lblPhieuGuiTien";
-            this.lblPhieuGuiTien.Size = new System.Drawing.Size(176, 28);
+            this.lblPhieuGuiTien.Size = new System.Drawing.Size(166, 27);
             this.lblPhieuGuiTien.TabIndex = 30;
             this.lblPhieuGuiTien.Text = "Phiếu gửi tiền";
             // 
@@ -161,7 +161,7 @@
             // pnlPhieuGuiTien
             // 
             this.pnlPhieuGuiTien.BackgroundImage = global::QLSTK.Properties.Resources._90440;
-            this.pnlPhieuGuiTien.Controls.Add(this.btnThoat);
+            this.pnlPhieuGuiTien.Controls.Add(this.btnExit);
             this.pnlPhieuGuiTien.Controls.Add(this.btnHuy);
             this.pnlPhieuGuiTien.Controls.Add(this.lblPhieuGuiTien);
             this.pnlPhieuGuiTien.Controls.Add(this.btnLuuVaXuatPhieu);
@@ -179,15 +179,16 @@
             this.pnlPhieuGuiTien.Size = new System.Drawing.Size(418, 500);
             this.pnlPhieuGuiTien.TabIndex = 32;
             // 
-            // btnThoat
+            // btnExit
             // 
-            this.btnThoat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThoat.Image = global::QLSTK.Properties.Resources.icons8_close_window_481;
-            this.btnThoat.Location = new System.Drawing.Point(385, 5);
-            this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(24, 22);
-            this.btnThoat.TabIndex = 32;
-            this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExit.Image = global::QLSTK.Properties.Resources.icons8_close_window_481;
+            this.btnExit.Location = new System.Drawing.Point(385, 5);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(24, 22);
+            this.btnExit.TabIndex = 32;
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.BtnExit_Click);
             // 
             // btnLuuVaXuatPhieu
             // 
@@ -235,6 +236,6 @@
         private System.Windows.Forms.Label lbKhachHang;
         private System.Windows.Forms.Label lbMaSo;
         private System.Windows.Forms.Panel pnlPhieuGuiTien;
-        private System.Windows.Forms.Button btnThoat;
+        private System.Windows.Forms.Button btnExit;
     }
 }

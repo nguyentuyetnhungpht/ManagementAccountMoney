@@ -17,5 +17,10 @@ namespace QLSTK
         {
             InitializeComponent();
         }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

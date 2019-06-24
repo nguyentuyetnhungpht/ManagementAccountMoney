@@ -85,6 +85,7 @@
             this.btnThoat.Size = new System.Drawing.Size(24, 22);
             this.btnThoat.TabIndex = 49;
             this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.Click += new System.EventHandler(this.BtnThoat_Click);
             // 
             // lblbaoCaoDoanhSoNgay
             // 

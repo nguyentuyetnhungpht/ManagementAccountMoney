@@ -16,11 +16,11 @@ namespace QLSTK
         [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles();
+            //Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
             BonusSkins.Register();
-            Application.Run(new frmMain());
+            Application.Run(new frmSplashScreen());
         }
     }
 }

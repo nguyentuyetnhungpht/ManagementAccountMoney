@@ -61,3 +61,204 @@ C:\Users\ADMIN\Desktop\QLSTK_giaodien\QLSTK\obj\Debug\QLSTK.frmPhieuRutTien.reso
 C:\Users\ADMIN\Desktop\QLSTK_giaodien\QLSTK\obj\Debug\QLSTK.frmQuyDinh.resources
 C:\Users\ADMIN\Desktop\QLSTK_giaodien\QLSTK\obj\Debug\QLSTK.frmTraCuu.resources
 C:\Users\ADMIN\Desktop\QLSTK_giaodien\QLSTK\obj\Debug\QLSTK.frmLapSoMoi.resources
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\QLSTK.exe.config
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\QLSTK.exe
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\QLSTK.pdb
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\DevExpress.BonusSkins.v19.1.dll
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\DevExpress.Data.v19.1.dll
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\DevExpress.Printing.v19.1.Core.dll
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\DevExpress.Sparkline.v19.1.Core.dll
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\DevExpress.Utils.v19.1.dll
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\DevExpress.XtraBars.v19.1.dll
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\DevExpress.XtraEditors.v19.1.dll
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\DevExpress.Pdf.v19.1.Core.dll
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\DevExpress.Data.v19.1.xml
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\DevExpress.Utils.v19.1.xml
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\DevExpress.Sparkline.v19.1.Core.xml
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\DevExpress.XtraBars.v19.1.xml
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\DevExpress.XtraEditors.v19.1.xml
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\DevExpress.Printing.v19.1.Core.xml
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\DevExpress.Pdf.v19.1.Core.xml
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\de\DevExpress.Data.v19.1.resources.dll
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\es\DevExpress.Data.v19.1.resources.dll
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\ja\DevExpress.Data.v19.1.resources.dll
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\ru\DevExpress.Data.v19.1.resources.dll
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\de\DevExpress.Utils.v19.1.resources.dll
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\es\DevExpress.Utils.v19.1.resources.dll
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\ja\DevExpress.Utils.v19.1.resources.dll
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\ru\DevExpress.Utils.v19.1.resources.dll
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\de\DevExpress.Sparkline.v19.1.Core.resources.dll
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\es\DevExpress.Sparkline.v19.1.Core.resources.dll
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\ja\DevExpress.Sparkline.v19.1.Core.resources.dll
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\ru\DevExpress.Sparkline.v19.1.Core.resources.dll
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\de\DevExpress.XtraBars.v19.1.resources.dll
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\es\DevExpress.XtraBars.v19.1.resources.dll
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\ja\DevExpress.XtraBars.v19.1.resources.dll
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\ru\DevExpress.XtraBars.v19.1.resources.dll
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\de\DevExpress.XtraEditors.v19.1.resources.dll
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\es\DevExpress.XtraEditors.v19.1.resources.dll
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\ja\DevExpress.XtraEditors.v19.1.resources.dll
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\ru\DevExpress.XtraEditors.v19.1.resources.dll
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\de\DevExpress.Printing.v19.1.Core.resources.dll
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\es\DevExpress.Printing.v19.1.Core.resources.dll
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\ja\DevExpress.Printing.v19.1.Core.resources.dll
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\ru\DevExpress.Printing.v19.1.Core.resources.dll
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\de\DevExpress.Pdf.v19.1.Core.resources.dll
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\es\DevExpress.Pdf.v19.1.Core.resources.dll
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\ja\DevExpress.Pdf.v19.1.Core.resources.dll
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\ru\DevExpress.Pdf.v19.1.Core.resources.dll
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\obj\Debug\QLSTKGUI.csprojAssemblyReference.cache
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\obj\Debug\QLSTK.frmBaoCaoDoanhSoNgay.resources
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\obj\Debug\QLSTK.frmBaoCaoDoanhSoThang.resources
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\obj\Debug\QLSTK.frmLapSoMoi.resources
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\obj\Debug\QLSTK.frmMain.resources
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\obj\Debug\QLSTK.frmPhieuGuiTien.resources
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\obj\Debug\QLSTK.frmPhieuRutTien.resources
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\obj\Debug\QLSTK.frmQuyDinh.resources
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\obj\Debug\QLSTK.frmTraCuu.resources
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\obj\Debug\QLSTK.Properties.Resources.resources
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\obj\Debug\QLSTK.frmSplashScreen.resources
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\obj\Debug\QLSTKGUI.csproj.GenerateResource.cache
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\obj\Debug\QLSTK.exe.licenses
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\obj\Debug\QLSTKGUI.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\obj\Debug\QLSTKGUI.csproj.CopyComplete
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\obj\Debug\QLSTK.exe
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\obj\Debug\QLSTK.pdb
+D:\CNPM\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\QLSTK.exe.config
+D:\CNPM\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\QLSTK.exe
+D:\CNPM\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\QLSTK.pdb
+D:\CNPM\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\DevExpress.BonusSkins.v19.1.dll
+D:\CNPM\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\DevExpress.Data.v19.1.dll
+D:\CNPM\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\DevExpress.Printing.v19.1.Core.dll
+D:\CNPM\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\DevExpress.Sparkline.v19.1.Core.dll
+D:\CNPM\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\DevExpress.Utils.v19.1.dll
+D:\CNPM\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\DevExpress.XtraBars.v19.1.dll
+D:\CNPM\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\DevExpress.XtraEditors.v19.1.dll
+D:\CNPM\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\DevExpress.Pdf.v19.1.Core.dll
+D:\CNPM\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\DevExpress.Data.v19.1.xml
+D:\CNPM\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\DevExpress.Utils.v19.1.xml
+D:\CNPM\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\DevExpress.Sparkline.v19.1.Core.xml
+D:\CNPM\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\DevExpress.XtraBars.v19.1.xml
+D:\CNPM\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\DevExpress.XtraEditors.v19.1.xml
+D:\CNPM\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\DevExpress.Printing.v19.1.Core.xml
+D:\CNPM\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\DevExpress.Pdf.v19.1.Core.xml
+D:\CNPM\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\de\DevExpress.Data.v19.1.resources.dll
+D:\CNPM\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\es\DevExpress.Data.v19.1.resources.dll
+D:\CNPM\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\ja\DevExpress.Data.v19.1.resources.dll
+D:\CNPM\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\ru\DevExpress.Data.v19.1.resources.dll
+D:\CNPM\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\de\DevExpress.Utils.v19.1.resources.dll
+D:\CNPM\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\es\DevExpress.Utils.v19.1.resources.dll
+D:\CNPM\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\ja\DevExpress.Utils.v19.1.resources.dll
+D:\CNPM\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\ru\DevExpress.Utils.v19.1.resources.dll
+D:\CNPM\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\de\DevExpress.Sparkline.v19.1.Core.resources.dll
+D:\CNPM\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\es\DevExpress.Sparkline.v19.1.Core.resources.dll
+D:\CNPM\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\ja\DevExpress.Sparkline.v19.1.Core.resources.dll
+D:\CNPM\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\ru\DevExpress.Sparkline.v19.1.Core.resources.dll
+D:\CNPM\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\de\DevExpress.XtraBars.v19.1.resources.dll
+D:\CNPM\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\es\DevExpress.XtraBars.v19.1.resources.dll
+D:\CNPM\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\ja\DevExpress.XtraBars.v19.1.resources.dll
+D:\CNPM\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\ru\DevExpress.XtraBars.v19.1.resources.dll
+D:\CNPM\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\de\DevExpress.XtraEditors.v19.1.resources.dll
+D:\CNPM\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\es\DevExpress.XtraEditors.v19.1.resources.dll
+D:\CNPM\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\ja\DevExpress.XtraEditors.v19.1.resources.dll
+D:\CNPM\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\ru\DevExpress.XtraEditors.v19.1.resources.dll
+D:\CNPM\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\de\DevExpress.Printing.v19.1.Core.resources.dll
+D:\CNPM\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\es\DevExpress.Printing.v19.1.Core.resources.dll
+D:\CNPM\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\ja\DevExpress.Printing.v19.1.Core.resources.dll
+D:\CNPM\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\ru\DevExpress.Printing.v19.1.Core.resources.dll
+D:\CNPM\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\de\DevExpress.Pdf.v19.1.Core.resources.dll
+D:\CNPM\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\es\DevExpress.Pdf.v19.1.Core.resources.dll
+D:\CNPM\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\ja\DevExpress.Pdf.v19.1.Core.resources.dll
+D:\CNPM\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\ru\DevExpress.Pdf.v19.1.Core.resources.dll
+D:\CNPM\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\obj\Debug\QLSTKGUI.csprojAssemblyReference.cache
+D:\CNPM\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\obj\Debug\QLSTK.frmBaoCaoDoanhSoNgay.resources
+D:\CNPM\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\obj\Debug\QLSTK.frmBaoCaoDoanhSoThang.resources
+D:\CNPM\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\obj\Debug\QLSTK.frmLapSoMoi.resources
+D:\CNPM\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\obj\Debug\QLSTK.frmMain.resources
+D:\CNPM\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\obj\Debug\QLSTK.frmPhieuGuiTien.resources
+D:\CNPM\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\obj\Debug\QLSTK.frmPhieuRutTien.resources
+D:\CNPM\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\obj\Debug\QLSTK.frmQuyDinh.resources
+D:\CNPM\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\obj\Debug\QLSTK.frmTraCuu.resources
+D:\CNPM\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\obj\Debug\QLSTK.Properties.Resources.resources
+D:\CNPM\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\obj\Debug\QLSTK.frmSplashScreen.resources
+D:\CNPM\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\obj\Debug\QLSTKGUI.csproj.GenerateResource.cache
+D:\CNPM\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\obj\Debug\QLSTK.exe.licenses
+D:\CNPM\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\obj\Debug\QLSTKGUI.csproj.CoreCompileInputs.cache
+D:\CNPM\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\obj\Debug\QLSTKGUI.csproj.CopyComplete
+D:\CNPM\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\obj\Debug\QLSTK.exe
+D:\CNPM\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\obj\Debug\QLSTK.pdb
+D:\CNPM\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\QLSTKBUS.dll
+D:\CNPM\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\QLSTKDTO.dll
+D:\CNPM\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\QLSTKDAL.dll
+D:\CNPM\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\QLSTKBUS.pdb
+D:\CNPM\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\QLSTKDTO.pdb
+D:\CNPM\QuanLiSoTietKiem-Nhung (2)\QuanLiSoTietKiem-Nhung\QLSTK_giaodien\QLSTK\bin\Debug\QLSTKDAL.pdb
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK_giaodien\QLSTK\bin\Debug\QLSTK.exe.config
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK_giaodien\QLSTK\bin\Debug\QLSTK.exe
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK_giaodien\QLSTK\bin\Debug\QLSTK.pdb
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK_giaodien\QLSTK\bin\Debug\DevExpress.BonusSkins.v19.1.dll
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK_giaodien\QLSTK\bin\Debug\DevExpress.Data.v19.1.dll
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK_giaodien\QLSTK\bin\Debug\DevExpress.Printing.v19.1.Core.dll
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK_giaodien\QLSTK\bin\Debug\DevExpress.Sparkline.v19.1.Core.dll
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK_giaodien\QLSTK\bin\Debug\DevExpress.Utils.v19.1.dll
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK_giaodien\QLSTK\bin\Debug\DevExpress.XtraBars.v19.1.dll
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK_giaodien\QLSTK\bin\Debug\DevExpress.XtraEditors.v19.1.dll
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK_giaodien\QLSTK\bin\Debug\QLSTKBUS.dll
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK_giaodien\QLSTK\bin\Debug\QLSTKDTO.dll
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK_giaodien\QLSTK\bin\Debug\QLSTKDAL.dll
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK_giaodien\QLSTK\bin\Debug\DevExpress.Pdf.v19.1.Core.dll
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK_giaodien\QLSTK\bin\Debug\QLSTKBUS.pdb
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK_giaodien\QLSTK\bin\Debug\QLSTKDTO.pdb
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK_giaodien\QLSTK\bin\Debug\DevExpress.Data.v19.1.xml
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK_giaodien\QLSTK\bin\Debug\DevExpress.Utils.v19.1.xml
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK_giaodien\QLSTK\bin\Debug\DevExpress.Sparkline.v19.1.Core.xml
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK_giaodien\QLSTK\bin\Debug\DevExpress.XtraBars.v19.1.xml
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK_giaodien\QLSTK\bin\Debug\DevExpress.XtraEditors.v19.1.xml
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK_giaodien\QLSTK\bin\Debug\DevExpress.Printing.v19.1.Core.xml
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK_giaodien\QLSTK\bin\Debug\QLSTKDAL.pdb
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK_giaodien\QLSTK\bin\Debug\DevExpress.Pdf.v19.1.Core.xml
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK_giaodien\QLSTK\bin\Debug\de\DevExpress.Data.v19.1.resources.dll
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK_giaodien\QLSTK\bin\Debug\es\DevExpress.Data.v19.1.resources.dll
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK_giaodien\QLSTK\bin\Debug\ja\DevExpress.Data.v19.1.resources.dll
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK_giaodien\QLSTK\bin\Debug\ru\DevExpress.Data.v19.1.resources.dll
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK_giaodien\QLSTK\bin\Debug\de\DevExpress.Utils.v19.1.resources.dll
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK_giaodien\QLSTK\bin\Debug\es\DevExpress.Utils.v19.1.resources.dll
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK_giaodien\QLSTK\bin\Debug\ja\DevExpress.Utils.v19.1.resources.dll
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK_giaodien\QLSTK\bin\Debug\ru\DevExpress.Utils.v19.1.resources.dll
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK_giaodien\QLSTK\bin\Debug\de\DevExpress.Sparkline.v19.1.Core.resources.dll
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK_giaodien\QLSTK\bin\Debug\es\DevExpress.Sparkline.v19.1.Core.resources.dll
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK_giaodien\QLSTK\bin\Debug\ja\DevExpress.Sparkline.v19.1.Core.resources.dll
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK_giaodien\QLSTK\bin\Debug\ru\DevExpress.Sparkline.v19.1.Core.resources.dll
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK_giaodien\QLSTK\bin\Debug\de\DevExpress.XtraBars.v19.1.resources.dll
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK_giaodien\QLSTK\bin\Debug\es\DevExpress.XtraBars.v19.1.resources.dll
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK_giaodien\QLSTK\bin\Debug\ja\DevExpress.XtraBars.v19.1.resources.dll
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK_giaodien\QLSTK\bin\Debug\ru\DevExpress.XtraBars.v19.1.resources.dll
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK_giaodien\QLSTK\bin\Debug\de\DevExpress.XtraEditors.v19.1.resources.dll
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK_giaodien\QLSTK\bin\Debug\es\DevExpress.XtraEditors.v19.1.resources.dll
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK_giaodien\QLSTK\bin\Debug\ja\DevExpress.XtraEditors.v19.1.resources.dll
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK_giaodien\QLSTK\bin\Debug\ru\DevExpress.XtraEditors.v19.1.resources.dll
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK_giaodien\QLSTK\bin\Debug\de\DevExpress.Printing.v19.1.Core.resources.dll
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK_giaodien\QLSTK\bin\Debug\es\DevExpress.Printing.v19.1.Core.resources.dll
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK_giaodien\QLSTK\bin\Debug\ja\DevExpress.Printing.v19.1.Core.resources.dll
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK_giaodien\QLSTK\bin\Debug\ru\DevExpress.Printing.v19.1.Core.resources.dll
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK_giaodien\QLSTK\bin\Debug\de\DevExpress.Pdf.v19.1.Core.resources.dll
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK_giaodien\QLSTK\bin\Debug\es\DevExpress.Pdf.v19.1.Core.resources.dll
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK_giaodien\QLSTK\bin\Debug\ja\DevExpress.Pdf.v19.1.Core.resources.dll
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK_giaodien\QLSTK\bin\Debug\ru\DevExpress.Pdf.v19.1.Core.resources.dll
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK_giaodien\QLSTK\obj\Debug\QLSTKGUI.csprojAssemblyReference.cache
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK_giaodien\QLSTK\obj\Debug\QLSTK.frmBaoCaoDoanhSoNgay.resources
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK_giaodien\QLSTK\obj\Debug\QLSTK.frmBaoCaoDoanhSoThang.resources
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK_giaodien\QLSTK\obj\Debug\QLSTK.frmLapSoMoi.resources
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK_giaodien\QLSTK\obj\Debug\QLSTK.frmMain.resources
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK_giaodien\QLSTK\obj\Debug\QLSTK.frmPhieuGuiTien.resources
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK_giaodien\QLSTK\obj\Debug\QLSTK.frmPhieuRutTien.resources
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK_giaodien\QLSTK\obj\Debug\QLSTK.frmQuyDinh.resources
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK_giaodien\QLSTK\obj\Debug\QLSTK.frmTraCuu.resources
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK_giaodien\QLSTK\obj\Debug\QLSTK.Properties.Resources.resources
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK_giaodien\QLSTK\obj\Debug\QLSTK.frmSplashScreen.resources
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK_giaodien\QLSTK\obj\Debug\QLSTKGUI.csproj.GenerateResource.cache
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK_giaodien\QLSTK\obj\Debug\QLSTK.exe.licenses
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK_giaodien\QLSTK\obj\Debug\QLSTKGUI.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK_giaodien\QLSTK\obj\Debug\QLSTKGUI.csproj.CopyComplete
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK_giaodien\QLSTK\obj\Debug\QLSTK.exe
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK_giaodien\QLSTK\obj\Debug\QLSTK.pdb

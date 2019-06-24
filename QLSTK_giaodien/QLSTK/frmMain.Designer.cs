@@ -63,7 +63,7 @@
             DevExpress.XtraEditors.TileItemElement tileItemElement23 = new DevExpress.XtraEditors.TileItemElement();
             this.tileBar1 = new DevExpress.XtraBars.Navigation.TileBar();
             this.lblTenNhanVien = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
             this.tileControl2 = new DevExpress.XtraEditors.TileControl();
             this.tileGroup2 = new DevExpress.XtraEditors.TileGroup();
             this.tileThayDoiQuiDinh = new DevExpress.XtraEditors.TileItem();
@@ -99,16 +99,17 @@
             this.lblTenNhanVien.TabIndex = 3;
             this.lblTenNhanVien.Text = "TenNhanVien";
             // 
-            // button1
+            // btnExit
             // 
-            this.button1.BackgroundImage = global::QLSTK.Properties.Resources.icons8_close_window_481;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(1147, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(24, 22);
-            this.button1.TabIndex = 4;
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnExit.BackgroundImage = global::QLSTK.Properties.Resources.icons8_close_window_481;
+            this.btnExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExit.Location = new System.Drawing.Point(1147, 12);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(24, 22);
+            this.btnExit.TabIndex = 4;
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.BtnExit_Click);
             // 
             // tileControl2
             // 
@@ -229,25 +230,11 @@
             // tileThongTin
             // 
             this.tileThongTin.BackgroundImage = global::QLSTK.Properties.Resources._290061_P6O4SC_288;
-            this.tileThongTin.CurrentFrameIndex = 1;
-            tileItemElement7.Appearance.Hovered.Font = new System.Drawing.Font("Segoe UI Light", 17F);
-            tileItemElement7.Appearance.Hovered.Options.UseFont = true;
-            tileItemElement7.Appearance.Hovered.Options.UseTextOptions = true;
-            tileItemElement7.Appearance.Hovered.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter;
-            tileItemElement7.Appearance.Hovered.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
-            tileItemElement7.Appearance.Normal.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            tileItemElement7.Appearance.Normal.Options.UseFont = true;
-            tileItemElement7.Appearance.Normal.Options.UseTextOptions = true;
-            tileItemElement7.Appearance.Normal.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter;
-            tileItemElement7.Appearance.Normal.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
-            tileItemElement7.Appearance.Selected.Font = new System.Drawing.Font("Segoe UI Light", 17F);
-            tileItemElement7.Appearance.Selected.Options.UseFont = true;
-            tileItemElement7.Appearance.Selected.Options.UseTextOptions = true;
-            tileItemElement7.Appearance.Selected.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter;
-            tileItemElement7.Appearance.Selected.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
-            tileItemElement7.Text = "Thông tin";
-            tileItemElement7.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            tileItemElement7.TextLocation = new System.Drawing.Point(4, 0);
+            tileItemElement7.ImageOptions.Image = global::QLSTK.Properties.Resources.notification;
+            tileItemElement7.ImageOptions.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual;
+            tileItemElement7.ImageOptions.ImageLocation = new System.Drawing.Point(-12, -8);
+            tileItemElement7.ImageOptions.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomOutside;
+            tileItemElement7.ImageOptions.ImageSize = new System.Drawing.Size(120, 120);
             this.tileThongTin.Elements.Add(tileItemElement7);
             tileItemFrame5.Animation = DevExpress.XtraEditors.TileItemContentAnimationType.ScrollDown;
             tileItemFrame5.BackgroundImage = global::QLSTK.Properties.Resources._290061_P6O4SC_288;
@@ -297,25 +284,11 @@
             // 
             this.tileTraCuu.BackgroundImage = global::QLSTK.Properties.Resources._90440;
             this.tileTraCuu.BackgroundImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            this.tileTraCuu.CurrentFrameIndex = 1;
-            tileItemElement10.Appearance.Hovered.Font = new System.Drawing.Font("Segoe UI Light", 17F);
-            tileItemElement10.Appearance.Hovered.Options.UseFont = true;
-            tileItemElement10.Appearance.Hovered.Options.UseTextOptions = true;
-            tileItemElement10.Appearance.Hovered.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter;
-            tileItemElement10.Appearance.Hovered.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
-            tileItemElement10.Appearance.Normal.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            tileItemElement10.Appearance.Normal.Options.UseFont = true;
-            tileItemElement10.Appearance.Normal.Options.UseTextOptions = true;
-            tileItemElement10.Appearance.Normal.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter;
-            tileItemElement10.Appearance.Normal.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
-            tileItemElement10.Appearance.Selected.Font = new System.Drawing.Font("Segoe UI Light", 17F);
-            tileItemElement10.Appearance.Selected.Options.UseFont = true;
-            tileItemElement10.Appearance.Selected.Options.UseTextOptions = true;
-            tileItemElement10.Appearance.Selected.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter;
-            tileItemElement10.Appearance.Selected.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
-            tileItemElement10.Text = "Tra cứu sổ";
-            tileItemElement10.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleLeft;
-            tileItemElement10.TextLocation = new System.Drawing.Point(2, 0);
+            tileItemElement10.ImageOptions.Image = global::QLSTK.Properties.Resources.file;
+            tileItemElement10.ImageOptions.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual;
+            tileItemElement10.ImageOptions.ImageLocation = new System.Drawing.Point(-12, -8);
+            tileItemElement10.ImageOptions.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomOutside;
+            tileItemElement10.ImageOptions.ImageSize = new System.Drawing.Size(120, 120);
             this.tileTraCuu.Elements.Add(tileItemElement10);
             tileItemFrame7.Animation = DevExpress.XtraEditors.TileItemContentAnimationType.ScrollDown;
             tileItemFrame7.BackgroundImage = global::QLSTK.Properties.Resources._90440;
@@ -359,25 +332,11 @@
             this.tileLapSoMoi.AllowAnimation = false;
             this.tileLapSoMoi.BackgroundImage = global::QLSTK.Properties.Resources._90440;
             this.tileLapSoMoi.BackgroundImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            this.tileLapSoMoi.CurrentFrameIndex = 1;
-            tileItemElement13.Appearance.Hovered.Font = new System.Drawing.Font("Segoe UI Light", 17F);
-            tileItemElement13.Appearance.Hovered.Options.UseFont = true;
-            tileItemElement13.Appearance.Hovered.Options.UseTextOptions = true;
-            tileItemElement13.Appearance.Hovered.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter;
-            tileItemElement13.Appearance.Hovered.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
-            tileItemElement13.Appearance.Normal.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            tileItemElement13.Appearance.Normal.Options.UseFont = true;
-            tileItemElement13.Appearance.Normal.Options.UseTextOptions = true;
-            tileItemElement13.Appearance.Normal.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter;
-            tileItemElement13.Appearance.Normal.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
-            tileItemElement13.Appearance.Selected.Font = new System.Drawing.Font("Segoe UI Light", 17F);
-            tileItemElement13.Appearance.Selected.Options.UseFont = true;
-            tileItemElement13.Appearance.Selected.Options.UseTextOptions = true;
-            tileItemElement13.Appearance.Selected.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter;
-            tileItemElement13.Appearance.Selected.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
-            tileItemElement13.Text = "Lập sổ mới";
-            tileItemElement13.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleLeft;
-            tileItemElement13.TextLocation = new System.Drawing.Point(2, 0);
+            tileItemElement13.ImageOptions.Image = global::QLSTK.Properties.Resources.file1;
+            tileItemElement13.ImageOptions.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual;
+            tileItemElement13.ImageOptions.ImageLocation = new System.Drawing.Point(-12, -8);
+            tileItemElement13.ImageOptions.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomOutside;
+            tileItemElement13.ImageOptions.ImageSize = new System.Drawing.Size(120, 120);
             this.tileLapSoMoi.Elements.Add(tileItemElement13);
             tileItemFrame9.Animation = DevExpress.XtraEditors.TileItemContentAnimationType.ScrollDown;
             tileItemFrame9.BackgroundImage = global::QLSTK.Properties.Resources._90440;
@@ -564,7 +523,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(1189, 607);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.lblTenNhanVien);
             this.Controls.Add(this.tileControl2);
             this.Controls.Add(this.tileBar1);
@@ -594,7 +553,7 @@
         private DevExpress.XtraEditors.TileItem tileLapBaoCaoNgay;
         private DevExpress.XtraEditors.TileItem tileLapBaoCaoThang;
         private System.Windows.Forms.Label lblTenNhanVien;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnExit;
     }
 }
 

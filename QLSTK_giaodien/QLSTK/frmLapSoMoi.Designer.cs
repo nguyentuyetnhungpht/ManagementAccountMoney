@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.pnlLapSoMoi = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.picKhachHang = new System.Windows.Forms.PictureBox();
             this.btnHuy = new System.Windows.Forms.Button();
@@ -55,7 +55,7 @@
             // pnlLapSoMoi
             // 
             this.pnlLapSoMoi.BackgroundImage = global::QLSTK.Properties.Resources._90440;
-            this.pnlLapSoMoi.Controls.Add(this.button1);
+            this.pnlLapSoMoi.Controls.Add(this.btnExit);
             this.pnlLapSoMoi.Controls.Add(this.textBox1);
             this.pnlLapSoMoi.Controls.Add(this.picKhachHang);
             this.pnlLapSoMoi.Controls.Add(this.btnHuy);
@@ -80,16 +80,17 @@
             this.pnlLapSoMoi.Size = new System.Drawing.Size(734, 542);
             this.pnlLapSoMoi.TabIndex = 63;
             // 
-            // button1
+            // btnExit
             // 
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Image = global::QLSTK.Properties.Resources.icons8_close_window_481;
-            this.button1.Location = new System.Drawing.Point(704, 5);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(24, 22);
-            this.button1.TabIndex = 63;
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExit.Image = global::QLSTK.Properties.Resources.icons8_close_window_481;
+            this.btnExit.Location = new System.Drawing.Point(704, 5);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(24, 22);
+            this.btnExit.TabIndex = 63;
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.Button1_Click);
             // 
             // textBox1
             // 
@@ -293,7 +294,7 @@
             this.lblKhachHang.TabIndex = 44;
             this.lblKhachHang.Text = "Khách hàng";
             // 
-            // frmLapSoMoics
+            // frmLapSoMoi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -303,7 +304,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximumSize = new System.Drawing.Size(734, 542);
             this.MinimumSize = new System.Drawing.Size(734, 542);
-            this.Name = "frmLapSoMoics";
+            this.Name = "frmLapSoMoi";
             this.Text = "frmLapSoMoics";
             this.pnlLapSoMoi.ResumeLayout(false);
             this.pnlLapSoMoi.PerformLayout();
@@ -333,6 +334,6 @@
         private System.Windows.Forms.Label lblMaSo;
         private System.Windows.Forms.Label lblKhachHang;
         private System.Windows.Forms.Panel pnlLapSoMoi;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnExit;
     }
 }

@@ -29,8 +29,10 @@
         private void InitializeComponent()
         {
             this.lblPhieuRutTien = new System.Windows.Forms.Label();
-            this.btnThoat = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
             this.pnlPhieuRutTien = new System.Windows.Forms.Panel();
+            this.btnHuy = new System.Windows.Forms.Button();
+            this.btnLuuVaXuatPhieu = new System.Windows.Forms.Button();
             this.txtSoTienGui = new System.Windows.Forms.TextBox();
             this.txtNgayGui = new System.Windows.Forms.TextBox();
             this.cmbKhachHang = new System.Windows.Forms.ComboBox();
@@ -39,8 +41,6 @@
             this.lbNgayRut = new System.Windows.Forms.Label();
             this.lbKhachHang = new System.Windows.Forms.Label();
             this.lbMaSo = new System.Windows.Forms.Label();
-            this.btnHuy = new System.Windows.Forms.Button();
-            this.btnLuuVaXuatPhieu = new System.Windows.Forms.Button();
             this.pnlPhieuRutTien.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -52,19 +52,20 @@
             this.lblPhieuRutTien.ForeColor = System.Drawing.Color.White;
             this.lblPhieuRutTien.Location = new System.Drawing.Point(208, 5);
             this.lblPhieuRutTien.Name = "lblPhieuRutTien";
-            this.lblPhieuRutTien.Size = new System.Drawing.Size(173, 28);
+            this.lblPhieuRutTien.Size = new System.Drawing.Size(162, 27);
             this.lblPhieuRutTien.TabIndex = 41;
             this.lblPhieuRutTien.Text = "Phiếu rút tiền";
             // 
-            // btnThoat
+            // btnExit
             // 
-            this.btnThoat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThoat.Image = global::QLSTK.Properties.Resources.icons8_close_window_481;
-            this.btnThoat.Location = new System.Drawing.Point(387, 5);
-            this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(24, 22);
-            this.btnThoat.TabIndex = 43;
-            this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExit.Image = global::QLSTK.Properties.Resources.icons8_close_window_481;
+            this.btnExit.Location = new System.Drawing.Point(387, 5);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(24, 22);
+            this.btnExit.TabIndex = 43;
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.BtnExit_Click);
             // 
             // pnlPhieuRutTien
             // 
@@ -79,13 +80,43 @@
             this.pnlPhieuRutTien.Controls.Add(this.lbNgayRut);
             this.pnlPhieuRutTien.Controls.Add(this.lbKhachHang);
             this.pnlPhieuRutTien.Controls.Add(this.lbMaSo);
-            this.pnlPhieuRutTien.Controls.Add(this.btnThoat);
+            this.pnlPhieuRutTien.Controls.Add(this.btnExit);
             this.pnlPhieuRutTien.Controls.Add(this.lblPhieuRutTien);
             this.pnlPhieuRutTien.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlPhieuRutTien.Location = new System.Drawing.Point(0, 0);
             this.pnlPhieuRutTien.Name = "pnlPhieuRutTien";
             this.pnlPhieuRutTien.Size = new System.Drawing.Size(418, 500);
             this.pnlPhieuRutTien.TabIndex = 44;
+            // 
+            // btnHuy
+            // 
+            this.btnHuy.BackColor = System.Drawing.Color.DarkCyan;
+            this.btnHuy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHuy.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHuy.Image = global::QLSTK.Properties.Resources.icons8_delete_file_24;
+            this.btnHuy.Location = new System.Drawing.Point(242, 388);
+            this.btnHuy.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnHuy.Name = "btnHuy";
+            this.btnHuy.Size = new System.Drawing.Size(127, 35);
+            this.btnHuy.TabIndex = 53;
+            this.btnHuy.Text = "Hủy";
+            this.btnHuy.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnHuy.UseVisualStyleBackColor = false;
+            // 
+            // btnLuuVaXuatPhieu
+            // 
+            this.btnLuuVaXuatPhieu.BackColor = System.Drawing.Color.DarkCyan;
+            this.btnLuuVaXuatPhieu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLuuVaXuatPhieu.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLuuVaXuatPhieu.Image = global::QLSTK.Properties.Resources.icons8_send_to_printer_30;
+            this.btnLuuVaXuatPhieu.Location = new System.Drawing.Point(44, 388);
+            this.btnLuuVaXuatPhieu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnLuuVaXuatPhieu.Name = "btnLuuVaXuatPhieu";
+            this.btnLuuVaXuatPhieu.Size = new System.Drawing.Size(158, 35);
+            this.btnLuuVaXuatPhieu.TabIndex = 52;
+            this.btnLuuVaXuatPhieu.Text = "Lưu và xuất";
+            this.btnLuuVaXuatPhieu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnLuuVaXuatPhieu.UseVisualStyleBackColor = false;
             // 
             // txtSoTienGui
             // 
@@ -174,40 +205,12 @@
             this.lbMaSo.TabIndex = 44;
             this.lbMaSo.Text = "Mã sổ";
             // 
-            // btnHuy
-            // 
-            this.btnHuy.BackColor = System.Drawing.Color.DarkCyan;
-            this.btnHuy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHuy.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHuy.Image = global::QLSTK.Properties.Resources.icons8_delete_file_24;
-            this.btnHuy.Location = new System.Drawing.Point(242, 388);
-            this.btnHuy.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnHuy.Name = "btnHuy";
-            this.btnHuy.Size = new System.Drawing.Size(127, 35);
-            this.btnHuy.TabIndex = 53;
-            this.btnHuy.Text = "Hủy";
-            this.btnHuy.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnHuy.UseVisualStyleBackColor = false;
-            // 
-            // btnLuuVaXuatPhieu
-            // 
-            this.btnLuuVaXuatPhieu.BackColor = System.Drawing.Color.DarkCyan;
-            this.btnLuuVaXuatPhieu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLuuVaXuatPhieu.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLuuVaXuatPhieu.Image = global::QLSTK.Properties.Resources.icons8_send_to_printer_30;
-            this.btnLuuVaXuatPhieu.Location = new System.Drawing.Point(44, 388);
-            this.btnLuuVaXuatPhieu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnLuuVaXuatPhieu.Name = "btnLuuVaXuatPhieu";
-            this.btnLuuVaXuatPhieu.Size = new System.Drawing.Size(158, 35);
-            this.btnLuuVaXuatPhieu.TabIndex = 52;
-            this.btnLuuVaXuatPhieu.Text = "Lưu và xuất";
-            this.btnLuuVaXuatPhieu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnLuuVaXuatPhieu.UseVisualStyleBackColor = false;
-            // 
             // frmPhieuRutTien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImageLayoutStore = System.Windows.Forms.ImageLayout.Tile;
+            this.BackgroundImageStore = global::QLSTK.Properties.Resources._90440;
             this.ClientSize = new System.Drawing.Size(418, 500);
             this.Controls.Add(this.pnlPhieuRutTien);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -223,7 +226,7 @@
 
         #endregion
         private System.Windows.Forms.Label lblPhieuRutTien;
-        private System.Windows.Forms.Button btnThoat;
+        private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Panel pnlPhieuRutTien;
         private System.Windows.Forms.TextBox txtSoTienGui;
         private System.Windows.Forms.TextBox txtNgayGui;

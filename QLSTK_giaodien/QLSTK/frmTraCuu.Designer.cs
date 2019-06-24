@@ -55,7 +55,7 @@
             this.cbMaSo = new System.Windows.Forms.ComboBox();
             this.lbLoaiTietKiem = new System.Windows.Forms.Label();
             this.pnlDanhSachSo = new System.Windows.Forms.Panel();
-            this.btnThoat = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.pnlDanhSachSo.SuspendLayout();
             this.SuspendLayout();
@@ -330,7 +330,8 @@
             // 
             // pnlDanhSachSo
             // 
-            this.pnlDanhSachSo.Controls.Add(this.btnThoat);
+            this.pnlDanhSachSo.BackgroundImage = global::QLSTK.Properties.Resources._90440;
+            this.pnlDanhSachSo.Controls.Add(this.btnExit);
             this.pnlDanhSachSo.Controls.Add(this.textBox2);
             this.pnlDanhSachSo.Controls.Add(this.textBox1);
             this.pnlDanhSachSo.Controls.Add(this.label6);
@@ -359,21 +360,24 @@
             this.pnlDanhSachSo.Size = new System.Drawing.Size(1011, 600);
             this.pnlDanhSachSo.TabIndex = 49;
             // 
-            // btnThoat
+            // btnExit
             // 
-            this.btnThoat.BackgroundImage = global::QLSTK.Properties.Resources.icons8_close_window_481;
-            this.btnThoat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnThoat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThoat.Location = new System.Drawing.Point(975, 12);
-            this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(24, 22);
-            this.btnThoat.TabIndex = 50;
-            this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnExit.BackgroundImage = global::QLSTK.Properties.Resources.icons8_close_window_481;
+            this.btnExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExit.Location = new System.Drawing.Point(975, 12);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(24, 22);
+            this.btnExit.TabIndex = 50;
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.BtnExit_Click);
             // 
             // frmTraCuu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImageLayoutStore = System.Windows.Forms.ImageLayout.Tile;
+            this.BackgroundImageStore = global::QLSTK.Properties.Resources._90440;
             this.ClientSize = new System.Drawing.Size(1011, 600);
             this.Controls.Add(this.pnlDanhSachSo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -417,6 +421,6 @@
         private System.Windows.Forms.ComboBox cbMaSo;
         private System.Windows.Forms.Label lbLoaiTietKiem;
         private System.Windows.Forms.Panel pnlDanhSachSo;
-        private System.Windows.Forms.Button btnThoat;
+        private System.Windows.Forms.Button btnExit;
     }
 }

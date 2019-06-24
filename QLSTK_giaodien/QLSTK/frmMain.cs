@@ -14,6 +14,7 @@ namespace QLSTK
         public frmMain()
         {
             InitializeComponent();
+            
         }
 
         private void TileItem6_ItemClick(object sender, DevExpress.XtraEditors.TileItemEventArgs e)
@@ -68,6 +69,11 @@ namespace QLSTK
             frmBaoCaoDoanhSoThang frm = new frmBaoCaoDoanhSoThang();
             //frm.MdiParent = this;
             frm.Show();
+        }
+
+        private void BtnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

@@ -43,18 +43,18 @@
             this.cmbMaLoaiTietKiem = new System.Windows.Forms.ComboBox();
             this.cmbTenLoaiTietKiem = new System.Windows.Forms.ComboBox();
             this.grbQuyDinh2 = new System.Windows.Forms.GroupBox();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.txtThoiGianGuiToiThieu = new System.Windows.Forms.TextBox();
             this.lblThoiGianGuiToiThieu = new System.Windows.Forms.Label();
             this.grbQuyDinh1 = new System.Windows.Forms.GroupBox();
-            this.lblThayDoiQuyDinh = new System.Windows.Forms.Label();
-            this.pnlThayDoiQuiDinh = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.btnThayDoiTienGuiToiThieu = new System.Windows.Forms.Button();
             this.btnSuaKyHan = new System.Windows.Forms.Button();
             this.btnXoaKyHan = new System.Windows.Forms.Button();
             this.btnthemKyHan = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.lblThayDoiQuyDinh = new System.Windows.Forms.Label();
+            this.pnlThayDoiQuiDinh = new System.Windows.Forms.Panel();
+            this.btnExit = new System.Windows.Forms.Button();
             this.grbQuyDinh2.SuspendLayout();
             this.grbQuyDinh1.SuspendLayout();
             this.pnlThayDoiQuiDinh.SuspendLayout();
@@ -228,6 +228,38 @@
             this.grbQuyDinh2.TabStop = false;
             this.grbQuyDinh2.Text = "Quy định 3";
             // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.DarkCyan;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.Black;
+            this.button3.Image = global::QLSTK.Properties.Resources.icons8_transfer_30;
+            this.button3.Location = new System.Drawing.Point(687, 77);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(165, 35);
+            this.button3.TabIndex = 24;
+            this.button3.Text = "Thay đổi";
+            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button3.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.DarkCyan;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.Black;
+            this.button2.Image = global::QLSTK.Properties.Resources.icons8_transfer_30;
+            this.button2.Location = new System.Drawing.Point(394, 30);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(165, 35);
+            this.button2.TabIndex = 23;
+            this.button2.Text = "Thay đổi";
+            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button2.UseVisualStyleBackColor = false;
+            // 
             // txtThoiGianGuiToiThieu
             // 
             this.txtThoiGianGuiToiThieu.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -276,46 +308,6 @@
             this.grbQuyDinh1.TabIndex = 17;
             this.grbQuyDinh1.TabStop = false;
             this.grbQuyDinh1.Text = "Quy định 1";
-            // 
-            // lblThayDoiQuyDinh
-            // 
-            this.lblThayDoiQuyDinh.AutoSize = true;
-            this.lblThayDoiQuyDinh.BackColor = System.Drawing.Color.Transparent;
-            this.lblThayDoiQuyDinh.Font = new System.Drawing.Font("Tahoma", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblThayDoiQuyDinh.ForeColor = System.Drawing.Color.White;
-            this.lblThayDoiQuyDinh.Location = new System.Drawing.Point(387, 67);
-            this.lblThayDoiQuyDinh.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblThayDoiQuyDinh.Name = "lblThayDoiQuyDinh";
-            this.lblThayDoiQuyDinh.Size = new System.Drawing.Size(217, 28);
-            this.lblThayDoiQuyDinh.TabIndex = 16;
-            this.lblThayDoiQuyDinh.Text = "Thay đổi quy định";
-            // 
-            // pnlThayDoiQuiDinh
-            // 
-            this.pnlThayDoiQuiDinh.BackColor = System.Drawing.Color.Transparent;
-            this.pnlThayDoiQuiDinh.BackgroundImage = global::QLSTK.Properties.Resources._90440;
-            this.pnlThayDoiQuiDinh.Controls.Add(this.button1);
-            this.pnlThayDoiQuiDinh.Controls.Add(this.grbQuyDinh2);
-            this.pnlThayDoiQuiDinh.Controls.Add(this.grbQuyDinh1);
-            this.pnlThayDoiQuiDinh.Controls.Add(this.lblThayDoiQuyDinh);
-            this.pnlThayDoiQuiDinh.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlThayDoiQuiDinh.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pnlThayDoiQuiDinh.Location = new System.Drawing.Point(0, 0);
-            this.pnlThayDoiQuiDinh.Name = "pnlThayDoiQuiDinh";
-            this.pnlThayDoiQuiDinh.Size = new System.Drawing.Size(1011, 600);
-            this.pnlThayDoiQuiDinh.TabIndex = 20;
-            // 
-            // button1
-            // 
-            this.button1.BackgroundImage = global::QLSTK.Properties.Resources.icons8_close_window_481;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(984, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(24, 22);
-            this.button1.TabIndex = 50;
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // btnThayDoiTienGuiToiThieu
             // 
@@ -381,37 +373,46 @@
             this.btnthemKyHan.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnthemKyHan.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // lblThayDoiQuyDinh
             // 
-            this.button2.BackColor = System.Drawing.Color.DarkCyan;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Image = global::QLSTK.Properties.Resources.icons8_transfer_30;
-            this.button2.Location = new System.Drawing.Point(394, 30);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(165, 35);
-            this.button2.TabIndex = 23;
-            this.button2.Text = "Thay đổi";
-            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button2.UseVisualStyleBackColor = false;
+            this.lblThayDoiQuyDinh.AutoSize = true;
+            this.lblThayDoiQuyDinh.BackColor = System.Drawing.Color.Transparent;
+            this.lblThayDoiQuyDinh.Font = new System.Drawing.Font("Tahoma", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblThayDoiQuyDinh.ForeColor = System.Drawing.Color.White;
+            this.lblThayDoiQuyDinh.Location = new System.Drawing.Point(387, 67);
+            this.lblThayDoiQuyDinh.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblThayDoiQuyDinh.Name = "lblThayDoiQuyDinh";
+            this.lblThayDoiQuyDinh.Size = new System.Drawing.Size(208, 27);
+            this.lblThayDoiQuyDinh.TabIndex = 16;
+            this.lblThayDoiQuyDinh.Text = "Thay đổi quy định";
             // 
-            // button3
+            // pnlThayDoiQuiDinh
             // 
-            this.button3.BackColor = System.Drawing.Color.DarkCyan;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.Black;
-            this.button3.Image = global::QLSTK.Properties.Resources.icons8_transfer_30;
-            this.button3.Location = new System.Drawing.Point(687, 77);
-            this.button3.Margin = new System.Windows.Forms.Padding(4);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(165, 35);
-            this.button3.TabIndex = 24;
-            this.button3.Text = "Thay đổi";
-            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button3.UseVisualStyleBackColor = false;
+            this.pnlThayDoiQuiDinh.BackColor = System.Drawing.Color.Transparent;
+            this.pnlThayDoiQuiDinh.BackgroundImage = global::QLSTK.Properties.Resources._90440;
+            this.pnlThayDoiQuiDinh.Controls.Add(this.btnExit);
+            this.pnlThayDoiQuiDinh.Controls.Add(this.grbQuyDinh2);
+            this.pnlThayDoiQuiDinh.Controls.Add(this.grbQuyDinh1);
+            this.pnlThayDoiQuiDinh.Controls.Add(this.lblThayDoiQuyDinh);
+            this.pnlThayDoiQuiDinh.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlThayDoiQuiDinh.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pnlThayDoiQuiDinh.Location = new System.Drawing.Point(0, 0);
+            this.pnlThayDoiQuiDinh.Name = "pnlThayDoiQuiDinh";
+            this.pnlThayDoiQuiDinh.Size = new System.Drawing.Size(1011, 600);
+            this.pnlThayDoiQuiDinh.TabIndex = 20;
+            // 
+            // btnExit
+            // 
+            this.btnExit.BackgroundImage = global::QLSTK.Properties.Resources.icons8_close_window_481;
+            this.btnExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExit.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.Location = new System.Drawing.Point(984, 3);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(24, 22);
+            this.btnExit.TabIndex = 50;
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.BtnExit_Click);
             // 
             // frmQuyDinh
             // 
@@ -459,7 +460,7 @@
         private System.Windows.Forms.GroupBox grbQuyDinh1;
         private System.Windows.Forms.Label lblThayDoiQuyDinh;
         private System.Windows.Forms.Panel pnlThayDoiQuiDinh;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
     }
