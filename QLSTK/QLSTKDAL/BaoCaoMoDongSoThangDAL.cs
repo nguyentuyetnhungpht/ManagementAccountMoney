@@ -14,7 +14,7 @@ namespace QLSTKDAL
         private string connectionString;
         public BaoCaoMoDongSoThangDAL()
         {
-            connectionString = ConfigurationManager.AppSettings["ConnectionString"];
+            connectionString = ConfigurationManager.AppSettings["ConnectionString"]; 
         }
         public string ConnectionString { get => connectionString; set => connectionString = value; }
 
