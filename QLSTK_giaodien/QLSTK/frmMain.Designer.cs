@@ -97,7 +97,7 @@
             this.lblTenNhanVien.Name = "lblTenNhanVien";
             this.lblTenNhanVien.Size = new System.Drawing.Size(186, 22);
             this.lblTenNhanVien.TabIndex = 3;
-            this.lblTenNhanVien.Text = "TenNhanVien";
+            this.lblTenNhanVien.Text = "chế độ";
             // 
             // btnExit
             // 

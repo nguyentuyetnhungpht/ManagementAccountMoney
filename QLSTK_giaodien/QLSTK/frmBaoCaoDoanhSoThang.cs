@@ -13,6 +13,7 @@ namespace QLSTK
 {
     public partial class frmBaoCaoDoanhSoThang : DevExpress.XtraEditors.XtraForm
     {
+        frmMain main = new frmMain();
         public frmBaoCaoDoanhSoThang()
         {
             InitializeComponent();
@@ -30,7 +31,8 @@ namespace QLSTK
 
         private void Btn_exit_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Hide();
+            main.Show();
         }
     }
 }

@@ -53,7 +53,7 @@ namespace QLSTK
 
         private void SplashScreen1_Load(object sender, EventArgs e)
         {
-            //pnDangNhap.Width = 0;
+            pnDangNhap.Width = 0;
             //pnLogo.Location = new drawing
             tbtMatKhauMoi.Visible = false;
             tbtNhapLaiMatKhau.Visible = false;
@@ -79,6 +79,9 @@ namespace QLSTK
                 {
                     pnDangNhap.Width = 674;
                     lblTrangThai.Text = "Kết nối thành công";
+                    progressBar1.Visible = false;
+                    lblStart.Visible = false;
+
                 }
                 else
                 {
@@ -152,7 +155,7 @@ namespace QLSTK
             bool ok = false;
             int loaiTK = 0;
 
-            //error
+            tkBUS = new TaiKhoanBUS();
             result = tkBUS.KiemTra(tbtTaiKhoan.Text, tbtMatKhau.Text, ref ok, ref loaiTK);
             if (result == false)
             {
@@ -221,6 +224,7 @@ namespace QLSTK
             bool ok = false;
             int loaiTK = 0;
 
+            tkBUS = new TaiKhoanBUS();
             result = tkBUS.KiemTra(tbtTaiKhoan.Text, tbtMatKhau.Text, ref ok, ref loaiTK);
             if (result == false)
             {
@@ -231,7 +235,7 @@ namespace QLSTK
 
             if (ok == true)
             {
-                ok = false; //kiểm tra update thành công
+                ok = true; //kiểm tra update thành công
                 result = tkBUS.Update(tbtTaiKhoan.Text, tbtMatKhau.Text, ref ok);
                 if (result == false)
                 {

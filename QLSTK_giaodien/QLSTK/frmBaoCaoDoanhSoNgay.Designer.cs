@@ -53,7 +53,6 @@
             // 
             // pnlBaoCaoNgay
             // 
-            this.pnlBaoCaoNgay.BackgroundImage = global::QLSTK.Properties.Resources._90440;
             this.pnlBaoCaoNgay.Controls.Add(this.btnThoat);
             this.pnlBaoCaoNgay.Controls.Add(this.lblbaoCaoDoanhSoNgay);
             this.pnlBaoCaoNgay.Controls.Add(this.dtpNgay);

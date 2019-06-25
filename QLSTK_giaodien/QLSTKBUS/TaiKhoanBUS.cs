@@ -10,7 +10,7 @@ namespace QLSTKBUS
 {
     public class TaiKhoanBUS
     {
-        private TaiKhoanDAL tkDAL;
+        private TaiKhoanDAL tkDAL = new TaiKhoanDAL();
 
         public bool KiemTra(string tenTK, string matkhau, ref bool isOK, ref int loaiTK)
         {

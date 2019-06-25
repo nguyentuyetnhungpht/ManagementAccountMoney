@@ -20,14 +20,14 @@ namespace QLSTK
         private void TileItem6_ItemClick(object sender, DevExpress.XtraEditors.TileItemEventArgs e)
         {
             frmLapSoMoi frm = new frmLapSoMoi();
-            //frm.MdiParent = this;
+            this.Hide();
             frm.Show();
         }
 
         private void TileThayDoiQuiDinh_ItemClick(object sender, DevExpress.XtraEditors.TileItemEventArgs e)
         {
             frmQuyDinh frm = new frmQuyDinh();
-            //frm.MdiParent = this;
+            this.Hide();
             frm.Show();
         }
 
@@ -39,35 +39,35 @@ namespace QLSTK
         private void TileTraCuu_ItemClick(object sender, DevExpress.XtraEditors.TileItemEventArgs e)
         {
             frmTraCuu frm = new frmTraCuu();
-            //frm.MdiParent = this;
+            this.Hide();
             frm.Show();
         }
 
         private void TileLapPhieuGuiTien_ItemClick(object sender, DevExpress.XtraEditors.TileItemEventArgs e)
         {
             frmPhieuGuiTien frm = new frmPhieuGuiTien();
-            //frm.MdiParent = this;
+            this.Hide();
             frm.Show();
         }
 
         private void TileLapPhieuRutTien_ItemClick(object sender, DevExpress.XtraEditors.TileItemEventArgs e)
         {
             frmPhieuRutTien frm = new frmPhieuRutTien();
-            //frm.MdiParent = this;
+            this.Hide();
             frm.Show();
         }
 
         private void TileLapBaoCaoNgay_ItemClick(object sender, DevExpress.XtraEditors.TileItemEventArgs e)
         {
             frmBaoCaoDoanhSoNgay frm = new frmBaoCaoDoanhSoNgay();
-            //frm.MdiParent = this;
+            this.Hide();
             frm.Show();
         }
 
         private void TileLapBaoCaoThang_ItemClick(object sender, DevExpress.XtraEditors.TileItemEventArgs e)
         {
             frmBaoCaoDoanhSoThang frm = new frmBaoCaoDoanhSoThang();
-            //frm.MdiParent = this;
+            this.Hide();
             frm.Show();
         }
 
