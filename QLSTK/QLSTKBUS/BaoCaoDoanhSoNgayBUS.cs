@@ -17,13 +17,17 @@ namespace QLSTKBUS
         }
         public bool createBaoCao()
         {
-            if (!bcDAL.createBaoCaoNgay())
-                return bcDAL.updateBaoCaoNgay();
-            return true;
+
+            return bcDAL.updateBaoCaoNgay();
+
         }
         public bool updateBaoCao()
         {
             return bcDAL.updateBaoCaoNgay();
+        }
+        public List<BaoCaoDoanhSoNgayDTO> getListBaoCao(DateTime dt)
+        {
+            return bcDAL.getListBaoCaoNgay(dt);
         }
     }
 }

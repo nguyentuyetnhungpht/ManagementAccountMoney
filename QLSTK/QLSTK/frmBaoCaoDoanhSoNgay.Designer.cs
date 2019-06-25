@@ -188,6 +188,7 @@
             this.dgvBaoCao.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvBaoCao.Size = new System.Drawing.Size(483, 150);
             this.dgvBaoCao.TabIndex = 37;
+            this.dgvBaoCao.RowPostPaint += new System.Windows.Forms.DataGridViewRowPostPaintEventHandler(this.dgvBaoCao_RowPostPaint);
             // 
             // frmBaoCaoDoanhSoNgay
             // 

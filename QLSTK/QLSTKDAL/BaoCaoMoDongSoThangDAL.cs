@@ -14,13 +14,14 @@ namespace QLSTKDAL
         private string connectionString;
         public BaoCaoMoDongSoThangDAL()
         {
-            connectionString = ConfigurationManager.AppSettings["ConnectionString"]; 
+            connectionString = ConfigurationManager.AppSettings["ConnectionString"];
         }
         public string ConnectionString { get => connectionString; set => connectionString = value; }
 
         public bool createBaoCaoMoDongSoThang(int iThang, int iNam)
         {
 
+            # region Tính số ngày của tháng đó
             int iSoNgay = 0;
             if (iThang > 0 && iThang < 13 && iNam > 1990)
             {
@@ -34,15 +35,20 @@ namespace QLSTKDAL
                 else
                     iSoNgay = 28;
             }
+            #endregion
+
+            #region Thêm mỗi ngày trong tháng vào báo cáo
             for (int i = 1; i < iSoNgay; i++)
             {
                 DateTime dt = new DateTime(iNam, iThang, i);
-                bool kq = insert(dt);
+                bool kq = insert(dt);// insert ngày đó vào 
                 if (kq == false)
                     return false;
             }
+            #endregion
             return true;
         }
+
         public bool insert(DateTime dt)
         {
             string query = string.Empty;
@@ -58,7 +64,7 @@ namespace QLSTKDAL
                     cmd.CommandText = query;
                     cmd.Parameters.AddWithValue("@MaBCMDST", bc.StrNgayBCMDST);
                     cmd.Parameters.AddWithValue("@ThangBCMDST", bc.IThangBCMDST);
-                    cmd.Parameters.AddWithValue("@NamBCMDST", bc.INamBCDST);
+                    cmd.Parameters.AddWithValue("@NamBCMDST", bc.INamBCMDST);
                     cmd.Parameters.AddWithValue("@NgayBCMDST", bc.StrNgayBCMDST);
                     cmd.Parameters.AddWithValue("@SoMo", bc.ISoMo);
                     cmd.Parameters.AddWithValue("@SoDong", bc.ISoDong);
@@ -78,10 +84,10 @@ namespace QLSTKDAL
                 }
             }
             return true;
-        }
+        } // hàm insert một ngày vào báo cáo
         public bool upadteBaoCaoMoDongSoThang(int iThang, int iNam)
         {
-
+            # region Tính số ngày của tháng đó
             int iSoNgay = 0;
             if (iThang > 0 && iThang < 13 && iNam > 1990)
             {
@@ -95,11 +101,17 @@ namespace QLSTKDAL
                 else
                     iSoNgay = 28;
             }
-            for (int i = 1; i < iSoNgay; i++)
+            #endregion
+
+            #region Tính số sổ mở, sổ đóng và chênh lệch của mỗi ngày
+            for (int i = 1; i <= iSoNgay; i++)
             {
                 DateTime dt = new DateTime(iNam, iThang, i);
                 BaoCaoMoDongSoThangDTO bc = new BaoCaoMoDongSoThangDTO(dt);
                 string query = string.Empty;
+
+
+                #region Tính số sổ mở
                 query = " SELECT COUNT(tblSoTietKiem.MaSoSTK) as SoMo "
                     + " FROM tblSoTietKiem "
                     + " WHERE CONVERT(date, tblSoTietKiem.NgayMoSo) = CONVERT(date, @NgayMoSo) ";
@@ -141,6 +153,9 @@ namespace QLSTKDAL
                         }
                     }
                 }
+                #endregion
+
+                #region Tính số sổ đóng
                 query = "SELECT COUNT(tblPhieuRutTien.MaSoPRT) as SoDong"
                     + " FROM tblPhieuRutTien "
                     + " WHERE CONVERT(date, tblPhieuRutTien.NgayRut) = CONVERT(date, @NgayRut) ";
@@ -181,7 +196,15 @@ namespace QLSTKDAL
                         }
                     }
                 }
+                #endregion
+
+                #region Tính số sổ chênh lệch
+
                 bc.IChenhLechSo = bc.ISoMo - bc.ISoDong;
+
+                #endregion
+
+                #region Cập nhật thông tin sổ vào database
                 query = "UPDATE tblBaoCaoMoDongSoThang "
                    + " SET SoMo = @SoMo, SoDong = @SoDong, ChenhLechSo = @ChenhLechSo "
                    + " WHERE CONVERT(date, tblBaoCaoMoDongSoThang.NgayBCMDST) = CONVERT(date, @NgayBC) ";
@@ -210,10 +233,61 @@ namespace QLSTKDAL
                         }
                     }
                 }
+                #endregion
             }
+            #endregion
             return true;
-        }
+        }//hàm cập nhật báo cáo tháng
+        public List<BaoCaoMoDongSoThangDTO> getBaoCaoThang(int iThang, int iNam)
+        {
+            string query = string.Empty;
+            query += "SELECT [NgayBCMDST], [SoMo], [SoDong], [ChenhLechSo] ";
+            query += "FROM [tblBaoCaoMoDongSoThang] ";
+            query += "WHERE ThangBCMDST = @Thang AND NamBCMDST = @Nam";
 
+            List<BaoCaoMoDongSoThangDTO> listBaoCao = new List<BaoCaoMoDongSoThangDTO>();
+
+            using (SqlConnection con = new SqlConnection(ConnectionString))
+            {
+
+                using (SqlCommand cmd = new SqlCommand())
+                {
+                    cmd.Connection = con;
+                    cmd.CommandType = System.Data.CommandType.Text;
+                    cmd.CommandText = query;
+                    cmd.Parameters.AddWithValue("@Thang", iThang);
+                    cmd.Parameters.AddWithValue("@Nam", iNam);
+                    try
+                    {
+                        con.Open();
+                        SqlDataReader reader = null;
+                        reader = cmd.ExecuteReader();
+                        if (reader.HasRows == true)
+                        {
+                            while (reader.Read())
+                            {
+                                BaoCaoMoDongSoThangDTO bc = new BaoCaoMoDongSoThangDTO();
+                                bc.StrNgayBCMDST = reader["NgayBCMDST"].ToString();
+                                bc.ISoMo = int.Parse(reader["SoMo"].ToString());
+                                bc.ISoDong = int.Parse(reader["SoDong"].ToString());
+                                bc.IChenhLechSo = int.Parse(reader["ChenhLechSo"].ToString());
+
+                                listBaoCao.Add(bc);
+                            }
+                        }
+
+                        con.Close();
+                        con.Dispose();
+                    }
+                    catch (Exception ex)
+                    {
+                        con.Close();
+                        return null;
+                    }
+                }
+            }
+            return listBaoCao;
+        }//Lập báo cáo tháng qua thông tin tháng và năm
     }
 
 
