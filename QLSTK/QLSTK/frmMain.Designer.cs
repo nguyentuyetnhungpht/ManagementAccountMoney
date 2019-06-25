@@ -41,17 +41,18 @@
             this.tsLapPhieuRutTien = new System.Windows.Forms.ToolStripMenuItem();
             this.tsLapBaoCao = new System.Windows.Forms.ToolStripMenuItem();
             this.tsBaoCaoDoanhSoNgay = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsBaoCaoMoDongSoThang = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsAbout = new System.Windows.Forms.ToolStripMenuItem();
             this.tsTaoBaoCaoNgay = new System.Windows.Forms.ToolStripMenuItem();
             this.tsCapNhatBaoCaoNgay = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsBaoCaoMoDongSoThang = new System.Windows.Forms.ToolStripMenuItem();
             this.tstaoBaoCaoThang = new System.Windows.Forms.ToolStripMenuItem();
             this.tsCapNhatBaoCaoThang = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsAbout = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsQuanLyHeThong,
             this.tsQuanLySo,
@@ -60,7 +61,8 @@
             this.tsAbout});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(880, 24);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(1173, 28);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -70,20 +72,20 @@
             this.tsThayDoiQuyDinh,
             this.thôngBáoToolStripMenuItem});
             this.tsQuanLyHeThong.Name = "tsQuanLyHeThong";
-            this.tsQuanLyHeThong.Size = new System.Drawing.Size(111, 20);
+            this.tsQuanLyHeThong.Size = new System.Drawing.Size(134, 24);
             this.tsQuanLyHeThong.Text = "Quản lý hệ thống";
             // 
             // tsThayDoiQuyDinh
             // 
             this.tsThayDoiQuyDinh.Name = "tsThayDoiQuyDinh";
-            this.tsThayDoiQuyDinh.Size = new System.Drawing.Size(170, 22);
+            this.tsThayDoiQuyDinh.Size = new System.Drawing.Size(202, 26);
             this.tsThayDoiQuyDinh.Text = "Thay đổi quy định";
             this.tsThayDoiQuyDinh.Click += new System.EventHandler(this.tsThayDoiQuyDinh_Click);
             // 
             // thôngBáoToolStripMenuItem
             // 
             this.thôngBáoToolStripMenuItem.Name = "thôngBáoToolStripMenuItem";
-            this.thôngBáoToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
+            this.thôngBáoToolStripMenuItem.Size = new System.Drawing.Size(202, 26);
             this.thôngBáoToolStripMenuItem.Text = "Thông báo";
             // 
             // tsQuanLySo
@@ -93,27 +95,27 @@
             this.tsTraCuuSo,
             this.tsThongTinKhachHang});
             this.tsQuanLySo.Name = "tsQuanLySo";
-            this.tsQuanLySo.Size = new System.Drawing.Size(75, 20);
+            this.tsQuanLySo.Size = new System.Drawing.Size(90, 24);
             this.tsQuanLySo.Text = "Quản lý sổ";
             // 
             // tsLapSoMoi
             // 
             this.tsLapSoMoi.Name = "tsLapSoMoi";
-            this.tsLapSoMoi.Size = new System.Drawing.Size(191, 22);
+            this.tsLapSoMoi.Size = new System.Drawing.Size(226, 26);
             this.tsLapSoMoi.Text = "Lập sổ mới";
             this.tsLapSoMoi.Click += new System.EventHandler(this.tsLapSoMoi_Click);
             // 
             // tsTraCuuSo
             // 
             this.tsTraCuuSo.Name = "tsTraCuuSo";
-            this.tsTraCuuSo.Size = new System.Drawing.Size(191, 22);
+            this.tsTraCuuSo.Size = new System.Drawing.Size(226, 26);
             this.tsTraCuuSo.Text = "Tra cứu sổ";
             this.tsTraCuuSo.Click += new System.EventHandler(this.tsTraCuuSo_Click_1);
             // 
             // tsThongTinKhachHang
             // 
             this.tsThongTinKhachHang.Name = "tsThongTinKhachHang";
-            this.tsThongTinKhachHang.Size = new System.Drawing.Size(191, 22);
+            this.tsThongTinKhachHang.Size = new System.Drawing.Size(226, 26);
             this.tsThongTinKhachHang.Text = "Thông tin khách hàng";
             this.tsThongTinKhachHang.Click += new System.EventHandler(this.tsThongTinKhachHang_Click);
             // 
@@ -123,20 +125,20 @@
             this.tsLapPhieuGuiTien,
             this.tsLapPhieuRutTien});
             this.tsLapPhieu.Name = "tsLapPhieu";
-            this.tsLapPhieu.Size = new System.Drawing.Size(71, 20);
+            this.tsLapPhieu.Size = new System.Drawing.Size(86, 24);
             this.tsLapPhieu.Text = "Lập phiếu";
             // 
             // tsLapPhieuGuiTien
             // 
             this.tsLapPhieuGuiTien.Name = "tsLapPhieuGuiTien";
-            this.tsLapPhieuGuiTien.Size = new System.Drawing.Size(169, 22);
+            this.tsLapPhieuGuiTien.Size = new System.Drawing.Size(204, 26);
             this.tsLapPhieuGuiTien.Text = "Lập phiếu gửi tiền";
             this.tsLapPhieuGuiTien.Click += new System.EventHandler(this.tsLapPhieuGuiTien_Click_1);
             // 
             // tsLapPhieuRutTien
             // 
             this.tsLapPhieuRutTien.Name = "tsLapPhieuRutTien";
-            this.tsLapPhieuRutTien.Size = new System.Drawing.Size(169, 22);
+            this.tsLapPhieuRutTien.Size = new System.Drawing.Size(204, 26);
             this.tsLapPhieuRutTien.Text = "Lập phiếu rút tiền";
             this.tsLapPhieuRutTien.Click += new System.EventHandler(this.tsLapPhieuRutTien_Click_1);
             // 
@@ -146,7 +148,7 @@
             this.tsBaoCaoDoanhSoNgay,
             this.tsBaoCaoMoDongSoThang});
             this.tsLapBaoCao.Name = "tsLapBaoCao";
-            this.tsLapBaoCao.Size = new System.Drawing.Size(83, 20);
+            this.tsLapBaoCao.Size = new System.Drawing.Size(103, 24);
             this.tsLapBaoCao.Text = "Lập báo cáo";
             // 
             // tsBaoCaoDoanhSoNgay
@@ -155,9 +157,23 @@
             this.tsTaoBaoCaoNgay,
             this.tsCapNhatBaoCaoNgay});
             this.tsBaoCaoDoanhSoNgay.Name = "tsBaoCaoDoanhSoNgay";
-            this.tsBaoCaoDoanhSoNgay.Size = new System.Drawing.Size(219, 22);
+            this.tsBaoCaoDoanhSoNgay.Size = new System.Drawing.Size(266, 26);
             this.tsBaoCaoDoanhSoNgay.Text = "Báo cáo doanh số ngày";
             this.tsBaoCaoDoanhSoNgay.Click += new System.EventHandler(this.tsBaoCaoDoanhSoNgay_Click);
+            // 
+            // tsTaoBaoCaoNgay
+            // 
+            this.tsTaoBaoCaoNgay.Name = "tsTaoBaoCaoNgay";
+            this.tsTaoBaoCaoNgay.Size = new System.Drawing.Size(237, 26);
+            this.tsTaoBaoCaoNgay.Text = "Tạo báo cáo ngày";
+            this.tsTaoBaoCaoNgay.Click += new System.EventHandler(this.tsTaoBaoCaoNgay_Click);
+            // 
+            // tsCapNhatBaoCaoNgay
+            // 
+            this.tsCapNhatBaoCaoNgay.Name = "tsCapNhatBaoCaoNgay";
+            this.tsCapNhatBaoCaoNgay.Size = new System.Drawing.Size(237, 26);
+            this.tsCapNhatBaoCaoNgay.Text = "Cập nhật báo cáo ngày";
+            this.tsCapNhatBaoCaoNgay.Click += new System.EventHandler(this.tsCapNhatBaoCaoNgay_Click);
             // 
             // tsBaoCaoMoDongSoThang
             // 
@@ -165,54 +181,43 @@
             this.tstaoBaoCaoThang,
             this.tsCapNhatBaoCaoThang});
             this.tsBaoCaoMoDongSoThang.Name = "tsBaoCaoMoDongSoThang";
-            this.tsBaoCaoMoDongSoThang.Size = new System.Drawing.Size(219, 22);
+            this.tsBaoCaoMoDongSoThang.Size = new System.Drawing.Size(266, 26);
             this.tsBaoCaoMoDongSoThang.Text = "Báo cáo mở/đóng sổ tháng";
             this.tsBaoCaoMoDongSoThang.Click += new System.EventHandler(this.tsBaoCaoMoDongSoThang_Click);
-            // 
-            // tsAbout
-            // 
-            this.tsAbout.Name = "tsAbout";
-            this.tsAbout.Size = new System.Drawing.Size(52, 20);
-            this.tsAbout.Text = "About";
-            // 
-            // tsTaoBaoCaoNgay
-            // 
-            this.tsTaoBaoCaoNgay.Name = "tsTaoBaoCaoNgay";
-            this.tsTaoBaoCaoNgay.Size = new System.Drawing.Size(196, 22);
-            this.tsTaoBaoCaoNgay.Text = "Tạo báo cáo ngày";
-            this.tsTaoBaoCaoNgay.Click += new System.EventHandler(this.tsTaoBaoCaoNgay_Click);
-            // 
-            // tsCapNhatBaoCaoNgay
-            // 
-            this.tsCapNhatBaoCaoNgay.Name = "tsCapNhatBaoCaoNgay";
-            this.tsCapNhatBaoCaoNgay.Size = new System.Drawing.Size(196, 22);
-            this.tsCapNhatBaoCaoNgay.Text = "Cập nhật báo cáo ngày";
-            this.tsCapNhatBaoCaoNgay.Click += new System.EventHandler(this.tsCapNhatBaoCaoNgay_Click);
             // 
             // tstaoBaoCaoThang
             // 
             this.tstaoBaoCaoThang.Name = "tstaoBaoCaoThang";
-            this.tstaoBaoCaoThang.Size = new System.Drawing.Size(201, 22);
+            this.tstaoBaoCaoThang.Size = new System.Drawing.Size(243, 26);
             this.tstaoBaoCaoThang.Text = "Tạo báo cáo tháng";
             this.tstaoBaoCaoThang.Click += new System.EventHandler(this.tstaoBaoCaoThang_Click);
             // 
             // tsCapNhatBaoCaoThang
             // 
             this.tsCapNhatBaoCaoThang.Name = "tsCapNhatBaoCaoThang";
-            this.tsCapNhatBaoCaoThang.Size = new System.Drawing.Size(201, 22);
+            this.tsCapNhatBaoCaoThang.Size = new System.Drawing.Size(243, 26);
             this.tsCapNhatBaoCaoThang.Text = "Cập nhật báo cáo tháng";
             this.tsCapNhatBaoCaoThang.Click += new System.EventHandler(this.tsCapNhatBaoCaoThang_Click);
             // 
+            // tsAbout
+            // 
+            this.tsAbout.Name = "tsAbout";
+            this.tsAbout.Size = new System.Drawing.Size(62, 24);
+            this.tsAbout.Text = "About";
+            this.tsAbout.Click += new System.EventHandler(this.TsAbout_Click);
+            // 
             // frmMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(880, 500);
+            this.ClientSize = new System.Drawing.Size(1173, 615);
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmMain";
             this.Text = "Quản lý sổ tiết kiệm";
+            this.Load += new System.EventHandler(this.FrmMain_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

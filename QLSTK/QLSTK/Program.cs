@@ -14,9 +14,9 @@ namespace QLSTK
         [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles();
+          //  Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmMain());
+            Application.Run(new SplashScreen1());
         }
     }
 }

@@ -156,5 +156,15 @@ namespace QLSTK
                 MessageBox.Show("Báo cáo tháng được cập nhật thành công");
             }
         }
+
+        private void FrmMain_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TsAbout_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

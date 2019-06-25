@@ -51,5 +51,10 @@ namespace QLSTK
             }
             //--------------------------------------------
         }
+
+        private void BtnHuy_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

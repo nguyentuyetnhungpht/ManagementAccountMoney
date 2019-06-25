@@ -28,9 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lblbaoCaoDoanhSoNgay = new System.Windows.Forms.Label();
             this.dtpNgayBaoCao = new System.Windows.Forms.DateTimePicker();
             this.lbChenhLech = new System.Windows.Forms.Label();
@@ -39,22 +36,25 @@
             this.txtTongChiNgay = new System.Windows.Forms.TextBox();
             this.txtChenhLech = new System.Windows.Forms.TextBox();
             this.txtTongThuNgay = new System.Windows.Forms.TextBox();
-            this.btnTraCuu = new System.Windows.Forms.Button();
-            this.btnXuatFile = new System.Windows.Forms.Button();
             this.lbNgay = new System.Windows.Forms.Label();
             this.dgvBaoCao = new System.Windows.Forms.DataGridView();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnTraCuu = new System.Windows.Forms.Button();
+            this.btnXuatFile = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBaoCao)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblbaoCaoDoanhSoNgay
             // 
             this.lblbaoCaoDoanhSoNgay.AutoEllipsis = true;
             this.lblbaoCaoDoanhSoNgay.AutoSize = true;
-            this.lblbaoCaoDoanhSoNgay.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblbaoCaoDoanhSoNgay.Location = new System.Drawing.Point(144, 49);
+            this.lblbaoCaoDoanhSoNgay.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblbaoCaoDoanhSoNgay.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.lblbaoCaoDoanhSoNgay.Location = new System.Drawing.Point(270, 9);
             this.lblbaoCaoDoanhSoNgay.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblbaoCaoDoanhSoNgay.Name = "lblbaoCaoDoanhSoNgay";
-            this.lblbaoCaoDoanhSoNgay.Size = new System.Drawing.Size(297, 31);
+            this.lblbaoCaoDoanhSoNgay.Size = new System.Drawing.Size(324, 36);
             this.lblbaoCaoDoanhSoNgay.TabIndex = 36;
             this.lblbaoCaoDoanhSoNgay.Text = "Báo cáo doanh số ngày";
             // 
@@ -63,154 +63,161 @@
             this.dtpNgayBaoCao.Cursor = System.Windows.Forms.Cursors.Default;
             this.dtpNgayBaoCao.CustomFormat = "";
             this.dtpNgayBaoCao.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpNgayBaoCao.Location = new System.Drawing.Point(125, 109);
+            this.dtpNgayBaoCao.Location = new System.Drawing.Point(203, 53);
             this.dtpNgayBaoCao.Name = "dtpNgayBaoCao";
-            this.dtpNgayBaoCao.Size = new System.Drawing.Size(120, 20);
+            this.dtpNgayBaoCao.Size = new System.Drawing.Size(117, 23);
             this.dtpNgayBaoCao.TabIndex = 35;
             // 
             // lbChenhLech
             // 
             this.lbChenhLech.AutoSize = true;
-            this.lbChenhLech.Location = new System.Drawing.Point(301, 142);
+            this.lbChenhLech.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbChenhLech.ForeColor = System.Drawing.Color.White;
+            this.lbChenhLech.Location = new System.Drawing.Point(37, 99);
             this.lbChenhLech.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbChenhLech.Name = "lbChenhLech";
-            this.lbChenhLech.Size = new System.Drawing.Size(65, 13);
+            this.lbChenhLech.Size = new System.Drawing.Size(113, 24);
             this.lbChenhLech.TabIndex = 34;
             this.lbChenhLech.Text = "Chênh Lệch";
             // 
             // lbTongChiNgay
             // 
             this.lbTongChiNgay.AutoSize = true;
-            this.lbTongChiNgay.Location = new System.Drawing.Point(301, 116);
+            this.lbTongChiNgay.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTongChiNgay.ForeColor = System.Drawing.Color.White;
+            this.lbTongChiNgay.Location = new System.Drawing.Point(447, 45);
             this.lbTongChiNgay.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbTongChiNgay.Name = "lbTongChiNgay";
-            this.lbTongChiNgay.Size = new System.Drawing.Size(75, 13);
+            this.lbTongChiNgay.Size = new System.Drawing.Size(135, 24);
             this.lbTongChiNgay.TabIndex = 33;
             this.lbTongChiNgay.Text = "Tổng chi ngày";
             // 
             // lbTongThuNgay
             // 
             this.lbTongThuNgay.AutoSize = true;
-            this.lbTongThuNgay.Location = new System.Drawing.Point(36, 142);
+            this.lbTongThuNgay.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTongThuNgay.ForeColor = System.Drawing.Color.White;
+            this.lbTongThuNgay.Location = new System.Drawing.Point(443, 99);
             this.lbTongThuNgay.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbTongThuNgay.Name = "lbTongThuNgay";
-            this.lbTongThuNgay.Size = new System.Drawing.Size(76, 13);
+            this.lbTongThuNgay.Size = new System.Drawing.Size(139, 24);
             this.lbTongThuNgay.TabIndex = 32;
             this.lbTongThuNgay.Text = "Tổng thu ngày";
             // 
             // txtTongChiNgay
             // 
-            this.txtTongChiNgay.Location = new System.Drawing.Point(389, 112);
+            this.txtTongChiNgay.Location = new System.Drawing.Point(624, 48);
             this.txtTongChiNgay.Margin = new System.Windows.Forms.Padding(2);
             this.txtTongChiNgay.Name = "txtTongChiNgay";
             this.txtTongChiNgay.ReadOnly = true;
-            this.txtTongChiNgay.Size = new System.Drawing.Size(126, 20);
+            this.txtTongChiNgay.Size = new System.Drawing.Size(199, 23);
             this.txtTongChiNgay.TabIndex = 31;
             // 
             // txtChenhLech
             // 
-            this.txtChenhLech.Location = new System.Drawing.Point(389, 139);
+            this.txtChenhLech.Location = new System.Drawing.Point(203, 102);
             this.txtChenhLech.Margin = new System.Windows.Forms.Padding(2);
             this.txtChenhLech.Name = "txtChenhLech";
             this.txtChenhLech.ReadOnly = true;
-            this.txtChenhLech.Size = new System.Drawing.Size(126, 20);
+            this.txtChenhLech.Size = new System.Drawing.Size(199, 23);
             this.txtChenhLech.TabIndex = 30;
             // 
             // txtTongThuNgay
             // 
-            this.txtTongThuNgay.Location = new System.Drawing.Point(125, 138);
+            this.txtTongThuNgay.Location = new System.Drawing.Point(624, 102);
             this.txtTongThuNgay.Margin = new System.Windows.Forms.Padding(2);
             this.txtTongThuNgay.Name = "txtTongThuNgay";
             this.txtTongThuNgay.ReadOnly = true;
-            this.txtTongThuNgay.Size = new System.Drawing.Size(120, 20);
+            this.txtTongThuNgay.Size = new System.Drawing.Size(199, 23);
             this.txtTongThuNgay.TabIndex = 29;
-            // 
-            // btnTraCuu
-            // 
-            this.btnTraCuu.Location = new System.Drawing.Point(110, 190);
-            this.btnTraCuu.Margin = new System.Windows.Forms.Padding(2);
-            this.btnTraCuu.Name = "btnTraCuu";
-            this.btnTraCuu.Size = new System.Drawing.Size(59, 20);
-            this.btnTraCuu.TabIndex = 28;
-            this.btnTraCuu.Text = "Tra cứu";
-            this.btnTraCuu.UseVisualStyleBackColor = true;
-            this.btnTraCuu.Click += new System.EventHandler(this.btnTraCuu_Click);
-            // 
-            // btnXuatFile
-            // 
-            this.btnXuatFile.Location = new System.Drawing.Point(32, 190);
-            this.btnXuatFile.Margin = new System.Windows.Forms.Padding(2);
-            this.btnXuatFile.Name = "btnXuatFile";
-            this.btnXuatFile.Size = new System.Drawing.Size(59, 20);
-            this.btnXuatFile.TabIndex = 26;
-            this.btnXuatFile.Text = "Xuất file";
-            this.btnXuatFile.UseVisualStyleBackColor = true;
             // 
             // lbNgay
             // 
             this.lbNgay.AutoEllipsis = true;
             this.lbNgay.AutoSize = true;
-            this.lbNgay.Location = new System.Drawing.Point(36, 109);
+            this.lbNgay.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbNgay.ForeColor = System.Drawing.Color.White;
+            this.lbNgay.Location = new System.Drawing.Point(95, 52);
             this.lbNgay.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbNgay.Name = "lbNgay";
-            this.lbNgay.Size = new System.Drawing.Size(32, 13);
+            this.lbNgay.Size = new System.Drawing.Size(55, 24);
             this.lbNgay.TabIndex = 25;
             this.lbNgay.Text = "Ngày";
             // 
             // dgvBaoCao
             // 
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvBaoCao.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvBaoCao.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvBaoCao.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvBaoCao.Location = new System.Drawing.Point(32, 230);
+            this.dgvBaoCao.Location = new System.Drawing.Point(41, 163);
             this.dgvBaoCao.Name = "dgvBaoCao";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvBaoCao.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.dgvBaoCao.Size = new System.Drawing.Size(483, 150);
+            this.dgvBaoCao.Size = new System.Drawing.Size(782, 326);
             this.dgvBaoCao.TabIndex = 37;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.dgvBaoCao);
+            this.groupBox1.Controls.Add(this.dtpNgayBaoCao);
+            this.groupBox1.Controls.Add(this.lbChenhLech);
+            this.groupBox1.Controls.Add(this.lbTongChiNgay);
+            this.groupBox1.Controls.Add(this.lbTongThuNgay);
+            this.groupBox1.Controls.Add(this.txtTongChiNgay);
+            this.groupBox1.Controls.Add(this.txtChenhLech);
+            this.groupBox1.Controls.Add(this.txtTongThuNgay);
+            this.groupBox1.Controls.Add(this.lbNgay);
+            this.groupBox1.ForeColor = System.Drawing.Color.White;
+            this.groupBox1.Location = new System.Drawing.Point(12, 115);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(863, 503);
+            this.groupBox1.TabIndex = 38;
+            this.groupBox1.TabStop = false;
+            // 
+            // btnTraCuu
+            // 
+            this.btnTraCuu.BackColor = System.Drawing.Color.DarkCyan;
+            this.btnTraCuu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTraCuu.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTraCuu.Image = global::QLSTK.Properties.Resources.icons8_view_32;
+            this.btnTraCuu.Location = new System.Drawing.Point(490, 646);
+            this.btnTraCuu.Margin = new System.Windows.Forms.Padding(2);
+            this.btnTraCuu.Name = "btnTraCuu";
+            this.btnTraCuu.Size = new System.Drawing.Size(146, 50);
+            this.btnTraCuu.TabIndex = 28;
+            this.btnTraCuu.Text = "Tra cứu";
+            this.btnTraCuu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnTraCuu.UseVisualStyleBackColor = false;
+            this.btnTraCuu.Click += new System.EventHandler(this.btnTraCuu_Click);
+            // 
+            // btnXuatFile
+            // 
+            this.btnXuatFile.BackColor = System.Drawing.Color.DarkCyan;
+            this.btnXuatFile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnXuatFile.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXuatFile.Image = global::QLSTK.Properties.Resources.icons8_print_32;
+            this.btnXuatFile.Location = new System.Drawing.Point(215, 646);
+            this.btnXuatFile.Margin = new System.Windows.Forms.Padding(2);
+            this.btnXuatFile.Name = "btnXuatFile";
+            this.btnXuatFile.Size = new System.Drawing.Size(146, 50);
+            this.btnXuatFile.TabIndex = 26;
+            this.btnXuatFile.Text = "Xuất file";
+            this.btnXuatFile.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnXuatFile.UseVisualStyleBackColor = false;
             // 
             // frmBaoCaoDoanhSoNgay
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(591, 403);
-            this.Controls.Add(this.dgvBaoCao);
+            this.BackColor = System.Drawing.Color.CadetBlue;
+            this.ClientSize = new System.Drawing.Size(882, 703);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.lblbaoCaoDoanhSoNgay);
-            this.Controls.Add(this.dtpNgayBaoCao);
-            this.Controls.Add(this.lbChenhLech);
-            this.Controls.Add(this.lbTongChiNgay);
-            this.Controls.Add(this.lbTongThuNgay);
-            this.Controls.Add(this.txtTongChiNgay);
-            this.Controls.Add(this.txtChenhLech);
-            this.Controls.Add(this.txtTongThuNgay);
             this.Controls.Add(this.btnTraCuu);
             this.Controls.Add(this.btnXuatFile);
-            this.Controls.Add(this.lbNgay);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "frmBaoCaoDoanhSoNgay";
             this.Text = "frmBaoCaoDoanhSoNgay";
             this.Load += new System.EventHandler(this.frmBaoCaoDoanhSoNgay_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvBaoCao)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -230,5 +237,6 @@
         private System.Windows.Forms.Button btnXuatFile;
         private System.Windows.Forms.Label lbNgay;
         private System.Windows.Forms.DataGridView dgvBaoCao;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }

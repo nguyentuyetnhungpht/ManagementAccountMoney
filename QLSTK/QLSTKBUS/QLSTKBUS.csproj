@@ -49,6 +49,7 @@
     <Compile Include="PhieuRutTienBUS.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SoTietKiemBUS.cs" />
+    <Compile Include="TaiKhoanBUS.cs" />
     <Compile Include="ThamSoBUS.cs" />
   </ItemGroup>
   <ItemGroup>

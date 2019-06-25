@@ -191,5 +191,6 @@ namespace QLSTK
         {
             string loaiKyhan = cmbLoaiKyHan.SelectedValue.ToString();
         }
+
     }
 }
