@@ -6,6 +6,8 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data;
+
 namespace QLSTKDAL
 {
     public class KhachHangDAL
@@ -151,6 +153,15 @@ namespace QLSTKDAL
                 }
             }
             return kh;
+        }
+        public string newMaSo()
+        {
+            string newMaSo;
+            SqlDataAdapter ada = new SqlDataAdapter("SELECT ISNULL(MAX(CAST(MaKH as INT)),0) + 1 FROM [tblKhachHang] ", connectionString);
+            DataTable dt = new DataTable();
+            ada.Fill(dt);
+            newMaSo = dt.Rows[0][0].ToString();
+            return newMaSo;
         }
     }
 }

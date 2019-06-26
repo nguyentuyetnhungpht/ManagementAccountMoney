@@ -18,7 +18,7 @@ namespace QLSTKBUS
         public bool createBaoCao()
         {
 
-            return bcDAL.updateBaoCaoNgay();
+            return bcDAL.createBaoCaoNgay();
 
         }
         public bool updateBaoCao()

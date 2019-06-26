@@ -23,6 +23,7 @@ namespace QLSTK
         private void frmPhieuRutTien_Load(object sender, EventArgs e)
         {
             prtBUS = new PhieuRutTienBUS();
+            txtMaSoPRT.Text = prtBUS.getNewMaSo();
         }
 
         private void btnLuuVaXuatPhieu_Click(object sender, EventArgs e)

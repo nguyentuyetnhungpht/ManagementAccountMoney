@@ -19,10 +19,6 @@ namespace QLSTK
             InitializeComponent();
         }
 
-        private void lậpSổMớiToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            
-        }
 
         private void tsThayDoiQuyDinh_Click(object sender, EventArgs e)
         {
@@ -101,7 +97,12 @@ namespace QLSTK
             frm.Show();
         }
 
-        private void tsTaoBaoCaoNgay_Click(object sender, EventArgs e)
+        private void frmMain_Load(object sender, EventArgs e)
+        {
+
+        }
+  
+        private void tsKhoiTaoBaoCao_Click(object sender, EventArgs e)
         {
             BaoCaoDoanhSoNgayBUS bcBUS = new BaoCaoDoanhSoNgayBUS();
             bool kq = bcBUS.createBaoCao();
@@ -114,7 +115,6 @@ namespace QLSTK
                 MessageBox.Show("Báo cáo ngày được tạo thành công");
             }
         }
-
         private void tsCapNhatBaoCaoNgay_Click(object sender, EventArgs e)
         {
             BaoCaoDoanhSoNgayBUS bcBUS = new BaoCaoDoanhSoNgayBUS();
@@ -127,9 +127,10 @@ namespace QLSTK
             {
                 MessageBox.Show("Báo cáo ngày được cập nhật thành công");
             }
+
         }
 
-        private void tstaoBaoCaoThang_Click(object sender, EventArgs e)
+        private void tsKhoiTaoBaoCaoThang_Click(object sender, EventArgs e)
         {
             BaoCaoMoDongSoThangBUS bcBUS = new BaoCaoMoDongSoThangBUS();
             bool kq = bcBUS.createBaoCaoThang(DateTime.Now.Month, DateTime.Now.Year);

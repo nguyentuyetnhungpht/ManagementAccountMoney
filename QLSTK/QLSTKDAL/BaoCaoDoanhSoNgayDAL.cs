@@ -6,6 +6,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data;
 
 namespace QLSTKDAL
 {
@@ -37,12 +38,11 @@ namespace QLSTKDAL
                     {
                         using (SqlCommand cmd = new SqlCommand())
                         {
-
                             cmd.Connection = con;
                             cmd.CommandType = System.Data.CommandType.Text;
                             cmd.CommandText = query;
                             cmd.Parameters.AddWithValue("@NgayBCDS", DateTime.Now.Date.ToString());
-                            cmd.Parameters.AddWithValue("@MaBCDSN", "x");
+                            cmd.Parameters.AddWithValue("@MaBCDSN", newMaSo());
                             cmd.Parameters.AddWithValue("@MaLTK", maltk);
                             try
                             {
@@ -237,7 +237,7 @@ namespace QLSTKDAL
             }
             return true;
         }
-
+        
 
         public List<BaoCaoDoanhSoNgayDTO> getListBaoCaoNgay(DateTime dt)
         {
@@ -286,12 +286,22 @@ namespace QLSTKDAL
                     catch (Exception ex)
                     {
                         con.Close();
-                        return null;
+                          return null;
                     }
                 }
             }
             return listBaoCao;
         } //Lập danh sách báo cáo qua thông tin ngày báo cáo
+
+        private string newMaSo()
+        {
+            string newMaSo;
+            SqlDataAdapter ada = new SqlDataAdapter("SELECT ISNULL(MAX(CAST(MaBCDSN as INT)),0) + 1 FROM [tblBaoCaoDoanhSoNgay] ", connectionString);
+            DataTable dt = new DataTable();
+            ada.Fill(dt);
+            newMaSo = dt.Rows[0][0].ToString();
+            return newMaSo;
+        }
     }
 }
-
+    

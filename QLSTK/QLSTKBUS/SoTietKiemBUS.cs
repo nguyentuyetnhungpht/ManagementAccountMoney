@@ -38,6 +38,10 @@ namespace QLSTKBUS
         {
             return stkDAL.getSTK(maSTK);
         }
+        public string getNewMaSo()
+        {
+            return stkDAL.newMaSo();
+        }
        
     }
 }

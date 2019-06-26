@@ -6,6 +6,8 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data;
+
 namespace QLSTKDAL
 {
 
@@ -46,6 +48,7 @@ namespace QLSTKDAL
                     return false;
             }
             #endregion
+
             return true;
         }
 
@@ -62,7 +65,7 @@ namespace QLSTKDAL
                     cmd.Connection = con;
                     cmd.CommandType = System.Data.CommandType.Text;
                     cmd.CommandText = query;
-                    cmd.Parameters.AddWithValue("@MaBCMDST", bc.StrNgayBCMDST);
+                    cmd.Parameters.AddWithValue("@MaBCMDST", newMaSo());
                     cmd.Parameters.AddWithValue("@ThangBCMDST", bc.IThangBCMDST);
                     cmd.Parameters.AddWithValue("@NamBCMDST", bc.INamBCMDST);
                     cmd.Parameters.AddWithValue("@NgayBCMDST", bc.StrNgayBCMDST);
@@ -288,7 +291,16 @@ namespace QLSTKDAL
             }
             return listBaoCao;
         }//Lập báo cáo tháng qua thông tin tháng và năm
+        private string newMaSo()
+        {
+            string newMaSo;
+            SqlDataAdapter ada = new SqlDataAdapter("SELECT ISNULL(MAX(CAST(MaBCMDST as INT)),0) + 1 FROM [tblBaoCaoMoDongSoThang] ", connectionString);
+            DataTable dt = new DataTable();
+            ada.Fill(dt);
+            newMaSo = dt.Rows[0][0].ToString();
+            return newMaSo;
+        }
     }
-
+    
 
 }

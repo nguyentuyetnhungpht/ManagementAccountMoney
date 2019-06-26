@@ -34,5 +34,9 @@ namespace QLSTKBUS
         {
             return khDAL.getKhachHang(maKH);
         }
+        public string getNewMaSo()
+        {
+            return khDAL.newMaSo();
+        }
     }
 }

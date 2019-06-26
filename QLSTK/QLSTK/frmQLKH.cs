@@ -23,6 +23,7 @@ namespace QLSTK
         private void frmQLKH_Load(object sender, EventArgs e)
         {
             khBUS = new KhachHangBUS();
+
         }
 
         private void btnThem_Click(object sender, EventArgs e)

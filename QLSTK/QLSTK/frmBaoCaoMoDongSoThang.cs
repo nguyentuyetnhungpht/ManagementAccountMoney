@@ -28,7 +28,7 @@ namespace QLSTK
 
         private void btnTraCuu_Click(object sender, EventArgs e)
         {
-
+            
         }
         private void Load_Data()
         {

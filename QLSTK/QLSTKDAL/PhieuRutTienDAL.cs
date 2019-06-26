@@ -6,6 +6,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data;
 
 namespace QLSTKDAL
 {
@@ -50,6 +51,15 @@ namespace QLSTKDAL
                 }
             }
             return true;
+        }
+        public string newMaSo()
+        {
+            string newMaSo;
+            SqlDataAdapter ada = new SqlDataAdapter("SELECT ISNULL(MAX(CAST(MaSoPRT as INT)),0) + 1 FROM [tblPhieuRutTien] ", connectionString);
+            DataTable dt = new DataTable();
+            ada.Fill(dt);
+            newMaSo = dt.Rows[0][0].ToString();
+            return newMaSo;
         }
     }
 }

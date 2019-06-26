@@ -162,25 +162,11 @@ namespace QLSTKDAL
                     catch (Exception ex)
                     {
                         con.Close();
-                        //  return null;
+                        return null;
                     }
                 }
             }
             return lsLoaiTietKiem;
-        }
-        public LoaiTietKiemDTO getLoaiTietKiem(string maLTK)
-        {
-            var table = new DataTable();
-            using (var da = new SqlDataAdapter("SELECT [LaiSuat], [KyHan], [TenLTK] FROM [tblLoaiTietKiem] WHERE [MaLTK] = '" + maLTK + "'", connectionString))
-            {
-                da.Fill(table);
-            }
-            LoaiTietKiemDTO ltk = new LoaiTietKiemDTO();
-            ltk.StrMaLTK = maLTK;
-            ltk.StrTenLTK = (table.Rows[0][2]).ToString();
-            ltk.FLaiSuat = float.Parse((table.Rows[0][0]).ToString());
-            ltk.IKyHan = int.Parse(table.Rows[0][1].ToString());
-            return ltk;
         }
         public List<string> getListMaLTK()
         {
@@ -218,11 +204,36 @@ namespace QLSTKDAL
                     catch (Exception ex)
                     {
                         con.Close();
-                        return null;
+                          return null;
                     }
                 }
             }
             return lsLoaiTietKiem;
+        }
+
+
+        public LoaiTietKiemDTO getLoaiTietKiem(string maLTK)
+        {
+            var table = new DataTable();
+            using (var da = new SqlDataAdapter("SELECT [LaiSuat], [KyHan], [TenLTK] FROM [tblLoaiTietKiem] WHERE [MaLTK] = '" + maLTK + "'", connectionString))
+            {
+                da.Fill(table);
+            }
+            LoaiTietKiemDTO ltk = new LoaiTietKiemDTO();
+            ltk.StrMaLTK = maLTK;
+            ltk.StrTenLTK = (table.Rows[0][2]).ToString();
+            ltk.FLaiSuat = float.Parse((table.Rows[0][0]).ToString());
+            ltk.IKyHan = int.Parse(table.Rows[0][1].ToString());
+            return ltk;
+        }
+        public string newMaSo()
+        {
+            string newMaSo;
+            SqlDataAdapter ada = new SqlDataAdapter("SELECT ISNULL(MAX(CAST(MaLTK as INT)),0) + 1 FROM [tblLoaiTietKiem] ", connectionString);
+            DataTable dt = new DataTable();
+            ada.Fill(dt);
+            newMaSo = dt.Rows[0][0].ToString();
+            return newMaSo;
         }
     }
 }

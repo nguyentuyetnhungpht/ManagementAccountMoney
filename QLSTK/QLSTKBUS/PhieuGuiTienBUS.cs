@@ -25,5 +25,9 @@ namespace QLSTKBUS
             }
             return re;
         }
+        public string getNewMaSo()
+        {
+            return ltkDAL.newMaSo();
+        }
     }
 }

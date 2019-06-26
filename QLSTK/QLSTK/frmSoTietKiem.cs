@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -20,6 +21,9 @@ namespace QLSTK
         public frmSoTietKiem()
         {
             InitializeComponent();
+            stkBUS = new SoTietKiemBUS();
+            ltkBUS = new LoaiTietKiemBUS();
+            txtMaSoSTK.Text = stkBUS.getNewMaSo();
         }
         public frmSoTietKiem(SoTietKiemDTO stk)
         {
@@ -33,12 +37,13 @@ namespace QLSTK
             txtDiaChi.Text = kh.StrDiaChi;
             txtSoTienGui.Text = stk.DSoDu.ToString();
             cmbLoaiTietKiem.Text = stk.StrMaLTK;
+            txtMaSoSTK.Text = stkBUS.getNewMaSo();
         }
         private void frmSoTietKiem_Load(object sender, EventArgs e)
         {
-            stkBUS = new SoTietKiemBUS();
-            ltkBUS = new LoaiTietKiemBUS();
+            
             load_MaLTK();
+
         }
         private void load_MaLTK()
         {

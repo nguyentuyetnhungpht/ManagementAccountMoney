@@ -212,5 +212,14 @@ namespace QLSTKDAL
             }
             return stk;
         }
+        public string newMaSo()
+        {
+            string newMaSo;
+            SqlDataAdapter ada = new SqlDataAdapter("SELECT ISNULL(MAX(CAST(MaSoSTK as INT)),0) + 1 FROM [tblSoTietKiem] ", connectionString);
+            DataTable dt = new DataTable();
+            ada.Fill(dt);
+            newMaSo = dt.Rows[0][0].ToString();
+            return newMaSo;
+        }
     }
 }

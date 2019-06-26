@@ -19,7 +19,7 @@ namespace QLSTK
         {
             InitializeComponent();
 
-
+            
         }
 
         private void frmBaoCaoDoanhSoNgay_Load(object sender, EventArgs e)
@@ -103,7 +103,7 @@ namespace QLSTK
 
         }
 
-        private void dgvBaoCao_RowPostPaint(object sender, DataGridViewRowPostPaintEventArgs e)
+        private void dgvBaoCao_RowPostPaint_1(object sender, DataGridViewRowPostPaintEventArgs e)
         {
             dgvBaoCao.Rows[e.RowIndex].Cells[0].Value = (e.RowIndex + 1).ToString();
         }

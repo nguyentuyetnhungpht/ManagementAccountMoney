@@ -15,15 +15,16 @@ namespace QLSTK
     public partial class frmPhieuGuiTien : Form
     {
         PhieuGuiTienBUS pgtBUS;
-        BaoCaoDoanhSoNgayBUS bcdsnBUS;
         public frmPhieuGuiTien()
         {
             InitializeComponent();
+            
         }
 
         private void frmPhieuGuiTien_Load(object sender, EventArgs e)
         {
             pgtBUS = new PhieuGuiTienBUS();
+            txtMaSoPGT.Text = pgtBUS.getNewMaSo();
         }
 
         private void btnLuuVaXuatPhieu_Click(object sender, EventArgs e)
