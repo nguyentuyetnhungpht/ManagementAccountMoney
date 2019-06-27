@@ -52,7 +52,7 @@
             this.btnLuuVaXuatPhieu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLuuVaXuatPhieu.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLuuVaXuatPhieu.Image = global::QLSTK.Properties.Resources.icons8_print_32;
-            this.btnLuuVaXuatPhieu.Location = new System.Drawing.Point(332, 593);
+            this.btnLuuVaXuatPhieu.Location = new System.Drawing.Point(319, 609);
             this.btnLuuVaXuatPhieu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLuuVaXuatPhieu.Name = "btnLuuVaXuatPhieu";
             this.btnLuuVaXuatPhieu.Size = new System.Drawing.Size(235, 50);
@@ -65,16 +65,17 @@
             // txtSoTienRut
             // 
             this.txtSoTienRut.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSoTienRut.Location = new System.Drawing.Point(297, 301);
+            this.txtSoTienRut.Location = new System.Drawing.Point(307, 354);
             this.txtSoTienRut.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtSoTienRut.Name = "txtSoTienRut";
             this.txtSoTienRut.Size = new System.Drawing.Size(250, 30);
             this.txtSoTienRut.TabIndex = 28;
+            this.txtSoTienRut.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtSoTienRut_KeyPress);
             // 
             // txtNgayRut
             // 
             this.txtNgayRut.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNgayRut.Location = new System.Drawing.Point(297, 241);
+            this.txtNgayRut.Location = new System.Drawing.Point(307, 294);
             this.txtNgayRut.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNgayRut.Name = "txtNgayRut";
             this.txtNgayRut.ReadOnly = true;
@@ -85,7 +86,7 @@
             // 
             this.cmbKhachHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbKhachHang.FormattingEnabled = true;
-            this.cmbKhachHang.Location = new System.Drawing.Point(297, 125);
+            this.cmbKhachHang.Location = new System.Drawing.Point(307, 178);
             this.cmbKhachHang.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbKhachHang.Name = "cmbKhachHang";
             this.cmbKhachHang.Size = new System.Drawing.Size(358, 33);
@@ -96,7 +97,7 @@
             // 
             this.cmbMaSoSTK.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbMaSoSTK.FormattingEnabled = true;
-            this.cmbMaSoSTK.Location = new System.Drawing.Point(297, 183);
+            this.cmbMaSoSTK.Location = new System.Drawing.Point(307, 236);
             this.cmbMaSoSTK.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbMaSoSTK.Name = "cmbMaSoSTK";
             this.cmbMaSoSTK.Size = new System.Drawing.Size(250, 33);
@@ -108,7 +109,7 @@
             this.lbSoTienRut.AutoSize = true;
             this.lbSoTienRut.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbSoTienRut.ForeColor = System.Drawing.Color.White;
-            this.lbSoTienRut.Location = new System.Drawing.Point(144, 300);
+            this.lbSoTienRut.Location = new System.Drawing.Point(154, 353);
             this.lbSoTienRut.Name = "lbSoTienRut";
             this.lbSoTienRut.Size = new System.Drawing.Size(100, 25);
             this.lbSoTienRut.TabIndex = 24;
@@ -119,7 +120,7 @@
             this.lbNgayRut.AutoSize = true;
             this.lbNgayRut.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbNgayRut.ForeColor = System.Drawing.Color.White;
-            this.lbNgayRut.Location = new System.Drawing.Point(159, 242);
+            this.lbNgayRut.Location = new System.Drawing.Point(169, 295);
             this.lbNgayRut.Name = "lbNgayRut";
             this.lbNgayRut.Size = new System.Drawing.Size(85, 25);
             this.lbNgayRut.TabIndex = 23;
@@ -130,7 +131,7 @@
             this.lbKhachHang.AutoSize = true;
             this.lbKhachHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbKhachHang.ForeColor = System.Drawing.Color.White;
-            this.lbKhachHang.Location = new System.Drawing.Point(126, 126);
+            this.lbKhachHang.Location = new System.Drawing.Point(136, 179);
             this.lbKhachHang.Name = "lbKhachHang";
             this.lbKhachHang.Size = new System.Drawing.Size(118, 25);
             this.lbKhachHang.TabIndex = 22;
@@ -141,7 +142,7 @@
             this.lbMaSoSTK.AutoSize = true;
             this.lbMaSoSTK.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbMaSoSTK.ForeColor = System.Drawing.Color.White;
-            this.lbMaSoSTK.Location = new System.Drawing.Point(132, 184);
+            this.lbMaSoSTK.Location = new System.Drawing.Point(142, 237);
             this.lbMaSoSTK.Name = "lbMaSoSTK";
             this.lbMaSoSTK.Size = new System.Drawing.Size(112, 25);
             this.lbMaSoSTK.TabIndex = 21;
@@ -150,7 +151,7 @@
             // txtMaSoPRT
             // 
             this.txtMaSoPRT.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMaSoPRT.Location = new System.Drawing.Point(297, 63);
+            this.txtMaSoPRT.Location = new System.Drawing.Point(307, 116);
             this.txtMaSoPRT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtMaSoPRT.Name = "txtMaSoPRT";
             this.txtMaSoPRT.Size = new System.Drawing.Size(250, 30);
@@ -169,9 +170,9 @@
             this.groupBox1.Controls.Add(this.lbKhachHang);
             this.groupBox1.Controls.Add(this.lbMaSoSTK);
             this.groupBox1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(66, 132);
+            this.groupBox1.Location = new System.Drawing.Point(12, 115);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(750, 406);
+            this.groupBox1.Size = new System.Drawing.Size(863, 472);
             this.groupBox1.TabIndex = 34;
             this.groupBox1.TabStop = false;
             // 
@@ -180,7 +181,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.IndianRed;
-            this.label1.Location = new System.Drawing.Point(140, 69);
+            this.label1.Location = new System.Drawing.Point(150, 122);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(104, 24);
             this.label1.TabIndex = 34;
@@ -205,7 +206,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Image = global::QLSTK.Properties.Resources.icons8_save_close_32;
-            this.button1.Location = new System.Drawing.Point(140, 593);
+            this.button1.Location = new System.Drawing.Point(127, 609);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(146, 50);
@@ -220,7 +221,7 @@
             this.btnHuy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHuy.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHuy.Image = global::QLSTK.Properties.Resources.icons8_exit_32;
-            this.btnHuy.Location = new System.Drawing.Point(613, 593);
+            this.btnHuy.Location = new System.Drawing.Point(600, 609);
             this.btnHuy.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.Size = new System.Drawing.Size(146, 50);

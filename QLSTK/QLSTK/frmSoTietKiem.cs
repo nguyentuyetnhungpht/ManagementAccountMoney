@@ -113,5 +113,23 @@ namespace QLSTK
             CurrencyManager myCurrencyManager = (CurrencyManager)this.BindingContext[cmbLoaiTietKiem.DataSource];
             myCurrencyManager.Refresh();
         }
+
+        private void TxtMaKH_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!Char.IsDigit(e.KeyChar) && !Char.IsControl(e.KeyChar))
+                e.Handled = true;
+        }
+
+        private void TxtCMND_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!Char.IsDigit(e.KeyChar) && !Char.IsControl(e.KeyChar))
+                e.Handled = true;
+        }
+
+        private void TxtSoTienGui_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!Char.IsDigit(e.KeyChar) && !Char.IsControl(e.KeyChar))
+                e.Handled = true;
+        }
     }
 }

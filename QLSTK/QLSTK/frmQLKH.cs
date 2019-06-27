@@ -7,6 +7,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -80,6 +81,32 @@ namespace QLSTK
                 MessageBox.Show("Sửa khách hàng thất bại. Vui lòng kiểm tra lại dũ liệu");
             else
                 MessageBox.Show("Sửa khách hàng thành công");
+        }
+
+        private void TxtHoTen_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !((e.KeyChar >= 65 && e.KeyChar <= 122) || e.KeyChar == 8);
+        }
+
+        private void TxtCMND_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!Char.IsDigit(e.KeyChar) && !Char.IsControl(e.KeyChar))
+                e.Handled = true;
+        }
+
+        private void tbtDienThoai_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!Char.IsDigit(e.KeyChar) && !Char.IsControl(e.KeyChar))
+                e.Handled = true;
+        }
+
+        private void TxtEmail_Leave(object sender, EventArgs e)
+        {
+            string patten = "^([0-9a-zA-Z]([-\\.\\w]*[0-9a-zA-Z]*@[0-9a-zA-Z][-\\w]*[0-9a-zA-Z]\\.)+[a-zA-Z]{2,9})$";
+            if (Regex.IsMatch(txtEmail.Text, patten))
+                    errorProvider1.Clear();
+           else
+                errorProvider1.SetError(this.txtEmail, "Email không hợp lệ");
         }
     }
 }

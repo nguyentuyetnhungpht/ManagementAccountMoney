@@ -72,18 +72,6 @@ namespace QLSTK
             frmQuyDinh.Show();
         }
 
-        private void TileTTKhachHang_ItemClick(object sender, TileItemEventArgs e)
-        {
-            pnZone.Controls.Clear();
-            frmQLKH frmQLKH = new frmQLKH();
-            frmQLKH.TopLevel = false;
-            pnZone.Controls.Add(frmQLKH);
-            frmQLKH.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            frmQLKH.AutoScroll = true;
-            frmQLKH.Dock = DockStyle.Fill;
-            frmQLKH.Show();
-        }
-
         private void TileLapBaoCaoNgay_ItemClick(object sender, TileItemEventArgs e)
         {
             pnZone.Controls.Clear();
@@ -120,7 +108,19 @@ namespace QLSTK
             frmLapSoMoi.Show();
         }
 
-        private void BtnThoát_Click(object sender, EventArgs e)
+        private void TileTTKhachHang_ItemClick_1(object sender, TileItemEventArgs e)
+        {
+            pnZone.Controls.Clear();
+            frmQLKH frmQLKH = new frmQLKH();
+            frmQLKH.TopLevel = false;
+            pnZone.Controls.Add(frmQLKH);
+            frmQLKH.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            frmQLKH.AutoScroll = true;
+            frmQLKH.Dock = DockStyle.Fill;
+            frmQLKH.Show();
+        }
+
+        private void BtnThoat_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Bạn muốn đóng ứng dụng sổ tiết kiệm?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 Application.Exit();

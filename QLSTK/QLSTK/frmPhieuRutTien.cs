@@ -95,5 +95,11 @@ namespace QLSTK
         {
             string maSTK = cmbMaSoSTK.SelectedValue.ToString();
         }
+
+        private void TxtSoTienRut_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!Char.IsDigit(e.KeyChar) && !Char.IsControl(e.KeyChar))
+                e.Handled = true;
+        }
     }
 }

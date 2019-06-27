@@ -167,15 +167,15 @@ namespace QLSTK
                     this.Hide();
                     frmHome Home = new frmHome();
                     Home.Show();
-                    //hiển thị quyền
+                    PhanQuyen( Home);
                 }
                 else //employee
                 {
                     this.Hide();
                     frmHome Home = new frmHome();
                     Home.Show();
-                    //vô hiệu hoá tile quy định
-                    //hiển thị quyền
+                    Home.tileThayDoiQuyDinh.Enabled = false;
+                    PhanQuyen( Home);
                 }
             }
             else
@@ -252,6 +252,22 @@ namespace QLSTK
             tbtMatKhau.Text = "";
             tbtMatKhauMoi.Text = "";
             tbtNhapLaiMatKhau.Text = "";
+        }
+
+        private void TbtMatKhau_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnDangNhap.PerformClick();
+            }
+        }
+
+        private void PhanQuyen(frmHome home)
+        {
+           if (home.tileThayDoiQuyDinh.Enabled == false)
+                home.lblPhanQuyen.Text = "Quyền truy cập: Nhân Viên";
+           else
+                home.lblPhanQuyen.Text = "Quyền truy cập: ADMIN";
         }
     }
 }

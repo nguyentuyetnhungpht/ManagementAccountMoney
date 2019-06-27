@@ -75,7 +75,7 @@ namespace QLSTKDAL
                             while (reader.Read())
                             {
                                 isOK = true;
-                                loaiTK = reader.GetOrdinal("MaLoaiTaiKhoan");
+                                loaiTK = reader.GetInt32(0); //maloaiTK ở cột 0
                             }
                         }
                     }

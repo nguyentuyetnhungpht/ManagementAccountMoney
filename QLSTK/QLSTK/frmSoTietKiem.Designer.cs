@@ -87,6 +87,7 @@
             this.txtMaKH.Name = "txtMaKH";
             this.txtMaKH.Size = new System.Drawing.Size(203, 32);
             this.txtMaKH.TabIndex = 45;
+            this.txtMaKH.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtMaKH_KeyPress);
             // 
             // txtMaSoSTK
             // 
@@ -146,6 +147,7 @@
             this.txtCMND.Name = "txtCMND";
             this.txtCMND.Size = new System.Drawing.Size(203, 32);
             this.txtCMND.TabIndex = 33;
+            this.txtCMND.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtCMND_KeyPress);
             // 
             // txtSoTienGui
             // 
@@ -155,6 +157,7 @@
             this.txtSoTienGui.Name = "txtSoTienGui";
             this.txtSoTienGui.Size = new System.Drawing.Size(203, 32);
             this.txtSoTienGui.TabIndex = 32;
+            this.txtSoTienGui.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtSoTienGui_KeyPress);
             // 
             // txtDiaChi
             // 

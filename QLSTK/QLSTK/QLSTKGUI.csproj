@@ -196,15 +196,6 @@
     <None Include="Resources\file1.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\user-groups-64.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\user-folder-64.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-user-folder-64.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Blue-Background-300x200.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -278,6 +269,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\9331.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-user-location-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-info-squared-55.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-shutdown-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-update-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-create-32.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

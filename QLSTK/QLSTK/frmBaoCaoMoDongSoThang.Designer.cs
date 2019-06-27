@@ -40,10 +40,10 @@
             this.dgvBaoCao = new System.Windows.Forms.DataGridView();
             this.cmbNam = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnTraCuu = new System.Windows.Forms.Button();
-            this.btnXuatFile = new System.Windows.Forms.Button();
             this.btnCapNhat = new System.Windows.Forms.Button();
             this.btnTaoBaoCao = new System.Windows.Forms.Button();
+            this.btnTraCuu = new System.Windows.Forms.Button();
+            this.btnXuatFile = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBaoCao)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -176,11 +176,45 @@
             this.groupBox1.Controls.Add(this.txtTongThuNgay);
             this.groupBox1.Controls.Add(this.lblChenhLech);
             this.groupBox1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(12, 120);
+            this.groupBox1.Location = new System.Drawing.Point(12, 115);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(863, 472);
             this.groupBox1.TabIndex = 51;
             this.groupBox1.TabStop = false;
+            // 
+            // btnCapNhat
+            // 
+            this.btnCapNhat.BackColor = System.Drawing.Color.DarkCyan;
+            this.btnCapNhat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCapNhat.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCapNhat.ForeColor = System.Drawing.Color.Black;
+            this.btnCapNhat.Image = global::QLSTK.Properties.Resources.icons8_update_32;
+            this.btnCapNhat.Location = new System.Drawing.Point(105, 633);
+            this.btnCapNhat.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCapNhat.Name = "btnCapNhat";
+            this.btnCapNhat.Size = new System.Drawing.Size(171, 50);
+            this.btnCapNhat.TabIndex = 55;
+            this.btnCapNhat.Text = "Cập nhật";
+            this.btnCapNhat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnCapNhat.UseVisualStyleBackColor = false;
+            this.btnCapNhat.Click += new System.EventHandler(this.BtnCapNhat_Click);
+            // 
+            // btnTaoBaoCao
+            // 
+            this.btnTaoBaoCao.BackColor = System.Drawing.Color.DarkCyan;
+            this.btnTaoBaoCao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTaoBaoCao.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTaoBaoCao.ForeColor = System.Drawing.Color.Black;
+            this.btnTaoBaoCao.Image = global::QLSTK.Properties.Resources.icons8_create_32;
+            this.btnTaoBaoCao.Location = new System.Drawing.Point(622, 633);
+            this.btnTaoBaoCao.Margin = new System.Windows.Forms.Padding(2);
+            this.btnTaoBaoCao.Name = "btnTaoBaoCao";
+            this.btnTaoBaoCao.Size = new System.Drawing.Size(171, 50);
+            this.btnTaoBaoCao.TabIndex = 54;
+            this.btnTaoBaoCao.Text = "Tạo";
+            this.btnTaoBaoCao.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnTaoBaoCao.UseVisualStyleBackColor = false;
+            this.btnTaoBaoCao.Click += new System.EventHandler(this.BtnTaoBaoCao_Click);
             // 
             // btnTraCuu
             // 
@@ -213,40 +247,6 @@
             this.btnXuatFile.Text = "Xuất file";
             this.btnXuatFile.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnXuatFile.UseVisualStyleBackColor = false;
-            // 
-            // btnCapNhat
-            // 
-            this.btnCapNhat.BackColor = System.Drawing.Color.DarkCyan;
-            this.btnCapNhat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCapNhat.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCapNhat.ForeColor = System.Drawing.Color.Black;
-            this.btnCapNhat.Image = global::QLSTK.Properties.Resources.icons8_view_32;
-            this.btnCapNhat.Location = new System.Drawing.Point(105, 633);
-            this.btnCapNhat.Margin = new System.Windows.Forms.Padding(2);
-            this.btnCapNhat.Name = "btnCapNhat";
-            this.btnCapNhat.Size = new System.Drawing.Size(171, 50);
-            this.btnCapNhat.TabIndex = 55;
-            this.btnCapNhat.Text = "Cập nhật";
-            this.btnCapNhat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnCapNhat.UseVisualStyleBackColor = false;
-            this.btnCapNhat.Click += new System.EventHandler(this.BtnCapNhat_Click);
-            // 
-            // btnTaoBaoCao
-            // 
-            this.btnTaoBaoCao.BackColor = System.Drawing.Color.DarkCyan;
-            this.btnTaoBaoCao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTaoBaoCao.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTaoBaoCao.ForeColor = System.Drawing.Color.Black;
-            this.btnTaoBaoCao.Image = global::QLSTK.Properties.Resources.icons8_view_32;
-            this.btnTaoBaoCao.Location = new System.Drawing.Point(622, 633);
-            this.btnTaoBaoCao.Margin = new System.Windows.Forms.Padding(2);
-            this.btnTaoBaoCao.Name = "btnTaoBaoCao";
-            this.btnTaoBaoCao.Size = new System.Drawing.Size(171, 50);
-            this.btnTaoBaoCao.TabIndex = 54;
-            this.btnTaoBaoCao.Text = "Tạo";
-            this.btnTaoBaoCao.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnTaoBaoCao.UseVisualStyleBackColor = false;
-            this.btnTaoBaoCao.Click += new System.EventHandler(this.BtnTaoBaoCao_Click);
             // 
             // frmBaoCaoMoDongSoThang
             // 

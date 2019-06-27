@@ -302,6 +302,7 @@
             this.tbtMatKhau.TabIndex = 11;
             this.tbtMatKhau.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.tbtMatKhau.UseSystemPasswordChar = true;
+            this.tbtMatKhau.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TbtMatKhau_KeyDown);
             // 
             // tbtTaiKhoan
             // 
@@ -338,7 +339,7 @@
             this.ClientSize = new System.Drawing.Size(1008, 545);
             this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "SplashScreen1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.SplashScreen1_Load);

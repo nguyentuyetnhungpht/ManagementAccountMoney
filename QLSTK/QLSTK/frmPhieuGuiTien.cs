@@ -66,6 +66,7 @@ namespace QLSTK
 
         private void btnLuuVaXuatPhieu_Click(object sender, EventArgs e)
         {
+
             //1. Map data from GUI
             PhieuGuiTienDTO pgt = new PhieuGuiTienDTO();
             pgt.StrMaSoPGT = txtMaSoPGT.Text;
@@ -87,7 +88,8 @@ namespace QLSTK
             {
                 MessageBox.Show("Thêm Phiếu gửi tiền thành công");
             }
-            //--------------------------------------------
+            //-------------------------------------------
+
         }
 
         private void BtnHuy_Click(object sender, EventArgs e)
@@ -103,6 +105,19 @@ namespace QLSTK
         private void CmbKhachHang_SelectedIndexChanged(object sender, EventArgs e)
         {
             string maKh = cmbKhachHang.SelectedValue.ToString();
+        }
+
+        //rang buoc du lieu nhap vao, chi dc nhap so
+        private void TxtSoTienGui_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!Char.IsDigit(e.KeyChar) && !Char.IsControl(e.KeyChar))
+                e.Handled = true;
+             
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
