@@ -16,7 +16,7 @@ namespace QLSTK
         {
           //  Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new SplashScreen1());
+            Application.Run(new frmHome());
         }
     }
 }

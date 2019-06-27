@@ -42,6 +42,9 @@ namespace QLSTKBUS
             bool re = ltkDAL.suaLoaiTietKiem(ltkDTO);
             return re;
         }
-
+        public string getNewMaSo()
+        {
+            return ltkDAL.newMaSo();
+        }
     }
 }

@@ -16,6 +16,7 @@ namespace QLSTK
     {
         private SoTietKiemBUS stkBUS;
         private LoaiTietKiemBUS ltkBUS;
+        private KhachHangBUS khBUS; //để load vao comboBox
         public frmTraCuu()
         {
             InitializeComponent();
@@ -25,6 +26,7 @@ namespace QLSTK
         {
             stkBUS = new SoTietKiemBUS();
             ltkBUS = new LoaiTietKiemBUS();
+            LoadDuLieuVao_Combobox();
         }
         private void btTimKiem_Click(object sender, EventArgs e)
         {
@@ -35,7 +37,7 @@ namespace QLSTK
         {
             string maso = cmbMaSo.Text.Trim();
             string makh = cmbMaKH.Text.Trim();
-            string maltk = cmbMaLTK.Text.Trim();
+            string maltk = cmbMaLoaiTietKiem.Text.Trim();
             double minsodu = 0;
             double maxsodu = 0;
             DateTime minNgay = dtpTuNgay.Value;
@@ -128,6 +130,55 @@ namespace QLSTK
             CurrencyManager myCurrencyManager = (CurrencyManager)this.BindingContext[dgvSoTietKiem.DataSource];// ho tro binding du lieu
             myCurrencyManager.Refresh();
         }
+
+        private void LoadDuLieuVao_Combobox()
+        {
+            List<LoaiTietKiemDTO> listLTK = ltkBUS.selectListLTK();
+            List<SoTietKiemDTO> listSTK = stkBUS.seclectSoTietKiem();
+
+            if (listLTK == null || listSTK == null)
+            {
+                MessageBox.Show("Có lỗi khi lấy LoaiTietKiem từ DB");
+                return;
+            }
+            // Load Loai tiet kiem
+            cmbMaLoaiTietKiem.DataSource = new BindingSource(listLTK, String.Empty);
+            cmbMaLoaiTietKiem.DisplayMember = "StrMaLTK";
+            cmbMaLoaiTietKiem.ValueMember = "StrMaLTK";
+            CurrencyManager myCurrencyManager = (CurrencyManager)this.BindingContext[cmbMaLoaiTietKiem.DataSource];
+            myCurrencyManager.Refresh();
+
+            //Load ma khach hang
+            cmbMaKH.DataSource = new BindingSource(listSTK, String.Empty);
+            cmbMaKH.DisplayMember = "StrMaKH";
+            cmbMaKH.ValueMember = "StrMaKH";
+            myCurrencyManager = (CurrencyManager)this.BindingContext[cmbMaKH.DataSource];
+            myCurrencyManager.Refresh();
+
+            //Load ma so tiet kiem
+            cmbMaSo.DataSource = new BindingSource(listSTK, String.Empty);
+            cmbMaSo.DisplayMember = "StrMaSoSTK";
+            cmbMaSo.ValueMember = "StrMaSoSTK";
+            myCurrencyManager = (CurrencyManager)this.BindingContext[cmbMaSo.DataSource];
+            myCurrencyManager.Refresh();
+
+
+            if (cmbMaLoaiTietKiem.Items.Count > 0)
+            {
+                cmbMaLoaiTietKiem.SelectedIndex = 0;
+            }
+
+            if (cmbMaSo.Items.Count > 0)
+            {
+                cmbMaSo.SelectedIndex = 0;
+            }
+
+            if (cmbMaKH.Items.Count > 0)
+            {
+                cmbMaKH.SelectedIndex = 0;
+            }
+
+        }
         private void cmsSuaSTK_Click(object sender, EventArgs e)
         {
             // ' Get the current cell location.
@@ -168,6 +219,31 @@ namespace QLSTK
                     }
                 }
             }
+        }
+
+        private void CmbMaLoaiTietKiem_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string maLoaiTK = cmbMaLoaiTietKiem.SelectedValue.ToString();
+        }
+
+        private void CmbMaSo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string maSoTietKiem = cmbMaSo.SelectedValue.ToString();
+        }
+
+        private void CmbMaKH_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string maKh = cmbMaKH.SelectedValue.ToString();
+        }
+
+        private void TxtMaxSoDu_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TxtMinSoDu_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

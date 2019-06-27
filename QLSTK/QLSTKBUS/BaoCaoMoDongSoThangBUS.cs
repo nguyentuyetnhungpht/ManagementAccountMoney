@@ -23,5 +23,9 @@ namespace QLSTKBUS
         {
             return bcDAL.upadteBaoCaoMoDongSoThang(Thang, Nam);
         }
+        public List<BaoCaoMoDongSoThangDTO> getListBaoCaoThang(int iThang, int iNam)
+        {
+            return bcDAL.getBaoCaoThang(iThang, iNam);
+        }
     }
 }

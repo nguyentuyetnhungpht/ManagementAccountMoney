@@ -41,6 +41,8 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnTraCuu = new System.Windows.Forms.Button();
             this.btnXuatFile = new System.Windows.Forms.Button();
+            this.btnTaoBaoCao = new System.Windows.Forms.Button();
+            this.btnCapNhat = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBaoCao)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -176,7 +178,7 @@
             this.btnTraCuu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTraCuu.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTraCuu.Image = global::QLSTK.Properties.Resources.icons8_view_32;
-            this.btnTraCuu.Location = new System.Drawing.Point(490, 646);
+            this.btnTraCuu.Location = new System.Drawing.Point(452, 632);
             this.btnTraCuu.Margin = new System.Windows.Forms.Padding(2);
             this.btnTraCuu.Name = "btnTraCuu";
             this.btnTraCuu.Size = new System.Drawing.Size(146, 50);
@@ -192,7 +194,7 @@
             this.btnXuatFile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnXuatFile.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXuatFile.Image = global::QLSTK.Properties.Resources.icons8_print_32;
-            this.btnXuatFile.Location = new System.Drawing.Point(215, 646);
+            this.btnXuatFile.Location = new System.Drawing.Point(293, 632);
             this.btnXuatFile.Margin = new System.Windows.Forms.Padding(2);
             this.btnXuatFile.Name = "btnXuatFile";
             this.btnXuatFile.Size = new System.Drawing.Size(146, 50);
@@ -201,12 +203,46 @@
             this.btnXuatFile.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnXuatFile.UseVisualStyleBackColor = false;
             // 
+            // btnTaoBaoCao
+            // 
+            this.btnTaoBaoCao.BackColor = System.Drawing.Color.DarkCyan;
+            this.btnTaoBaoCao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTaoBaoCao.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTaoBaoCao.Image = global::QLSTK.Properties.Resources.icons8_view_32;
+            this.btnTaoBaoCao.Location = new System.Drawing.Point(611, 632);
+            this.btnTaoBaoCao.Margin = new System.Windows.Forms.Padding(2);
+            this.btnTaoBaoCao.Name = "btnTaoBaoCao";
+            this.btnTaoBaoCao.Size = new System.Drawing.Size(171, 50);
+            this.btnTaoBaoCao.TabIndex = 39;
+            this.btnTaoBaoCao.Text = "Tạo";
+            this.btnTaoBaoCao.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnTaoBaoCao.UseVisualStyleBackColor = false;
+            this.btnTaoBaoCao.Click += new System.EventHandler(this.BtnTaoBaoCao_Click);
+            // 
+            // btnCapNhat
+            // 
+            this.btnCapNhat.BackColor = System.Drawing.Color.DarkCyan;
+            this.btnCapNhat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCapNhat.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCapNhat.Image = global::QLSTK.Properties.Resources.icons8_view_32;
+            this.btnCapNhat.Location = new System.Drawing.Point(111, 632);
+            this.btnCapNhat.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCapNhat.Name = "btnCapNhat";
+            this.btnCapNhat.Size = new System.Drawing.Size(171, 50);
+            this.btnCapNhat.TabIndex = 40;
+            this.btnCapNhat.Text = "Cập nhật";
+            this.btnCapNhat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnCapNhat.UseVisualStyleBackColor = false;
+            this.btnCapNhat.Click += new System.EventHandler(this.BtnCapNhat_Click);
+            // 
             // frmBaoCaoDoanhSoNgay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CadetBlue;
             this.ClientSize = new System.Drawing.Size(882, 703);
+            this.Controls.Add(this.btnCapNhat);
+            this.Controls.Add(this.btnTaoBaoCao);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.lblbaoCaoDoanhSoNgay);
             this.Controls.Add(this.btnTraCuu);
@@ -238,5 +274,7 @@
         private System.Windows.Forms.Label lbNgay;
         private System.Windows.Forms.DataGridView dgvBaoCao;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button btnTaoBaoCao;
+        private System.Windows.Forms.Button btnCapNhat;
     }
 }

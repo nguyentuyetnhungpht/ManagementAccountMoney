@@ -20,5 +20,9 @@ namespace QLSTKBUS
             bool re = ltkDAL.themPhieuRutTien(prt);
             return re;
         }
+        public string getNewMaSo()
+        {
+            return ltkDAL.newMaSo();
+        }
     }
 }

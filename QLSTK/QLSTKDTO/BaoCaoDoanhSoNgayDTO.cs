@@ -22,7 +22,7 @@ namespace QLSTKDTO
         public string StrMaLTK { get => strMaLTK; set => strMaLTK = value; }
         public BaoCaoDoanhSoNgayDTO(string MaLTK)
         {
-            strMaBCDSN = "x";
+            strMaBCDSN = "0";
             strNgayBCDS = DateTime.Now.ToString();
             dTongThu = 0;
             dTongChi = 0;

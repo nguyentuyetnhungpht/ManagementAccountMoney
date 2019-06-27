@@ -30,14 +30,23 @@ namespace QLSTKBUS
         //{
         //    return stkDAL.selectListSTK(masoSTK, maKH, maLTK, minSoDu);
         //}
+        
         public List<SoTietKiemDTO> selectSTK(string masoSTK, string maKH, string maLTK, double minSoDu, double maxSoDu, DateTime minNgay, DateTime maxNgay)
         {
             return stkDAL.selectListSTK(masoSTK, maKH, maLTK, minSoDu, maxSoDu, minNgay, maxNgay);
+        }
+
+        public List<SoTietKiemDTO> seclectSoTietKiem()
+        {
+            return stkDAL.selecListSoTietKiem();
         }
         public SoTietKiemDTO getSoTietKiem(string maSTK)
         {
             return stkDAL.getSTK(maSTK);
         }
-       
+        public string getNewMaSo()
+        {
+            return stkDAL.newMaSo();
+        }
     }
 }

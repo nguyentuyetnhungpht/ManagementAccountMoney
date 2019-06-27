@@ -39,8 +39,8 @@
             this.lbMaSoSTK = new System.Windows.Forms.Label();
             this.txtMaSoPRT = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.lblPhieuRutTien = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.lblPhieuRutTien = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.btnHuy = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
@@ -90,6 +90,7 @@
             this.cmbKhachHang.Name = "cmbKhachHang";
             this.cmbKhachHang.Size = new System.Drawing.Size(358, 33);
             this.cmbKhachHang.TabIndex = 26;
+            this.cmbKhachHang.SelectedIndexChanged += new System.EventHandler(this.CmbKhachHang_SelectedIndexChanged);
             // 
             // cmbMaSoSTK
             // 
@@ -100,6 +101,7 @@
             this.cmbMaSoSTK.Name = "cmbMaSoSTK";
             this.cmbMaSoSTK.Size = new System.Drawing.Size(250, 33);
             this.cmbMaSoSTK.TabIndex = 25;
+            this.cmbMaSoSTK.SelectedIndexChanged += new System.EventHandler(this.CmbMaSoSTK_SelectedIndexChanged);
             // 
             // lbSoTienRut
             // 
@@ -173,6 +175,17 @@
             this.groupBox1.TabIndex = 34;
             this.groupBox1.TabStop = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.IndianRed;
+            this.label1.Location = new System.Drawing.Point(140, 69);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(104, 24);
+            this.label1.TabIndex = 34;
+            this.label1.Text = "Mã số PGT";
+            // 
             // lblPhieuRutTien
             // 
             this.lblPhieuRutTien.AutoSize = true;
@@ -185,17 +198,6 @@
             this.lblPhieuRutTien.TabIndex = 35;
             this.lblPhieuRutTien.Text = "LẬP PHIẾU RÚT TIỀN";
             this.lblPhieuRutTien.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.IndianRed;
-            this.label1.Location = new System.Drawing.Point(140, 69);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(104, 24);
-            this.label1.TabIndex = 34;
-            this.label1.Text = "Mã số PGT";
             // 
             // button1
             // 
@@ -238,7 +240,7 @@
             this.Controls.Add(this.lblPhieuRutTien);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnLuuVaXuatPhieu);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmPhieuRutTien";
             this.Text = "frmPhieuRutTien";
             this.Load += new System.EventHandler(this.frmPhieuRutTien_Load);

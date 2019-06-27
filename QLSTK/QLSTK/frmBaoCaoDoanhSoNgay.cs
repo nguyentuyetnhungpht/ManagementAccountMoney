@@ -30,6 +30,37 @@ namespace QLSTK
 
         }
 
-        
+        private void Button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnTaoBaoCao_Click(object sender, EventArgs e)
+        {
+            BaoCaoDoanhSoNgayBUS bcBUS = new BaoCaoDoanhSoNgayBUS();
+            bool kq = bcBUS.createBaoCao();
+            if (kq == false)
+            {
+                MessageBox.Show("Không thể hoàn thành thao tác. Vui lòng kiểm tra lại dũ liệu");
+            }
+            else
+            {
+                MessageBox.Show("Báo cáo ngày được tạo thành công");
+            }
+        }
+
+        private void BtnCapNhat_Click(object sender, EventArgs e)
+        {
+            BaoCaoDoanhSoNgayBUS bcBUS = new BaoCaoDoanhSoNgayBUS();
+            bool kq = bcBUS.updateBaoCao();
+            if (kq == false)
+            {
+                MessageBox.Show("Không thể hoàn thành thao tác. Vui lòng kiểm tra lại dũ liệu");
+            }
+            else
+            {
+                MessageBox.Show("Báo cáo ngày được cập nhật thành công");
+            }
+        }
     }
 }

@@ -18,6 +18,8 @@ namespace QLSTK
         public frmQLKH()
         {
             InitializeComponent();
+            khBUS = new KhachHangBUS();
+            txtMaKH.Text = khBUS.getNewMaSo();
         }
 
         private void frmQLKH_Load(object sender, EventArgs e)

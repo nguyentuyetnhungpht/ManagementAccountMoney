@@ -14,17 +14,56 @@ namespace QLSTK
 {
     public partial class frmPhieuRutTien : Form
     {
+        PhieuRutTienBUS prtBUS;
+        private SoTietKiemBUS stkBUS;
         public frmPhieuRutTien()
         {
             InitializeComponent();
+            prtBUS = new PhieuRutTienBUS();
+            txtMaSoPRT.Text = prtBUS.getNewMaSo();
         }
-        PhieuRutTienBUS prtBUS;
 
         private void frmPhieuRutTien_Load(object sender, EventArgs e)
         {
-            prtBUS = new PhieuRutTienBUS();
+            stkBUS = new SoTietKiemBUS();
+            LoadDuLieuVao_Combobox();
         }
 
+        private void LoadDuLieuVao_Combobox()
+        {
+            List<SoTietKiemDTO> listSTK = stkBUS.seclectSoTietKiem();
+
+            if (listSTK == null)
+            {
+                MessageBox.Show("Có lỗi khi lấy LoaiTietKiem từ DB");
+                return;
+            }
+
+            //Load ma khach hang
+            cmbKhachHang.DataSource = new BindingSource(listSTK, String.Empty);
+            cmbKhachHang.DisplayMember = "StrMaKH";
+            cmbKhachHang.ValueMember = "StrMaKH";
+            CurrencyManager myCurrencyManager = (CurrencyManager)this.BindingContext[cmbKhachHang.DataSource];
+            myCurrencyManager.Refresh();
+
+            //Load ma so tiet kiem
+            cmbMaSoSTK.DataSource = new BindingSource(listSTK, String.Empty);
+            cmbMaSoSTK.DisplayMember = "StrMaSoSTK";
+            cmbMaSoSTK.ValueMember = "StrMaSoSTK";
+            myCurrencyManager = (CurrencyManager)this.BindingContext[cmbMaSoSTK.DataSource];
+            myCurrencyManager.Refresh();
+
+
+            if (cmbMaSoSTK.Items.Count > 0)
+            {
+                cmbMaSoSTK.SelectedIndex = 0;
+            }
+
+            if (cmbKhachHang.Items.Count > 0)
+            {
+                cmbKhachHang.SelectedIndex = 0;
+            }
+        }
         private void btnLuuVaXuatPhieu_Click(object sender, EventArgs e)
         {
             //1. Map data from GUI
@@ -47,5 +86,14 @@ namespace QLSTK
             //--------------------------------------------
         }
 
+        private void CmbKhachHang_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string maKh = cmbKhachHang.SelectedValue.ToString();
+        }
+
+        private void CmbMaSoSTK_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string maSTK = cmbMaSoSTK.SelectedValue.ToString();
+        }
     }
 }

@@ -87,6 +87,7 @@
             this.cmbKhachHang.Name = "cmbKhachHang";
             this.cmbKhachHang.Size = new System.Drawing.Size(347, 33);
             this.cmbKhachHang.TabIndex = 15;
+            this.cmbKhachHang.SelectedIndexChanged += new System.EventHandler(this.CmbKhachHang_SelectedIndexChanged);
             // 
             // cmbMaSoSTK
             // 
@@ -97,6 +98,7 @@
             this.cmbMaSoSTK.Name = "cmbMaSoSTK";
             this.cmbMaSoSTK.Size = new System.Drawing.Size(209, 33);
             this.cmbMaSoSTK.TabIndex = 14;
+            this.cmbMaSoSTK.SelectedIndexChanged += new System.EventHandler(this.CmbMaSoSTK_SelectedIndexChanged);
             // 
             // lbSoTienGui
             // 

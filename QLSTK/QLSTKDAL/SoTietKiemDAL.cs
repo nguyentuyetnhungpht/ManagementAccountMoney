@@ -89,13 +89,11 @@ namespace QLSTKDAL
 
 
         }
-
         public bool suaSoTietKiem(SoTietKiemDTO stk)
         {
 
             return true;
         }
-
         public List<SoTietKiemDTO> selectListSTK(string masoSTK, string maKH, string maLTK, double minSoDu, double maxSoDu, DateTime minNgay, DateTime maxNgay)
         {
             string query = string.Empty;
@@ -164,6 +162,61 @@ namespace QLSTKDAL
             }
             return listSTK;
         }
+        
+        public List<SoTietKiemDTO> selecListSoTietKiem()
+        {
+            string query = string.Empty;
+            query += "SELECT [MaSoSTK], [MaKH], [SoTienGoiSTK], [MaLTK], [NgayMoSo], [TienLai], [SoLanDaoHan], [SoDu], [LaiSuatCamKet], [KyHanCamKet]";
+            query += "FROM [tblSoTietKiem]";
+
+            List<SoTietKiemDTO> lsSoTietKiem = new List<SoTietKiemDTO>();
+
+            using (SqlConnection con = new SqlConnection(ConnectionString))
+            {
+
+                using (SqlCommand cmd = new SqlCommand())
+                {
+                    cmd.Connection = con;
+                    cmd.CommandType = System.Data.CommandType.Text;
+                    cmd.CommandText = query;
+
+                    try
+                    {
+                        con.Open();
+                        SqlDataReader reader = null;
+                        reader = cmd.ExecuteReader();
+                        if (reader.HasRows == true)
+                        {
+                            while (reader.Read())
+                            {
+                                SoTietKiemDTO stk = new SoTietKiemDTO();
+
+                                stk.StrMaSoSTK = reader["MaSoSTK"].ToString();
+                                stk.StrMaKH = reader["MaKH"].ToString();
+                                stk.DSoTienGui = double.Parse(reader["SoTienGoiSTK"].ToString());
+                                stk.StrMaLTK = reader["MaLTK"].ToString();
+                                stk.StrNgayMoSo = reader["NgayMoSo"].ToString();
+                                stk.DTienLai = double.Parse(reader["TienLai"].ToString());
+                                stk.ISoLanDaoHan = int.Parse(reader["SoLanDaoHan"].ToString());
+                                stk.DSoDu = double.Parse(reader["SoDu"].ToString());
+                                stk.FLaiSuatCamKet = float.Parse(reader["LaiSuatCamKet"].ToString());
+                                stk.IKyHanCamKet = int.Parse(reader["KyHanCamKet"].ToString());
+
+                                lsSoTietKiem.Add(stk);
+                            }
+                        }
+                        con.Close();
+                        con.Dispose();
+                    }
+                    catch (Exception ex)
+                    {
+                        con.Close();
+                        return null;
+                    }
+                }
+            }
+            return lsSoTietKiem;
+        }
         public SoTietKiemDTO getSTK(string masoSTK)
         {
             string query = string.Empty;
@@ -211,6 +264,15 @@ namespace QLSTKDAL
                 }
             }
             return stk;
+        }
+        public string newMaSo()
+        {
+            string newMaSo;
+            SqlDataAdapter ada = new SqlDataAdapter("SELECT ISNULL(MAX(CAST(MaSoSTK as INT)),0) + 1 FROM [tblSoTietKiem] ", connectionString);
+            DataTable dt = new DataTable();
+            ada.Fill(dt);
+            newMaSo = dt.Rows[0][0].ToString();
+            return newMaSo;
         }
     }
 }

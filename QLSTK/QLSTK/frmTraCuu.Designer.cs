@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.cmbMaLTK = new System.Windows.Forms.ComboBox();
+            this.cmbMaLoaiTietKiem = new System.Windows.Forms.ComboBox();
             this.cmbMaKH = new System.Windows.Forms.ComboBox();
             this.cmbMaSo = new System.Windows.Forms.ComboBox();
             this.lbKhachHang = new System.Windows.Forms.Label();
@@ -41,28 +41,29 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.dtpToiNgay = new System.Windows.Forms.DateTimePicker();
-            this.label8 = new System.Windows.Forms.Label();
-            this.txtMinSoDu = new System.Windows.Forms.TextBox();
-            this.txtMaxSoDu = new System.Windows.Forms.TextBox();
             this.dgvSoTietKiem = new System.Windows.Forms.DataGridView();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.cmsSuaSTK = new System.Windows.Forms.ToolStripMenuItem();
             this.cmsXoaSTK = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnTraCuu = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtMinSoDu = new System.Windows.Forms.TextBox();
+            this.txtMaxSoDu = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSoTietKiem)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // cmbMaLTK
+            // cmbMaLoaiTietKiem
             // 
-            this.cmbMaLTK.FormattingEnabled = true;
-            this.cmbMaLTK.Location = new System.Drawing.Point(224, 138);
-            this.cmbMaLTK.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cmbMaLTK.Name = "cmbMaLTK";
-            this.cmbMaLTK.Size = new System.Drawing.Size(176, 32);
-            this.cmbMaLTK.TabIndex = 14;
+            this.cmbMaLoaiTietKiem.FormattingEnabled = true;
+            this.cmbMaLoaiTietKiem.Location = new System.Drawing.Point(224, 138);
+            this.cmbMaLoaiTietKiem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmbMaLoaiTietKiem.Name = "cmbMaLoaiTietKiem";
+            this.cmbMaLoaiTietKiem.Size = new System.Drawing.Size(176, 32);
+            this.cmbMaLoaiTietKiem.TabIndex = 14;
+            this.cmbMaLoaiTietKiem.SelectedIndexChanged += new System.EventHandler(this.CmbMaLoaiTietKiem_SelectedIndexChanged);
             // 
             // cmbMaKH
             // 
@@ -72,6 +73,7 @@
             this.cmbMaKH.Name = "cmbMaKH";
             this.cmbMaKH.Size = new System.Drawing.Size(176, 32);
             this.cmbMaKH.TabIndex = 13;
+            this.cmbMaKH.SelectedIndexChanged += new System.EventHandler(this.CmbMaKH_SelectedIndexChanged);
             // 
             // cmbMaSo
             // 
@@ -81,6 +83,7 @@
             this.cmbMaSo.Name = "cmbMaSo";
             this.cmbMaSo.Size = new System.Drawing.Size(176, 32);
             this.cmbMaSo.TabIndex = 12;
+            this.cmbMaSo.SelectedIndexChanged += new System.EventHandler(this.CmbMaSo_SelectedIndexChanged);
             // 
             // lbKhachHang
             // 
@@ -127,7 +130,7 @@
             // 
             this.dtpTuNgay.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpTuNgay.Location = new System.Drawing.Point(633, 89);
-            this.dtpTuNgay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpTuNgay.Margin = new System.Windows.Forms.Padding(4);
             this.dtpTuNgay.Name = "dtpTuNgay";
             this.dtpTuNgay.Size = new System.Drawing.Size(157, 32);
             this.dtpTuNgay.TabIndex = 18;
@@ -167,43 +170,17 @@
             // 
             this.dtpToiNgay.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpToiNgay.Location = new System.Drawing.Point(633, 135);
-            this.dtpToiNgay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpToiNgay.Margin = new System.Windows.Forms.Padding(4);
             this.dtpToiNgay.Name = "dtpToiNgay";
             this.dtpToiNgay.Size = new System.Drawing.Size(157, 32);
             this.dtpToiNgay.TabIndex = 23;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(112, 196);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(61, 24);
-            this.label8.TabIndex = 25;
-            this.label8.Text = "Số dư";
-            // 
-            // txtMinSoDu
-            // 
-            this.txtMinSoDu.Location = new System.Drawing.Point(224, 188);
-            this.txtMinSoDu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtMinSoDu.Name = "txtMinSoDu";
-            this.txtMinSoDu.Size = new System.Drawing.Size(71, 32);
-            this.txtMinSoDu.TabIndex = 28;
-            // 
-            // txtMaxSoDu
-            // 
-            this.txtMaxSoDu.Location = new System.Drawing.Point(329, 188);
-            this.txtMaxSoDu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtMaxSoDu.Name = "txtMaxSoDu";
-            this.txtMaxSoDu.Size = new System.Drawing.Size(71, 32);
-            this.txtMaxSoDu.TabIndex = 29;
             // 
             // dgvSoTietKiem
             // 
             this.dgvSoTietKiem.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvSoTietKiem.ContextMenuStrip = this.contextMenuStrip1;
             this.dgvSoTietKiem.Location = new System.Drawing.Point(6, 250);
-            this.dgvSoTietKiem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvSoTietKiem.Margin = new System.Windows.Forms.Padding(4);
             this.dgvSoTietKiem.Name = "dgvSoTietKiem";
             this.dgvSoTietKiem.Size = new System.Drawing.Size(850, 248);
             this.dgvSoTietKiem.TabIndex = 30;
@@ -242,7 +219,7 @@
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.dtpTuNgay);
-            this.groupBox1.Controls.Add(this.cmbMaLTK);
+            this.groupBox1.Controls.Add(this.cmbMaLoaiTietKiem);
             this.groupBox1.Controls.Add(this.cmbMaKH);
             this.groupBox1.Controls.Add(this.cmbMaSo);
             this.groupBox1.Controls.Add(this.lbKhachHang);
@@ -271,6 +248,34 @@
             this.btnTraCuu.UseVisualStyleBackColor = false;
             this.btnTraCuu.Click += new System.EventHandler(this.btTimKiem_Click);
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(112, 196);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(61, 24);
+            this.label8.TabIndex = 25;
+            this.label8.Text = "Số dư";
+            // 
+            // txtMinSoDu
+            // 
+            this.txtMinSoDu.Location = new System.Drawing.Point(224, 188);
+            this.txtMinSoDu.Margin = new System.Windows.Forms.Padding(4);
+            this.txtMinSoDu.Name = "txtMinSoDu";
+            this.txtMinSoDu.Size = new System.Drawing.Size(71, 32);
+            this.txtMinSoDu.TabIndex = 28;
+            this.txtMinSoDu.TextChanged += new System.EventHandler(this.TxtMinSoDu_TextChanged);
+            // 
+            // txtMaxSoDu
+            // 
+            this.txtMaxSoDu.Location = new System.Drawing.Point(329, 188);
+            this.txtMaxSoDu.Margin = new System.Windows.Forms.Padding(4);
+            this.txtMaxSoDu.Name = "txtMaxSoDu";
+            this.txtMaxSoDu.Size = new System.Drawing.Size(71, 32);
+            this.txtMaxSoDu.TabIndex = 29;
+            this.txtMaxSoDu.TextChanged += new System.EventHandler(this.TxtMaxSoDu_TextChanged);
+            // 
             // frmTraCuu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -281,7 +286,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnTraCuu);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmTraCuu";
             this.Text = "Tra cứu sổ";
             this.Load += new System.EventHandler(this.frmTraCuu_Load);
@@ -295,7 +300,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.ComboBox cmbMaLTK;
+        private System.Windows.Forms.ComboBox cmbMaLoaiTietKiem;
         private System.Windows.Forms.ComboBox cmbMaKH;
         private System.Windows.Forms.ComboBox cmbMaSo;
         private System.Windows.Forms.Label lbKhachHang;
@@ -308,13 +313,13 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DateTimePicker dtpToiNgay;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox txtMinSoDu;
-        private System.Windows.Forms.TextBox txtMaxSoDu;
         private System.Windows.Forms.DataGridView dgvSoTietKiem;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem cmsSuaSTK;
         private System.Windows.Forms.ToolStripMenuItem cmsXoaSTK;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.TextBox txtMaxSoDu;
+        private System.Windows.Forms.TextBox txtMinSoDu;
+        private System.Windows.Forms.Label label8;
     }
 }

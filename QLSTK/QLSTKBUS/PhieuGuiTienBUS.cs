@@ -19,11 +19,15 @@ namespace QLSTKBUS
         public bool them(PhieuGuiTienDTO pgt)
         {
             bool re = ltkDAL.themPhieuGuiTien(pgt);
-            if(re == true)
+            if (re == true)
             {
 
             }
             return re;
+        }
+        public string getNewMaSo()
+        {
+            return ltkDAL.newMaSo();
         }
     }
 }
