@@ -1,7 +1,6 @@
 # Money Management
 
- <img src="https://imgur.com/hEngF1X">
-
+﻿<img src="https://i.imgur.com/bcHFVBJ.png">
 
 
 Project of Introduction to Software Technology course,
