@@ -1,6 +1,6 @@
 # Money Management
 
-﻿<img src="https://i.imgur.com/uAO0IeO.png">
+<img src="https://i.imgur.com/uAO0IeO.png">
 
 
 Project of Introduction to Software Technology course,
@@ -28,7 +28,9 @@ University infomation Technology
 
 # Screenshots
 
-
+<img src="https://i.imgur.com/8I0QYiE.png">
+ 
+[Imgur](https://i.imgur.com/Q8HeOBh.png)
 
 # Set up
 
