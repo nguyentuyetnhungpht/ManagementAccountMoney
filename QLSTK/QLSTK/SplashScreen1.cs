@@ -95,7 +95,8 @@ namespace QLSTK
 
         private void LblThoat_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            if (MessageBox.Show("Bạn muốn đóng ứng dụng sổ tiết kiệm?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                Application.Exit();
         }
 
         private void LblDoiMatKhau_Click(object sender, EventArgs e)

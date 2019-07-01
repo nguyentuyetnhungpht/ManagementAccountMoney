@@ -101,5 +101,11 @@ namespace QLSTK
             if (!Char.IsDigit(e.KeyChar) && !Char.IsControl(e.KeyChar))
                 e.Handled = true;
         }
+
+        private void BtnHuy_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Đã huỷ, bạn có muốn đóng ứng dụng sổ tiết kiệm?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                Application.Exit();
+        }
     }
 }

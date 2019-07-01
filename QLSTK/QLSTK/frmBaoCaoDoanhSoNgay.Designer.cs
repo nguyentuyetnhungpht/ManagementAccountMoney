@@ -234,6 +234,7 @@
             this.btnXuatFile.Text = "Xuất file";
             this.btnXuatFile.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnXuatFile.UseVisualStyleBackColor = false;
+            this.btnXuatFile.Click += new System.EventHandler(this.BtnXuatFile_Click);
             // 
             // frmBaoCaoDoanhSoNgay
             // 

@@ -29,10 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.pbLogo = new System.Windows.Forms.PictureBox();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
-            this.lblTrangThai = new DevExpress.XtraEditors.LabelControl();
-            this.lblStart = new DevExpress.XtraEditors.LabelControl();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.pnDangNhap = new System.Windows.Forms.Panel();
             this.lblTroVe = new System.Windows.Forms.Label();
@@ -50,57 +47,18 @@
             this.tbtMatKhau = new System.Windows.Forms.TextBox();
             this.tbtTaiKhoan = new System.Windows.Forms.TextBox();
             this.Label10 = new System.Windows.Forms.Label();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.lblTrangThai = new DevExpress.XtraEditors.LabelControl();
+            this.lblStart = new DevExpress.XtraEditors.LabelControl();
+            this.pbLogo = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.pnDangNhap.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             this.SuspendLayout();
             // 
-            // pbLogo
+            // timer1
             // 
-            this.pbLogo.BackgroundImage = global::QLSTK.Properties.Resources._9331;
-            this.pbLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pbLogo.Location = new System.Drawing.Point(3, 3);
-            this.pbLogo.Name = "pbLogo";
-            this.pbLogo.Size = new System.Drawing.Size(663, 358);
-            this.pbLogo.TabIndex = 14;
-            this.pbLogo.TabStop = false;
-            // 
-            // progressBar1
-            // 
-            this.progressBar1.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.progressBar1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.progressBar1.Location = new System.Drawing.Point(4, 396);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(663, 10);
-            this.progressBar1.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
-            this.progressBar1.TabIndex = 15;
-            // 
-            // lblTrangThai
-            // 
-            this.lblTrangThai.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTrangThai.Appearance.ForeColor = System.Drawing.Color.SandyBrown;
-            this.lblTrangThai.Appearance.Options.UseFont = true;
-            this.lblTrangThai.Appearance.Options.UseForeColor = true;
-            this.lblTrangThai.Location = new System.Drawing.Point(252, 420);
-            this.lblTrangThai.Margin = new System.Windows.Forms.Padding(4);
-            this.lblTrangThai.Name = "lblTrangThai";
-            this.lblTrangThai.Size = new System.Drawing.Size(151, 21);
-            this.lblTrangThai.TabIndex = 17;
-            this.lblTrangThai.Text = "Kết nối cơ sở dữ liệu";
-            // 
-            // lblStart
-            // 
-            this.lblStart.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStart.Appearance.ForeColor = System.Drawing.Color.SandyBrown;
-            this.lblStart.Appearance.Options.UseFont = true;
-            this.lblStart.Appearance.Options.UseForeColor = true;
-            this.lblStart.Location = new System.Drawing.Point(4, 368);
-            this.lblStart.Margin = new System.Windows.Forms.Padding(4);
-            this.lblStart.Name = "lblStart";
-            this.lblStart.Size = new System.Drawing.Size(73, 21);
-            this.lblStart.TabIndex = 16;
-            this.lblStart.Text = "Starting...";
+            this.timer1.Tick += new System.EventHandler(this.Timer1_Tick);
             // 
             // panel1
             // 
@@ -327,9 +285,51 @@
             this.Label10.TabIndex = 6;
             this.Label10.Text = "ĐĂNG NHẬP";
             // 
-            // timer1
+            // progressBar1
             // 
-            this.timer1.Tick += new System.EventHandler(this.Timer1_Tick);
+            this.progressBar1.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.progressBar1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.progressBar1.Location = new System.Drawing.Point(4, 396);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(663, 10);
+            this.progressBar1.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            this.progressBar1.TabIndex = 15;
+            // 
+            // lblTrangThai
+            // 
+            this.lblTrangThai.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTrangThai.Appearance.ForeColor = System.Drawing.Color.SandyBrown;
+            this.lblTrangThai.Appearance.Options.UseFont = true;
+            this.lblTrangThai.Appearance.Options.UseForeColor = true;
+            this.lblTrangThai.Location = new System.Drawing.Point(252, 420);
+            this.lblTrangThai.Margin = new System.Windows.Forms.Padding(4);
+            this.lblTrangThai.Name = "lblTrangThai";
+            this.lblTrangThai.Size = new System.Drawing.Size(151, 21);
+            this.lblTrangThai.TabIndex = 17;
+            this.lblTrangThai.Text = "Kết nối cơ sở dữ liệu";
+            // 
+            // lblStart
+            // 
+            this.lblStart.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStart.Appearance.ForeColor = System.Drawing.Color.SandyBrown;
+            this.lblStart.Appearance.Options.UseFont = true;
+            this.lblStart.Appearance.Options.UseForeColor = true;
+            this.lblStart.Location = new System.Drawing.Point(4, 368);
+            this.lblStart.Margin = new System.Windows.Forms.Padding(4);
+            this.lblStart.Name = "lblStart";
+            this.lblStart.Size = new System.Drawing.Size(73, 21);
+            this.lblStart.TabIndex = 16;
+            this.lblStart.Text = "Starting...";
+            // 
+            // pbLogo
+            // 
+            this.pbLogo.BackgroundImage = global::QLSTK.Properties.Resources._9331;
+            this.pbLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pbLogo.Location = new System.Drawing.Point(3, 3);
+            this.pbLogo.Name = "pbLogo";
+            this.pbLogo.Size = new System.Drawing.Size(663, 358);
+            this.pbLogo.TabIndex = 14;
+            this.pbLogo.TabStop = false;
             // 
             // SplashScreen1
             // 
@@ -343,11 +343,11 @@
             this.Name = "SplashScreen1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.SplashScreen1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.pnDangNhap.ResumeLayout(false);
             this.pnDangNhap.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
             this.ResumeLayout(false);
 
         }

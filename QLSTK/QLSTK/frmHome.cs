@@ -125,5 +125,17 @@ namespace QLSTK
             if (MessageBox.Show("Bạn muốn đóng ứng dụng sổ tiết kiệm?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 Application.Exit();
         }
+
+        private void TileThongTin_ItemClick(object sender, TileItemEventArgs e)
+        {
+            pnZone.Controls.Clear();
+            frmThongTin frmThongTin = new frmThongTin();
+            frmThongTin.TopLevel = false;
+            pnZone.Controls.Add(frmThongTin);
+            frmThongTin.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            frmThongTin.AutoScroll = true;
+            frmThongTin.Dock = DockStyle.Fill;
+            frmThongTin.Show();
+        }
     }
 }

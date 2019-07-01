@@ -148,9 +148,12 @@
             // 
             // dgvBaoCao
             // 
+            this.dgvBaoCao.AllowUserToAddRows = false;
+            this.dgvBaoCao.AllowUserToDeleteRows = false;
             this.dgvBaoCao.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvBaoCao.Location = new System.Drawing.Point(6, 195);
             this.dgvBaoCao.Name = "dgvBaoCao";
+            this.dgvBaoCao.ReadOnly = true;
             this.dgvBaoCao.Size = new System.Drawing.Size(851, 270);
             this.dgvBaoCao.TabIndex = 49;
             // 
@@ -231,6 +234,7 @@
             this.btnTraCuu.Text = "Tra cứu";
             this.btnTraCuu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnTraCuu.UseVisualStyleBackColor = false;
+            this.btnTraCuu.Click += new System.EventHandler(this.BtnTraCuu_Click);
             // 
             // btnXuatFile
             // 

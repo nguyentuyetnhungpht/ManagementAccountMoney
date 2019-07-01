@@ -245,5 +245,11 @@ namespace QLSTK
         {
 
         }
+
+        private void BtnThoat_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Bạn muốn đóng ứng dụng sổ tiết kiệm?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                Application.Exit();
+        }
     }
 }

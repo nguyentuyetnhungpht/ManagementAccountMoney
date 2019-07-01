@@ -32,7 +32,6 @@
             this.txtMaKH = new System.Windows.Forms.TextBox();
             this.txtMaSoSTK = new System.Windows.Forms.TextBox();
             this.btnBrower = new System.Windows.Forms.Button();
-            this.picKhachHang = new System.Windows.Forms.PictureBox();
             this.cmbLoaiTietKiem = new System.Windows.Forms.ComboBox();
             this.txtNgayMoSo = new System.Windows.Forms.TextBox();
             this.txtCMND = new System.Windows.Forms.TextBox();
@@ -45,10 +44,12 @@
             this.lblDiaChi = new System.Windows.Forms.Label();
             this.lblMaSo = new System.Windows.Forms.Label();
             this.lblKhachHang = new System.Windows.Forms.Label();
+            this.lblSoTietKiem = new System.Windows.Forms.Label();
+            this.picKhachHang = new System.Windows.Forms.PictureBox();
             this.btnDongSo = new System.Windows.Forms.Button();
             this.btnHuy = new System.Windows.Forms.Button();
-            this.lblSoTietKiem = new System.Windows.Forms.Label();
             this.btnThem = new System.Windows.Forms.Button();
+            this.linkAnh = new System.Windows.Forms.OpenFileDialog();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picKhachHang)).BeginInit();
             this.SuspendLayout();
@@ -109,15 +110,7 @@
             this.btnBrower.TabIndex = 42;
             this.btnBrower.Text = "Brower...";
             this.btnBrower.UseVisualStyleBackColor = false;
-            // 
-            // picKhachHang
-            // 
-            this.picKhachHang.Location = new System.Drawing.Point(520, 89);
-            this.picKhachHang.Margin = new System.Windows.Forms.Padding(6);
-            this.picKhachHang.Name = "picKhachHang";
-            this.picKhachHang.Size = new System.Drawing.Size(201, 231);
-            this.picKhachHang.TabIndex = 41;
-            this.picKhachHang.TabStop = false;
+            this.btnBrower.Click += new System.EventHandler(this.BtnBrower_Click);
             // 
             // cmbLoaiTietKiem
             // 
@@ -251,6 +244,28 @@
             this.lblKhachHang.TabIndex = 24;
             this.lblKhachHang.Text = "Khách hàng";
             // 
+            // lblSoTietKiem
+            // 
+            this.lblSoTietKiem.AutoSize = true;
+            this.lblSoTietKiem.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSoTietKiem.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.lblSoTietKiem.Location = new System.Drawing.Point(262, 30);
+            this.lblSoTietKiem.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblSoTietKiem.Name = "lblSoTietKiem";
+            this.lblSoTietKiem.Size = new System.Drawing.Size(263, 36);
+            this.lblSoTietKiem.TabIndex = 48;
+            this.lblSoTietKiem.Text = "LẬP SỔ TIẾT KIỆM";
+            // 
+            // picKhachHang
+            // 
+            this.picKhachHang.Location = new System.Drawing.Point(520, 89);
+            this.picKhachHang.Margin = new System.Windows.Forms.Padding(6);
+            this.picKhachHang.Name = "picKhachHang";
+            this.picKhachHang.Size = new System.Drawing.Size(201, 231);
+            this.picKhachHang.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picKhachHang.TabIndex = 41;
+            this.picKhachHang.TabStop = false;
+            // 
             // btnDongSo
             // 
             this.btnDongSo.BackColor = System.Drawing.Color.DarkCyan;
@@ -283,18 +298,7 @@
             this.btnHuy.Text = "Thoát";
             this.btnHuy.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnHuy.UseVisualStyleBackColor = false;
-            // 
-            // lblSoTietKiem
-            // 
-            this.lblSoTietKiem.AutoSize = true;
-            this.lblSoTietKiem.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSoTietKiem.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.lblSoTietKiem.Location = new System.Drawing.Point(262, 30);
-            this.lblSoTietKiem.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblSoTietKiem.Name = "lblSoTietKiem";
-            this.lblSoTietKiem.Size = new System.Drawing.Size(263, 36);
-            this.lblSoTietKiem.TabIndex = 48;
-            this.lblSoTietKiem.Text = "LẬP SỔ TIẾT KIỆM";
+            this.btnHuy.Click += new System.EventHandler(this.BtnHuy_Click);
             // 
             // btnThem
             // 
@@ -312,6 +316,10 @@
             this.btnThem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnThem.UseVisualStyleBackColor = false;
             this.btnThem.Click += new System.EventHandler(this.BtnThem_Click);
+            // 
+            // linkAnh
+            // 
+            this.linkAnh.FileName = "openFileDialog1";
             // 
             // frmSoTietKiem
             // 
@@ -359,5 +367,6 @@
         private System.Windows.Forms.Button btnHuy;
         private System.Windows.Forms.Label lblSoTietKiem;
         private System.Windows.Forms.Button btnThem;
+        private System.Windows.Forms.OpenFileDialog linkAnh;
     }
 }

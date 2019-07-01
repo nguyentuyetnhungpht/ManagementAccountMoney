@@ -46,10 +46,11 @@
             this.cmsSuaSTK = new System.Windows.Forms.ToolStripMenuItem();
             this.cmsXoaSTK = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnTraCuu = new System.Windows.Forms.Button();
-            this.label8 = new System.Windows.Forms.Label();
-            this.txtMinSoDu = new System.Windows.Forms.TextBox();
             this.txtMaxSoDu = new System.Windows.Forms.TextBox();
+            this.txtMinSoDu = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.btnTraCuu = new System.Windows.Forms.Button();
+            this.btnThoat = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSoTietKiem)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -232,21 +233,23 @@
             this.groupBox1.TabIndex = 31;
             this.groupBox1.TabStop = false;
             // 
-            // btnTraCuu
+            // txtMaxSoDu
             // 
-            this.btnTraCuu.BackColor = System.Drawing.Color.DarkCyan;
-            this.btnTraCuu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTraCuu.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTraCuu.Image = global::QLSTK.Properties.Resources.icons8_view_32;
-            this.btnTraCuu.Location = new System.Drawing.Point(368, 641);
-            this.btnTraCuu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnTraCuu.Name = "btnTraCuu";
-            this.btnTraCuu.Size = new System.Drawing.Size(146, 50);
-            this.btnTraCuu.TabIndex = 16;
-            this.btnTraCuu.Text = "Tra cứu";
-            this.btnTraCuu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnTraCuu.UseVisualStyleBackColor = false;
-            this.btnTraCuu.Click += new System.EventHandler(this.btTimKiem_Click);
+            this.txtMaxSoDu.Location = new System.Drawing.Point(329, 188);
+            this.txtMaxSoDu.Margin = new System.Windows.Forms.Padding(4);
+            this.txtMaxSoDu.Name = "txtMaxSoDu";
+            this.txtMaxSoDu.Size = new System.Drawing.Size(71, 32);
+            this.txtMaxSoDu.TabIndex = 29;
+            this.txtMaxSoDu.TextChanged += new System.EventHandler(this.TxtMaxSoDu_TextChanged);
+            // 
+            // txtMinSoDu
+            // 
+            this.txtMinSoDu.Location = new System.Drawing.Point(224, 188);
+            this.txtMinSoDu.Margin = new System.Windows.Forms.Padding(4);
+            this.txtMinSoDu.Name = "txtMinSoDu";
+            this.txtMinSoDu.Size = new System.Drawing.Size(71, 32);
+            this.txtMinSoDu.TabIndex = 28;
+            this.txtMinSoDu.TextChanged += new System.EventHandler(this.TxtMinSoDu_TextChanged);
             // 
             // label8
             // 
@@ -258,23 +261,37 @@
             this.label8.TabIndex = 25;
             this.label8.Text = "Số dư";
             // 
-            // txtMinSoDu
+            // btnTraCuu
             // 
-            this.txtMinSoDu.Location = new System.Drawing.Point(224, 188);
-            this.txtMinSoDu.Margin = new System.Windows.Forms.Padding(4);
-            this.txtMinSoDu.Name = "txtMinSoDu";
-            this.txtMinSoDu.Size = new System.Drawing.Size(71, 32);
-            this.txtMinSoDu.TabIndex = 28;
-            this.txtMinSoDu.TextChanged += new System.EventHandler(this.TxtMinSoDu_TextChanged);
+            this.btnTraCuu.BackColor = System.Drawing.Color.DarkCyan;
+            this.btnTraCuu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTraCuu.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTraCuu.Image = global::QLSTK.Properties.Resources.icons8_view_32;
+            this.btnTraCuu.Location = new System.Drawing.Point(281, 632);
+            this.btnTraCuu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnTraCuu.Name = "btnTraCuu";
+            this.btnTraCuu.Size = new System.Drawing.Size(146, 50);
+            this.btnTraCuu.TabIndex = 16;
+            this.btnTraCuu.Text = "Tra cứu";
+            this.btnTraCuu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnTraCuu.UseVisualStyleBackColor = false;
+            this.btnTraCuu.Click += new System.EventHandler(this.btTimKiem_Click);
             // 
-            // txtMaxSoDu
+            // btnThoat
             // 
-            this.txtMaxSoDu.Location = new System.Drawing.Point(329, 188);
-            this.txtMaxSoDu.Margin = new System.Windows.Forms.Padding(4);
-            this.txtMaxSoDu.Name = "txtMaxSoDu";
-            this.txtMaxSoDu.Size = new System.Drawing.Size(71, 32);
-            this.txtMaxSoDu.TabIndex = 29;
-            this.txtMaxSoDu.TextChanged += new System.EventHandler(this.TxtMaxSoDu_TextChanged);
+            this.btnThoat.BackColor = System.Drawing.Color.DarkCyan;
+            this.btnThoat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThoat.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThoat.Image = global::QLSTK.Properties.Resources.icons8_exit_32;
+            this.btnThoat.Location = new System.Drawing.Point(467, 632);
+            this.btnThoat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnThoat.Name = "btnThoat";
+            this.btnThoat.Size = new System.Drawing.Size(146, 50);
+            this.btnThoat.TabIndex = 32;
+            this.btnThoat.Text = "Thoát";
+            this.btnThoat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnThoat.UseVisualStyleBackColor = false;
+            this.btnThoat.Click += new System.EventHandler(this.BtnThoat_Click);
             // 
             // frmTraCuu
             // 
@@ -282,6 +299,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CadetBlue;
             this.ClientSize = new System.Drawing.Size(882, 703);
+            this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnTraCuu);
@@ -321,5 +339,6 @@
         private System.Windows.Forms.TextBox txtMaxSoDu;
         private System.Windows.Forms.TextBox txtMinSoDu;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button btnThoat;
     }
 }

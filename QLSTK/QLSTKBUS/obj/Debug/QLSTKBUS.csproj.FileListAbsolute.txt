@@ -31,17 +31,6 @@ C:\Users\Linh Satoh\Documents\GitHub\QuanLiSoTietKiem\QLSTK\QLSTKBUS\obj\Debug\Q
 C:\Users\Linh Satoh\Documents\GitHub\QuanLiSoTietKiem\QLSTK\QLSTKBUS\obj\Debug\QLSTKBUS.csproj.CopyComplete
 C:\Users\Linh Satoh\Documents\GitHub\QuanLiSoTietKiem\QLSTK\QLSTKBUS\obj\Debug\QLSTKBUS.dll
 C:\Users\Linh Satoh\Documents\GitHub\QuanLiSoTietKiem\QLSTK\QLSTKBUS\obj\Debug\QLSTKBUS.pdb
-C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK\QLSTKBUS\bin\Debug\QLSTKBUS.dll
-C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK\QLSTKBUS\bin\Debug\QLSTKBUS.pdb
-C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK\QLSTKBUS\bin\Debug\QLSTKDAL.dll
-C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK\QLSTKBUS\bin\Debug\QLSTKDTO.dll
-C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK\QLSTKBUS\bin\Debug\QLSTKDAL.pdb
-C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK\QLSTKBUS\bin\Debug\QLSTKDTO.pdb
-C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK\QLSTKBUS\obj\Debug\QLSTKBUS.csprojAssemblyReference.cache
-C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK\QLSTKBUS\obj\Debug\QLSTKBUS.csproj.CoreCompileInputs.cache
-C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK\QLSTKBUS\obj\Debug\QLSTKBUS.csproj.CopyComplete
-C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK\QLSTKBUS\obj\Debug\QLSTKBUS.dll
-C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK\QLSTKBUS\obj\Debug\QLSTKBUS.pdb
 C:\Users\ADMIN\Downloads\QuanLiSoTietKiem-master\QuanLiSoTietKiem-master\QLSTK\QLSTKBUS\bin\Debug\QLSTKBUS.dll
 C:\Users\ADMIN\Downloads\QuanLiSoTietKiem-master\QuanLiSoTietKiem-master\QLSTK\QLSTKBUS\bin\Debug\QLSTKBUS.pdb
 C:\Users\ADMIN\Downloads\QuanLiSoTietKiem-master\QuanLiSoTietKiem-master\QLSTK\QLSTKBUS\bin\Debug\QLSTKDAL.dll
@@ -64,3 +53,14 @@ C:\Users\ADMIN\Desktop\QuanLiSoTietKiem-master\QuanLiSoTietKiem-master\QLSTK\QLS
 C:\Users\ADMIN\Desktop\QuanLiSoTietKiem-master\QuanLiSoTietKiem-master\QLSTK\QLSTKBUS\obj\Debug\QLSTKBUS.csproj.CopyComplete
 C:\Users\ADMIN\Desktop\QuanLiSoTietKiem-master\QuanLiSoTietKiem-master\QLSTK\QLSTKBUS\obj\Debug\QLSTKBUS.dll
 C:\Users\ADMIN\Desktop\QuanLiSoTietKiem-master\QuanLiSoTietKiem-master\QLSTK\QLSTKBUS\obj\Debug\QLSTKBUS.pdb
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK\QLSTKBUS\bin\Debug\QLSTKBUS.dll
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK\QLSTKBUS\bin\Debug\QLSTKBUS.pdb
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK\QLSTKBUS\bin\Debug\QLSTKDAL.dll
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK\QLSTKBUS\bin\Debug\QLSTKDTO.dll
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK\QLSTKBUS\bin\Debug\QLSTKDAL.pdb
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK\QLSTKBUS\bin\Debug\QLSTKDTO.pdb
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK\QLSTKBUS\obj\Debug\QLSTKBUS.csprojAssemblyReference.cache
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK\QLSTKBUS\obj\Debug\QLSTKBUS.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK\QLSTKBUS\obj\Debug\QLSTKBUS.csproj.CopyComplete
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK\QLSTKBUS\obj\Debug\QLSTKBUS.dll
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK\QLSTKBUS\obj\Debug\QLSTKBUS.pdb

@@ -16,15 +16,14 @@ C:\Users\Linh Satoh\Documents\GitHub\QuanLiSoTietKiem\QLSTK\QLSTKDTO\obj\Debug\Q
 C:\Users\Linh Satoh\Documents\GitHub\QuanLiSoTietKiem\QLSTK\QLSTKDTO\obj\Debug\QLSTKDTO.csproj.CoreCompileInputs.cache
 C:\Users\Linh Satoh\Documents\GitHub\QuanLiSoTietKiem\QLSTK\QLSTKDTO\obj\Debug\QLSTKDTO.dll
 C:\Users\Linh Satoh\Documents\GitHub\QuanLiSoTietKiem\QLSTK\QLSTKDTO\obj\Debug\QLSTKDTO.pdb
-C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK\QLSTKDTO\bin\Debug\QLSTKDTO.dll
-C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK\QLSTKDTO\bin\Debug\QLSTKDTO.pdb
-C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK\QLSTKDTO\obj\Debug\QLSTKDTO.csprojAssemblyReference.cache
-C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK\QLSTKDTO\obj\Debug\QLSTKDTO.csproj.CoreCompileInputs.cache
-C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK\QLSTKDTO\obj\Debug\QLSTKDTO.dll
-C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK\QLSTKDTO\obj\Debug\QLSTKDTO.pdb
 C:\Users\ADMIN\Downloads\QuanLiSoTietKiem-master\QuanLiSoTietKiem-master\QLSTK\QLSTKDTO\bin\Debug\QLSTKDTO.dll
 C:\Users\ADMIN\Downloads\QuanLiSoTietKiem-master\QuanLiSoTietKiem-master\QLSTK\QLSTKDTO\bin\Debug\QLSTKDTO.pdb
 C:\Users\ADMIN\Downloads\QuanLiSoTietKiem-master\QuanLiSoTietKiem-master\QLSTK\QLSTKDTO\obj\Debug\QLSTKDTO.csprojAssemblyReference.cache
 C:\Users\ADMIN\Downloads\QuanLiSoTietKiem-master\QuanLiSoTietKiem-master\QLSTK\QLSTKDTO\obj\Debug\QLSTKDTO.csproj.CoreCompileInputs.cache
 C:\Users\ADMIN\Downloads\QuanLiSoTietKiem-master\QuanLiSoTietKiem-master\QLSTK\QLSTKDTO\obj\Debug\QLSTKDTO.dll
 C:\Users\ADMIN\Downloads\QuanLiSoTietKiem-master\QuanLiSoTietKiem-master\QLSTK\QLSTKDTO\obj\Debug\QLSTKDTO.pdb
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK\QLSTKDTO\bin\Debug\QLSTKDTO.dll
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK\QLSTKDTO\bin\Debug\QLSTKDTO.pdb
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK\QLSTKDTO\obj\Debug\QLSTKDTO.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK\QLSTKDTO\obj\Debug\QLSTKDTO.dll
+C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK\QLSTKDTO\obj\Debug\QLSTKDTO.pdb

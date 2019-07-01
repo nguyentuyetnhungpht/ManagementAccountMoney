@@ -52,5 +52,10 @@ namespace QLSTK
                 MessageBox.Show("Báo cáo tháng được cập nhật thành công");
             }
         }
+
+        private void BtnTraCuu_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

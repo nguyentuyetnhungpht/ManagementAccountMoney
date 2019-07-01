@@ -62,5 +62,11 @@ namespace QLSTK
                 MessageBox.Show("Báo cáo ngày được cập nhật thành công");
             }
         }
+
+        //Xuất báo cáo
+        private void BtnXuatFile_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

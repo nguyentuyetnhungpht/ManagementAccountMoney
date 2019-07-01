@@ -94,7 +94,8 @@ namespace QLSTK
 
         private void BtnHuy_Click(object sender, EventArgs e)
         {
-
+            if (MessageBox.Show("Đã huỷ, bạn có muốn đóng ứng dụng sổ tiết kiệm?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                Application.Exit();
         }
 
         private void CmbMaSoSTK_SelectedIndexChanged(object sender, EventArgs e)
