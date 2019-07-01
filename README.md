@@ -1,4 +1,3 @@
-# Money Management
 
 <img src="https://i.imgur.com/uAO0IeO.png">
 
