@@ -29,6 +29,9 @@ University infomation Technology
 
 # Screenshots
 
+ <img src="https://i.imgur.com/8I0QYiE.png">
+
+ <img src="https://i.imgur.com/Q8HeOBh.png">
 
 
 # Set up
