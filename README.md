@@ -1,6 +1,6 @@
 # Money Management
 
- [Imgur](https://i.imgur.com/WyYGOiJ.png)
+ <img src="https://i.imgur.com/WyYGOiJ.png">
 
 
 
