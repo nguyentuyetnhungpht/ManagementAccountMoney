@@ -15,11 +15,6 @@ namespace QLSTKBUS
         {
             this.khDAL = new KhachHangDAL();
         }
-
-        public List<KhachHangDTO> selectListKhachHang()
-        {
-            return khDAL.selecListKhachHang();
-        }
         public bool them(KhachHangDTO kh)
         {
             bool re = khDAL.themKhachHang(kh);
@@ -42,6 +37,10 @@ namespace QLSTKBUS
         public string getNewMaSo()
         {
             return khDAL.newMaSo();
+        }
+        public List<KhachHangDTO> selectListLTK()
+        {
+            return khDAL.selecListKhachHang();
         }
     }
 }

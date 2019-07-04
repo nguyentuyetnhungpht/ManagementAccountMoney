@@ -184,6 +184,7 @@
             this.groupBox1.Size = new System.Drawing.Size(863, 472);
             this.groupBox1.TabIndex = 23;
             this.groupBox1.TabStop = false;
+            this.groupBox1.Enter += new System.EventHandler(this.GroupBox1_Enter);
             // 
             // btnHuy
             // 
@@ -231,6 +232,7 @@
             this.btnLuu.Text = "Lưu";
             this.btnLuu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnLuu.UseVisualStyleBackColor = false;
+            this.btnLuu.Click += new System.EventHandler(this.BtnLuu_Click);
             // 
             // frmPhieuGuiTien
             // 

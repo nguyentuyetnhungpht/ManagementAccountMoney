@@ -32,6 +32,36 @@ namespace QLSTK
         {
             //1. Map data from GUI
             KhachHangDTO kh = new KhachHangDTO();
+
+            if(txtHoTen.Text.Length == 0)
+            {
+                MessageBox.Show("Nhập họ tên");
+                return;
+            }
+
+            if (txtCMND.Text.Length == 0)
+            {
+                MessageBox.Show("Nhập CMND");
+                return;
+            }
+
+            if (txtDC.Text.Length == 0)
+            {
+                MessageBox.Show("Nhập địa chỉ");
+                return;
+            }
+
+            if (txtDienThoai.Text.Length == 0)
+            {
+                MessageBox.Show("Nhập số điện thoại");
+                return;
+            }
+
+            if (txtEmail.Text.Length == 0)
+            {
+                MessageBox.Show("Nhập họ tên");
+                return;
+            }
             kh.StrMaKH = txtMaKH.Text;
             kh.StrHoTenKH = txtHoTen.Text;
             kh.StrDiaChi = txtDiaChi.Text;

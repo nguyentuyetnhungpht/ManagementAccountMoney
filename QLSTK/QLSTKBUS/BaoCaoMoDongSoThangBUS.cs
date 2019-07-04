@@ -15,7 +15,7 @@ namespace QLSTKBUS
         {
             this.bcDAL = new BaoCaoMoDongSoThangDAL();
         }
-        public bool createBaoCaoThang(int Thang, int Nam)
+       public bool createBaoCaoThang(int Thang, int Nam)
         {
             return bcDAL.createBaoCaoMoDongSoThang(Thang, Nam);
         }
@@ -23,9 +23,9 @@ namespace QLSTKBUS
         {
             return bcDAL.upadteBaoCaoMoDongSoThang(Thang, Nam);
         }
-        public List<BaoCaoMoDongSoThangDTO> getListBaoCaoThang(int iThang, int iNam)
+        public List<BaoCaoMoDongSoThangDTO> getListBaoCaoThang(int iThang, int iNam, string strMaLTK)
         {
-            return bcDAL.getBaoCaoThang(iThang, iNam);
+            return bcDAL.getBaoCaoThang(iThang, iNam, strMaLTK);
         }
     }
 }

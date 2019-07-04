@@ -20,7 +20,13 @@ namespace QLSTK
 
         private void FrmMain1_Load(object sender, EventArgs e)
         {
-           
+            frmThongTin frmThongTin = new frmThongTin();
+            frmThongTin.TopLevel = false;
+            pnZone.Controls.Add(frmThongTin);
+            frmThongTin.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            frmThongTin.AutoScroll = true;
+            frmThongTin.Dock = DockStyle.Fill;
+            frmThongTin.Show();
         }
 
         private void TileLapPhieuGuiTien_ItemClick(object sender, TileItemEventArgs e)

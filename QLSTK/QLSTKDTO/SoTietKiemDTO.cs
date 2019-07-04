@@ -13,6 +13,7 @@ namespace QLSTKDTO
         private double dSoTienGui;
         private string strMaLTK;
         private string strNgayMoSo;
+        private string strNgayChinhSua;
         private double dTienLai;
         private int iSoLanDaoHan;
         private double dSoDu;
@@ -28,7 +29,7 @@ namespace QLSTKDTO
         public double DSoDu { get => dSoDu; set => dSoDu = value; }
         public float FLaiSuatCamKet { get => fLaiSuatCamKet; set => fLaiSuatCamKet = value; }
         public int IKyHanCamKet { get => iKyHanCamKet; set => iKyHanCamKet = value; }
-        
+        public string StrNgayChinhSua { get => strNgayChinhSua; set => strNgayChinhSua = value; }
 
         public SoTietKiemDTO()
         {
@@ -46,6 +47,7 @@ namespace QLSTKDTO
             this.dSoDu = this.dSoTienGui;
             this.fLaiSuatCamKet = LaiSuat;
             this.iKyHanCamKet = KyHan;
+            this.strNgayChinhSua = this.StrNgayMoSo;
         }
         
     }

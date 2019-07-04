@@ -74,10 +74,12 @@ namespace QLSTKDAL
             }
             return true;
         }
+    
+
         public bool suaLoaiTietKiem(LoaiTietKiemDTO ltk)
         {
             string query = string.Empty;
-
+            
             using (SqlConnection con = new SqlConnection(ConnectionString))
             {
 
@@ -85,7 +87,7 @@ namespace QLSTKDAL
                 {
                     cmd.Connection = con;
                     cmd.CommandType = System.Data.CommandType.Text;
-
+                    
                     if (ltk.FLaiSuat != -1)
                     {
                         query += "UPDATE tblLoaiTietKiem SET TenLTK = @TenLTK, LaiSuat = @LaiSuat, KyHan = @KyHan Where MaLTK = @MaLTK";
@@ -153,6 +155,7 @@ namespace QLSTKDAL
                                 lsLoaiTietKiem.Add(ltk);
                             }
                         }
+
                         con.Close();
                         con.Dispose();
                     }
@@ -201,7 +204,7 @@ namespace QLSTKDAL
                     catch (Exception ex)
                     {
                         con.Close();
-                        return null;
+                          return null;
                     }
                 }
             }

@@ -37,8 +37,8 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.txtCMND = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.tbtDienThoai = new System.Windows.Forms.TextBox();
+            this.txtDC = new System.Windows.Forms.TextBox();
+            this.txtDienThoai = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label8 = new System.Windows.Forms.Label();
@@ -46,7 +46,6 @@
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.label9 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.txtMaKH = new System.Windows.Forms.TextBox();
             this.txtHoTen = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -147,22 +146,22 @@
             this.txtCMND.TabIndex = 9;
             this.txtCMND.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtCMND_KeyPress);
             // 
-            // textBox4
+            // txtDC
             // 
-            this.textBox4.Location = new System.Drawing.Point(347, 248);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(294, 32);
-            this.textBox4.TabIndex = 10;
+            this.txtDC.Location = new System.Drawing.Point(347, 248);
+            this.txtDC.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDC.Name = "txtDC";
+            this.txtDC.Size = new System.Drawing.Size(294, 32);
+            this.txtDC.TabIndex = 10;
             // 
-            // tbtDienThoai
+            // txtDienThoai
             // 
-            this.tbtDienThoai.Location = new System.Drawing.Point(406, 299);
-            this.tbtDienThoai.Margin = new System.Windows.Forms.Padding(4);
-            this.tbtDienThoai.Name = "tbtDienThoai";
-            this.tbtDienThoai.Size = new System.Drawing.Size(161, 32);
-            this.tbtDienThoai.TabIndex = 11;
-            this.tbtDienThoai.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbtDienThoai_KeyPress);
+            this.txtDienThoai.Location = new System.Drawing.Point(347, 299);
+            this.txtDienThoai.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDienThoai.Name = "txtDienThoai";
+            this.txtDienThoai.Size = new System.Drawing.Size(220, 32);
+            this.txtDienThoai.TabIndex = 11;
+            this.txtDienThoai.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbtDienThoai_KeyPress);
             // 
             // txtEmail
             // 
@@ -240,15 +239,6 @@
             this.label9.TabIndex = 22;
             this.label9.Text = "Giới tính";
             // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(347, 299);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(51, 32);
-            this.comboBox2.TabIndex = 23;
-            // 
             // txtMaKH
             // 
             this.txtMaKH.Location = new System.Drawing.Point(347, 93);
@@ -269,7 +259,6 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.txtMaKH);
-            this.groupBox1.Controls.Add(this.comboBox2);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.radioButton3);
             this.groupBox1.Controls.Add(this.radioButton2);
@@ -277,8 +266,8 @@
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.dateTimePicker1);
             this.groupBox1.Controls.Add(this.txtEmail);
-            this.groupBox1.Controls.Add(this.tbtDienThoai);
-            this.groupBox1.Controls.Add(this.textBox4);
+            this.groupBox1.Controls.Add(this.txtDienThoai);
+            this.groupBox1.Controls.Add(this.txtDC);
             this.groupBox1.Controls.Add(this.txtCMND);
             this.groupBox1.Controls.Add(this.txtHoTen);
             this.groupBox1.Controls.Add(this.label7);
@@ -380,8 +369,8 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtCMND;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox tbtDienThoai;
+        private System.Windows.Forms.TextBox txtDC;
+        private System.Windows.Forms.TextBox txtDienThoai;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.Button btnXoa;
@@ -392,7 +381,6 @@
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton3;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.TextBox txtMaKH;
         private System.Windows.Forms.TextBox txtHoTen;
         private System.Windows.Forms.GroupBox groupBox1;

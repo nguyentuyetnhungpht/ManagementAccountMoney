@@ -1,5 +1,7 @@
+# Money Management
 
-<img src="https://i.imgur.com/uAO0IeO.png">
+ <img src="https://imgur.com/hEngF1X">
+
 
 
 Project of Introduction to Software Technology course,
@@ -27,9 +29,7 @@ University infomation Technology
 
 # Screenshots
 
-<img src="https://i.imgur.com/8I0QYiE.png">
- 
-<img src="https://i.imgur.com/Q8HeOBh.png">
+
 
 # Set up
 
@@ -40,6 +40,7 @@ University infomation Technology
 * .Net Framework 3.5
 
 * SQL Server 2008
+
 
 
 # Development environment

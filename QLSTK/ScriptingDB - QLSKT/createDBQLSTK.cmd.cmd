@@ -1,1 +1,1 @@
-SQLCMD -S NHUNG -E -i createDBQLSTK.sql
+SQLCMD -NHUNG -E -i createDBQLSTK.sql

@@ -27,3 +27,9 @@ C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK\QLSTKDTO\bin\Debug\QLSTKDTO.pdb
 C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK\QLSTKDTO\obj\Debug\QLSTKDTO.csproj.CoreCompileInputs.cache
 C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK\QLSTKDTO\obj\Debug\QLSTKDTO.dll
 C:\Users\ADMIN\Desktop\QuanLiSoTietKiem\QLSTK\QLSTKDTO\obj\Debug\QLSTKDTO.pdb
+C:\Users\ADMIN\Desktop\QLSTK\QLSTKDTO\bin\Debug\QLSTKDTO.dll
+C:\Users\ADMIN\Desktop\QLSTK\QLSTKDTO\bin\Debug\QLSTKDTO.pdb
+C:\Users\ADMIN\Desktop\QLSTK\QLSTKDTO\obj\Debug\QLSTKDTO.csprojAssemblyReference.cache
+C:\Users\ADMIN\Desktop\QLSTK\QLSTKDTO\obj\Debug\QLSTKDTO.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Desktop\QLSTK\QLSTKDTO\obj\Debug\QLSTKDTO.dll
+C:\Users\ADMIN\Desktop\QLSTK\QLSTKDTO\obj\Debug\QLSTKDTO.pdb

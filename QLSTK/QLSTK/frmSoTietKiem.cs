@@ -48,6 +48,28 @@ namespace QLSTK
         private void BtnThem_Click(object sender, EventArgs e)
         {
             //1. Map data from GUI
+            if (txtMaKH.Text.Length == 0)
+            {
+                MessageBox.Show("Nhập mã khách hàng");
+                return;
+            }
+            if (txtCMND.Text.Length == 0)
+            {
+                MessageBox.Show("Nhập CMND");
+                return;
+            }
+
+            if (txtDiaChi.Text.Length == 0)
+            {
+                MessageBox.Show("Nhập địa chỉ");
+                return;
+            }
+
+            if (txtSoTienGui.Text.Length == 0)
+            {
+                MessageBox.Show("Nhập số tiền gửi");
+                return;
+            }
 
             //1.1 info từ form Sổ tiết kiểm
             SoTietKiemDTO stk = new SoTietKiemDTO();

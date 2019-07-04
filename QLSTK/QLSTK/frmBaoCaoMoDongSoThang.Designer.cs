@@ -40,12 +40,18 @@
             this.dgvBaoCao = new System.Windows.Forms.DataGridView();
             this.cmbNam = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lblLTK = new System.Windows.Forms.Label();
+            this.cmbLoaiTietKiem = new System.Windows.Forms.ComboBox();
             this.btnCapNhat = new System.Windows.Forms.Button();
             this.btnTaoBaoCao = new System.Windows.Forms.Button();
             this.btnTraCuu = new System.Windows.Forms.Button();
             this.btnXuatFile = new System.Windows.Forms.Button();
+            this.gridLookUpEdit1 = new DevExpress.XtraEditors.GridLookUpEdit();
+            this.gridLookUpEdit1View = new DevExpress.XtraGrid.Views.Grid.GridView();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBaoCao)).BeginInit();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEdit1View)).BeginInit();
             this.SuspendLayout();
             // 
             // lblBaoMoDongSoThang
@@ -163,11 +169,13 @@
             this.cmbNam.Location = new System.Drawing.Point(224, 61);
             this.cmbNam.Margin = new System.Windows.Forms.Padding(2);
             this.cmbNam.Name = "cmbNam";
-            this.cmbNam.Size = new System.Drawing.Size(95, 32);
+            this.cmbNam.Size = new System.Drawing.Size(135, 32);
             this.cmbNam.TabIndex = 50;
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.lblLTK);
+            this.groupBox1.Controls.Add(this.cmbLoaiTietKiem);
             this.groupBox1.Controls.Add(this.cmbNam);
             this.groupBox1.Controls.Add(this.dgvBaoCao);
             this.groupBox1.Controls.Add(this.cmbThang);
@@ -184,6 +192,28 @@
             this.groupBox1.Size = new System.Drawing.Size(863, 472);
             this.groupBox1.TabIndex = 51;
             this.groupBox1.TabStop = false;
+            // 
+            // lblLTK
+            // 
+            this.lblLTK.AutoEllipsis = true;
+            this.lblLTK.AutoSize = true;
+            this.lblLTK.BackColor = System.Drawing.Color.CadetBlue;
+            this.lblLTK.ForeColor = System.Drawing.Color.White;
+            this.lblLTK.Location = new System.Drawing.Point(60, 127);
+            this.lblLTK.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblLTK.Name = "lblLTK";
+            this.lblLTK.Size = new System.Drawing.Size(132, 24);
+            this.lblLTK.TabIndex = 52;
+            this.lblLTK.Text = "Loại tiết kiệm";
+            // 
+            // cmbLoaiTietKiem
+            // 
+            this.cmbLoaiTietKiem.FormattingEnabled = true;
+            this.cmbLoaiTietKiem.Location = new System.Drawing.Point(224, 127);
+            this.cmbLoaiTietKiem.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbLoaiTietKiem.Name = "cmbLoaiTietKiem";
+            this.cmbLoaiTietKiem.Size = new System.Drawing.Size(135, 32);
+            this.cmbLoaiTietKiem.TabIndex = 51;
             // 
             // btnCapNhat
             // 
@@ -252,12 +282,30 @@
             this.btnXuatFile.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnXuatFile.UseVisualStyleBackColor = false;
             // 
+            // gridLookUpEdit1
+            // 
+            this.gridLookUpEdit1.Location = new System.Drawing.Point(361, 655);
+            this.gridLookUpEdit1.Name = "gridLookUpEdit1";
+            this.gridLookUpEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.gridLookUpEdit1.Properties.PopupView = this.gridLookUpEdit1View;
+            this.gridLookUpEdit1.Size = new System.Drawing.Size(125, 22);
+            this.gridLookUpEdit1.TabIndex = 57;
+            // 
+            // gridLookUpEdit1View
+            // 
+            this.gridLookUpEdit1View.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
+            this.gridLookUpEdit1View.Name = "gridLookUpEdit1View";
+            this.gridLookUpEdit1View.OptionsSelection.EnableAppearanceFocusedCell = false;
+            this.gridLookUpEdit1View.OptionsView.ShowGroupPanel = false;
+            // 
             // frmBaoCaoMoDongSoThang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CadetBlue;
             this.ClientSize = new System.Drawing.Size(882, 703);
+            this.Controls.Add(this.gridLookUpEdit1);
             this.Controls.Add(this.btnCapNhat);
             this.Controls.Add(this.btnTaoBaoCao);
             this.Controls.Add(this.btnTraCuu);
@@ -272,6 +320,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvBaoCao)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEdit1View)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -295,5 +345,9 @@
         private System.Windows.Forms.Button btnXuatFile;
         private System.Windows.Forms.Button btnCapNhat;
         private System.Windows.Forms.Button btnTaoBaoCao;
+        private System.Windows.Forms.Label lblLTK;
+        private System.Windows.Forms.ComboBox cmbLoaiTietKiem;
+        private DevExpress.XtraEditors.GridLookUpEdit gridLookUpEdit1;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridLookUpEdit1View;
     }
 }

@@ -11,7 +11,6 @@ namespace QLSTKBUS
     public class PhieuGuiTienBUS
     {
         private PhieuGuiTienDAL ltkDAL;
-        private BaoCaoDoanhSoNgayBUS bcdsBUS;
         public PhieuGuiTienBUS()
         {
             this.ltkDAL = new PhieuGuiTienDAL();
@@ -19,7 +18,7 @@ namespace QLSTKBUS
         public bool them(PhieuGuiTienDTO pgt)
         {
             bool re = ltkDAL.themPhieuGuiTien(pgt);
-            if (re == true)
+            if(re == true)
             {
 
             }

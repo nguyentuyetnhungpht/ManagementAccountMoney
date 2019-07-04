@@ -70,6 +70,7 @@
             this.txtSoTienRut.Name = "txtSoTienRut";
             this.txtSoTienRut.Size = new System.Drawing.Size(250, 30);
             this.txtSoTienRut.TabIndex = 28;
+            this.txtSoTienRut.TextChanged += new System.EventHandler(this.txtSoTienRut_Leave);
             this.txtSoTienRut.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtSoTienRut_KeyPress);
             // 
             // txtNgayRut
@@ -175,6 +176,7 @@
             this.groupBox1.Size = new System.Drawing.Size(863, 472);
             this.groupBox1.TabIndex = 34;
             this.groupBox1.TabStop = false;
+            this.groupBox1.Enter += new System.EventHandler(this.GroupBox1_Enter);
             // 
             // label1
             // 
@@ -214,6 +216,7 @@
             this.button1.Text = "Lưu";
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // btnHuy
             // 

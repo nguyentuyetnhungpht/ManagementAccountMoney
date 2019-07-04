@@ -26,7 +26,7 @@ namespace QLSTK
         {
             stkBUS = new SoTietKiemBUS();
             ltkBUS = new LoaiTietKiemBUS();
-            LoadDuLieuVao_Combobox();
+            LoadData();
         }
         private void btTimKiem_Click(object sender, EventArgs e)
         {
@@ -131,54 +131,7 @@ namespace QLSTK
             myCurrencyManager.Refresh();
         }
 
-        private void LoadDuLieuVao_Combobox()
-        {
-            List<LoaiTietKiemDTO> listLTK = ltkBUS.selectListLTK();
-            List<SoTietKiemDTO> listSTK = stkBUS.seclectSoTietKiem();
-
-            if (listLTK == null || listSTK == null)
-            {
-                MessageBox.Show("Có lỗi khi lấy LoaiTietKiem từ DB");
-                return;
-            }
-            // Load Loai tiet kiem
-            cmbMaLoaiTietKiem.DataSource = new BindingSource(listLTK, String.Empty);
-            cmbMaLoaiTietKiem.DisplayMember = "StrMaLTK";
-            cmbMaLoaiTietKiem.ValueMember = "StrMaLTK";
-            CurrencyManager myCurrencyManager = (CurrencyManager)this.BindingContext[cmbMaLoaiTietKiem.DataSource];
-            myCurrencyManager.Refresh();
-
-            //Load ma khach hang
-            cmbMaKH.DataSource = new BindingSource(listSTK, String.Empty);
-            cmbMaKH.DisplayMember = "StrMaKH";
-            cmbMaKH.ValueMember = "StrMaKH";
-            myCurrencyManager = (CurrencyManager)this.BindingContext[cmbMaKH.DataSource];
-            myCurrencyManager.Refresh();
-
-            //Load ma so tiet kiem
-            cmbMaSo.DataSource = new BindingSource(listSTK, String.Empty);
-            cmbMaSo.DisplayMember = "StrMaSoSTK";
-            cmbMaSo.ValueMember = "StrMaSoSTK";
-            myCurrencyManager = (CurrencyManager)this.BindingContext[cmbMaSo.DataSource];
-            myCurrencyManager.Refresh();
-
-
-            if (cmbMaLoaiTietKiem.Items.Count > 0)
-            {
-                cmbMaLoaiTietKiem.SelectedIndex = 0;
-            }
-
-            if (cmbMaSo.Items.Count > 0)
-            {
-                cmbMaSo.SelectedIndex = 0;
-            }
-
-            if (cmbMaKH.Items.Count > 0)
-            {
-                cmbMaKH.SelectedIndex = 0;
-            }
-
-        }
+        
         private void cmsSuaSTK_Click(object sender, EventArgs e)
         {
             // ' Get the current cell location.
@@ -250,6 +203,11 @@ namespace QLSTK
         {
             if (MessageBox.Show("Bạn muốn đóng ứng dụng sổ tiết kiệm?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 Application.Exit();
+        }
+
+        private void GroupBox1_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }
