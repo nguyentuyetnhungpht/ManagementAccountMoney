@@ -77,7 +77,7 @@ namespace QLSTK
 
             if (listSTK == null)
             {
-                MessageBox.Show("Có lỗi khi lấy Món ăn từ DB");
+                MessageBox.Show("Có lỗi khi lấy sổ tiết kiệm từ DB");
                 return;
             }
 
@@ -149,6 +149,27 @@ namespace QLSTK
         private void cmsXoaSTK_Click(object sender, EventArgs e)
         {
             // ' Get the current cell location.
+            //int currentRowIndex = dgvSoTietKiem.CurrentCellAddress.Y;// 'current row selected
+
+
+            //'Verify that indexing OK
+            //if (-1 < currentRowIndex && currentRowIndex < dgvSoTietKiem.RowCount)
+            //{
+            //    SoTietKiemDTO stk = (SoTietKiemDTO)dgvSoTietKiem.Rows[currentRowIndex].DataBoundItem;
+            //    if (stk != null)
+            //    {
+            //        bool kt = stkBUS.dongSoTietKiem(stk);
+            //        if (kt == false)
+            //            MessageBox.Show("Đóng sổ tiết kiệm thất bại. Vui lòng kiểm tra lại dũ liệu");
+            //        else
+            //        {
+            //            MessageBox.Show("Đóng sổ tiết kiệm thành công");
+            //            this.LoadData();
+            //        }
+            //    }
+            //}
+
+            // ' Get the current cell location.
             int currentRowIndex = dgvSoTietKiem.CurrentCellAddress.Y;// 'current row selected
 
 
@@ -158,16 +179,16 @@ namespace QLSTK
                 SoTietKiemDTO stk = (SoTietKiemDTO)dgvSoTietKiem.Rows[currentRowIndex].DataBoundItem;
                 if (stk != null)
                 {
-                    bool kt = stkBUS.dongSoTietKiem(stk);
-                    if (kt == false)
-                        MessageBox.Show("Đóng sổ tiết kiệm thất bại. Vui lòng kiểm tra lại dũ liệu");
-                    else
-                    {
-                        MessageBox.Show("Đóng sổ tiết kiệm thành công");
-                        this.LoadData();
-                    }
+                    frmSoTietKiem frm = new frmSoTietKiem(stk);
+                    frm.ShowDialog();
                 }
             }
+
+        }
+
+        private void dgvSoTietKiem_RowPostPaint(object sender, DataGridViewRowPostPaintEventArgs e)
+        {
+            dgvSoTietKiem.Rows[e.RowIndex].Cells[0].Value = (e.RowIndex + 1).ToString();
         }
     }
 }

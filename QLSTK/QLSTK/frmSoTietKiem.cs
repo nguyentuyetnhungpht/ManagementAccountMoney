@@ -28,7 +28,8 @@ namespace QLSTK
         public frmSoTietKiem(SoTietKiemDTO stk)
         {
             InitializeComponent();
-
+            stkBUS = new SoTietKiemBUS();
+            ltkBUS = new LoaiTietKiemBUS();
             khBUS = new KhachHangBUS();
             KhachHangDTO kh = khBUS.getKhachHang(stk.StrMaKH);
             txtMaSoSTK.Text = stk.StrMaSoSTK;
@@ -37,7 +38,7 @@ namespace QLSTK
             txtDiaChi.Text = kh.StrDiaChi;
             txtSoTienGui.Text = stk.DSoDu.ToString();
             cmbLoaiTietKiem.Text = stk.StrMaLTK;
-            txtMaSoSTK.Text = stkBUS.getNewMaSo();
+            txtMaSoSTK.Text = stk.StrMaSoSTK;
         }
         private void frmSoTietKiem_Load(object sender, EventArgs e)
         {
@@ -88,9 +89,10 @@ namespace QLSTK
             //3. Thêm vào DB
             bool kq = stkBUS.themSoTietKiem(stk);
             if (kq == false)
-                MessageBox.Show("Thêm Loại tiết kiệm thất bại. Vui lòng kiểm tra lại dũ liệu");
+                MessageBox.Show("Thêm Sổ tiết kiệm thất bại. Vui lòng kiểm tra lại dũ liệu");
             else
-                MessageBox.Show("Thêm Loại tiết kiệm thành công");
+                MessageBox.Show("Thêm Sổ tiết kiệm thành công");
+            this.Close();
             //--------------------------------------------
         }
 

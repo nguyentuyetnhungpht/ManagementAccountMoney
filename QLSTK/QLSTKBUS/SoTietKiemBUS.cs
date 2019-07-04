@@ -26,6 +26,11 @@ namespace QLSTKBUS
             bool re = stkDAL.xoaSoTietKiem(stkDTO);
             return re;
         }
+        public bool suaSoTietKiem(SoTietKiemDTO stkDTO)
+        {
+            bool re = stkDAL.suaSoTietKiem(stkDTO);
+            return re;
+        }
         //public List<SoTietKiemDTO> selectSTK(string masoSTK, string maKH, string maLTK, double minSoDu)
         //{
         //    return stkDAL.selectListSTK(masoSTK, maKH, maLTK, minSoDu);
@@ -33,6 +38,10 @@ namespace QLSTKBUS
         public List<SoTietKiemDTO> selectSTK(string masoSTK, string maKH, string maLTK, double minSoDu, double maxSoDu, DateTime minNgay, DateTime maxNgay)
         {
             return stkDAL.selectListSTK(masoSTK, maKH, maLTK, minSoDu, maxSoDu, minNgay, maxNgay);
+        }
+        public List<SoTietKiemDTO> selectSTKcuaKhachHang(string strMaKH)
+        {
+            return stkDAL.listSTKCuaKhachHang(strMaKH);
         }
         public SoTietKiemDTO getSoTietKiem(string maSTK)
         {
@@ -42,6 +51,10 @@ namespace QLSTKBUS
         {
             return stkDAL.newMaSo();
         }
+        //public int getSoLanDaoHan(SoTietKiemDTO stk)
+        //{
+        //    return stkDAL.getSoLanDaoHan(stk);
+        //}
        
     }
 }

@@ -23,6 +23,8 @@ namespace QLSTKDAL
         // Tạo báo cáo ngày đối với mỗi loại tiết kiệm
         public bool createBaoCaoNgay()
         {
+            if (isCoSan())
+                return false;
             LoaiTietKiemDAL ltk = new LoaiTietKiemDAL();
             List<string> lsMaLTk = ltk.getListMaLTK(); // Lấy toàn bộ các loại tiết kiệm làm khóa chính
             #region insert các loại tiết tiệm trong một ngày báo cáo
@@ -73,18 +75,19 @@ namespace QLSTKDAL
 
             #region Tính tổng thu của mỗi loại tiết kiệm ngày đó rồi cho vào list báo cáo
 
-            #region Câu lệnh  Lấy ra tổng số tiền thu vào của mỗi loại tiết kiệm
-            query = "SELECT SUM(SoTienGoiPGT) as TongThu, MaLTK "
-                + " FROM tblPhieuGuiTien, tblSoTietKiem "
-                + " WHERE tblPhieuGuiTien.MaSoSTK = tblSoTietKiem.MaSoSTK "
-                + " and CONVERT(date, tblPhieuGuiTien.NgayGoi) = CONVERT(date, @NgayBCDS) "
-                + " and tblSoTietKiem.MaLTK = @MaLTK"
-                + " GROUP BY MaLTK";
-            #endregion
+           
 
             #region nếu có loại tiết kiệm lúc đó ta bắt đầu tính doanh thu
             if (lsMaLTk != null)
             {
+                #region Câu lệnh  Lấy ra tổng số tiền thu vào của mỗi loại tiết kiệm
+                query = "SELECT SUM(SoTienGoiPGT) as TongThu, MaLTK "
+                    + " FROM tblPhieuGuiTien, tblSoTietKiem "
+                    + " WHERE tblPhieuGuiTien.MaSoSTK = tblSoTietKiem.MaSoSTK "
+                    + " and CONVERT(date, tblPhieuGuiTien.NgayGoi) = CONVERT(date, @NgayBCDS) "
+                    + " and tblSoTietKiem.MaLTK = @MaLTK"
+                    + " GROUP BY MaLTK";
+                #endregion
                 // Với mỗi mã tiết kiệm, ta tính Tổng thu tương ứng
                 foreach (string maltk in lsMaLTk)
                 {
@@ -136,7 +139,6 @@ namespace QLSTKDAL
                 #region Nếu List báo cáo đó có, ta tính tổng chi, và tính luôn chênh lệch = tổng thu - tổng chi
                 if (listbc.Count > 0)
                 {
-
                     query = "SELECT SUM(SoTienRut) as TongChi, MaLTK "
                 + " FROM tblPhieuRutTien, tblSoTietKiem "
                 + " WHERE tblPhieuRutTien.MaSoSTK = tblSoTietKiem.MaSoSTK "
@@ -201,8 +203,9 @@ namespace QLSTKDAL
             if (Listbc != null)
             {
                 string query = string.Empty;
-                query += "INSERT INTO [tblBaoCaoDoanhSoNgay] ([MaBCDSN], [NgayBCDS], [TongThu], [TongChi], [ChenhLechTien], [MaLTK]) ";
-                query += "VALUES (@MaBCDSN, @NgayBCDS, @TongThu, @TongChi, @ChenhLech, @MaLTK)";
+                query += " UPDATE [tblBaoCaoDoanhSoNgay] ";
+                query += " SET [TongThu] = @TongThu, [TongChi] = @TongChi, [ChenhLechTien] = @ChenhLech ";
+                query += " WHERE CONVERT(date, NgayBCDS) = CONVERT(date, @NgayBCDS) AND MaLTK = @MaLTK ";
                 foreach (BaoCaoDoanhSoNgayDTO bc in Listbc)
                 {
                     using (SqlConnection con = new SqlConnection(ConnectionString))
@@ -212,7 +215,6 @@ namespace QLSTKDAL
                             cmd.Connection = con;
                             cmd.CommandType = System.Data.CommandType.Text;
                             cmd.CommandText = query;
-                            cmd.Parameters.AddWithValue("@MaBCDSN", "x");
                             cmd.Parameters.AddWithValue("@NgayBCDS", bc.StrNgayBCDS);
                             cmd.Parameters.AddWithValue("@TongThu", bc.DTongThu);
                             cmd.Parameters.AddWithValue("@TongChi", bc.DTongChi);
@@ -237,7 +239,7 @@ namespace QLSTKDAL
             }
             return true;
         }
-        
+
 
         public List<BaoCaoDoanhSoNgayDTO> getListBaoCaoNgay(DateTime dt)
         {
@@ -286,7 +288,7 @@ namespace QLSTKDAL
                     catch (Exception ex)
                     {
                         con.Close();
-                          return null;
+                        return null;
                     }
                 }
             }
@@ -302,6 +304,50 @@ namespace QLSTKDAL
             newMaSo = dt.Rows[0][0].ToString();
             return newMaSo;
         }
+        private bool isCoSan()
+        {
+            string query = string.Empty;
+            query += "SELECT COUNT(*) as Tong ";
+            query += "FROM [tblBaoCaoDoanhSoNgay] ";
+            query += "WHERE CONVERT(date, NgayBCDS) = CONVERT(date, @NgayBCDS)";
+            int count = 0;
+            using (SqlConnection con = new SqlConnection(ConnectionString))
+            {
+                using (SqlCommand cmd = new SqlCommand())
+                {
+                    cmd.Connection = con;
+                    cmd.CommandType = System.Data.CommandType.Text;
+                    cmd.CommandText = query;
+                    cmd.Parameters.AddWithValue("@NgayBCDS", DateTime.Now);
+
+                    try
+                    {
+                        con.Open();
+                        SqlDataReader reader = null;
+                        reader = cmd.ExecuteReader();
+                        if (reader.HasRows == true)
+                        {
+                            while (reader.Read())
+                            {
+                                BaoCaoDoanhSoNgayDTO bc = new BaoCaoDoanhSoNgayDTO();
+                                count = int.Parse(reader["Tong"].ToString());
+                            }
+                        }
+
+                        con.Close();
+                        con.Dispose();
+                    }
+                    catch (Exception ex)
+                    {
+                        con.Close();
+                        return false;
+                    }
+                }
+                
+            }
+            if (count > 0)
+                return true;
+            return false;
+        }
     }
 }
-    

@@ -19,10 +19,10 @@ namespace QLSTKDAL
             connectionString = ConfigurationManager.AppSettings["ConnectionString"];
         }
         public string ConnectionString { get => connectionString; set => connectionString = value; }
-
         public bool createBaoCaoMoDongSoThang(int iThang, int iNam)
         {
-
+            if (isCoSan())
+                return false;
             # region Tính số ngày của tháng đó
             int iSoNgay = 0;
             if (iThang > 0 && iThang < 13 && iNam > 1990)
@@ -56,38 +56,49 @@ namespace QLSTKDAL
         {
             string query = string.Empty;
             BaoCaoMoDongSoThangDTO bc = new BaoCaoMoDongSoThangDTO(dt);
-            query += "INSERT INTO [tblBaoCaoMoDongSoThang] ([MaBCMDST], [ThangBCMDST], [NamBCMDST], [NgayBCMDST], [SoMo], [SoDong], [ChenhLechSo]) ";
-            query += "VALUES (@MaBCMDST, @ThangBCMDST, @NamBCMDST, @NgayBCMDST, @SoMo, @SoDong, @ChenhLechSo)";
-            using (SqlConnection con = new SqlConnection(ConnectionString))
+            LoaiTietKiemDAL ltk = new LoaiTietKiemDAL();
+            List<string> lsMaLTk = ltk.getListMaLTK();
+            query += "INSERT INTO [tblBaoCaoMoDongSoThang] ([MaBCMDST], [ThangBCMDST], [NamBCMDST], [NgayBCMDST], [SoMo], [SoDong], [ChenhLechSo], [MaLTK]) ";
+            query += "VALUES (@MaBCMDST, @ThangBCMDST, @NamBCMDST, @NgayBCMDST, @SoMo, @SoDong, @ChenhLechSo, @MaLTK)";
+
+            if (lsMaLTk != null)
             {
-                using (SqlCommand cmd = new SqlCommand())
+                foreach (string maltk in lsMaLTk)
                 {
-                    cmd.Connection = con;
-                    cmd.CommandType = System.Data.CommandType.Text;
-                    cmd.CommandText = query;
-                    cmd.Parameters.AddWithValue("@MaBCMDST", newMaSo());
-                    cmd.Parameters.AddWithValue("@ThangBCMDST", bc.IThangBCMDST);
-                    cmd.Parameters.AddWithValue("@NamBCMDST", bc.INamBCMDST);
-                    cmd.Parameters.AddWithValue("@NgayBCMDST", bc.StrNgayBCMDST);
-                    cmd.Parameters.AddWithValue("@SoMo", bc.ISoMo);
-                    cmd.Parameters.AddWithValue("@SoDong", bc.ISoDong);
-                    cmd.Parameters.AddWithValue("@ChenhLechSo", bc.IChenhLechSo);
-                    try
+                    using (SqlConnection con = new SqlConnection(ConnectionString))
                     {
-                        con.Open();
-                        cmd.ExecuteNonQuery();
-                        con.Close();
-                        con.Dispose();
-                    }
-                    catch (Exception ex)
-                    {
-                        con.Close();
-                        return false;
+                        using (SqlCommand cmd = new SqlCommand())
+                        {
+                            cmd.Connection = con;
+                            cmd.CommandType = System.Data.CommandType.Text;
+                            cmd.CommandText = query;
+                            cmd.Parameters.AddWithValue("@MaBCMDST", newMaSo());
+                            cmd.Parameters.AddWithValue("@ThangBCMDST", bc.IThangBCMDST);
+                            cmd.Parameters.AddWithValue("@NamBCMDST", bc.INamBCMDST);
+                            cmd.Parameters.AddWithValue("@NgayBCMDST", bc.StrNgayBCMDST);
+                            cmd.Parameters.AddWithValue("@SoMo", bc.ISoMo);
+                            cmd.Parameters.AddWithValue("@SoDong", bc.ISoDong);
+                            cmd.Parameters.AddWithValue("@ChenhLechSo", bc.IChenhLechSo);
+                            cmd.Parameters.AddWithValue("@MaLTK", maltk);
+                            try
+                            {
+                                con.Open();
+                                cmd.ExecuteNonQuery();
+                                con.Close();
+                                con.Dispose();
+                            }
+                            catch (Exception ex)
+                            {
+                                con.Close();
+                                return false;
+                            }
+                        }
                     }
                 }
             }
             return true;
-        } // hàm insert một ngày vào báo cáo
+        }
+        // hàm insert một ngày vào báo cáo
         public bool upadteBaoCaoMoDongSoThang(int iThang, int iNam)
         {
             # region Tính số ngày của tháng đó
@@ -105,148 +116,170 @@ namespace QLSTKDAL
                     iSoNgay = 28;
             }
             #endregion
+            LoaiTietKiemDAL ltk = new LoaiTietKiemDAL();
+            List<string> lsMaLTk = ltk.getListMaLTK();
+
 
             #region Tính số sổ mở, sổ đóng và chênh lệch của mỗi ngày
-            for (int i = 1; i <= iSoNgay; i++)
+            if (lsMaLTk != null)
             {
-                DateTime dt = new DateTime(iNam, iThang, i);
-                BaoCaoMoDongSoThangDTO bc = new BaoCaoMoDongSoThangDTO(dt);
-                string query = string.Empty;
-
-
-                #region Tính số sổ mở
-                query = " SELECT COUNT(tblSoTietKiem.MaSoSTK) as SoMo "
-                    + " FROM tblSoTietKiem "
-                    + " WHERE CONVERT(date, tblSoTietKiem.NgayMoSo) = CONVERT(date, @NgayMoSo) ";
-
-                using (SqlConnection con = new SqlConnection(ConnectionString))
+                foreach (string maltk in lsMaLTk)
                 {
-                    using (SqlCommand cmd = new SqlCommand())
+                    for (int i = 1; i <= iSoNgay; i++)
                     {
-                        cmd.Connection = con;
-                        cmd.CommandType = System.Data.CommandType.Text;
-                        cmd.CommandText = query;
-                        cmd.Parameters.AddWithValue("@NgayMoSo", dt.ToString());
-                        try
+                        DateTime dt = new DateTime(iNam, iThang, i);
+                        BaoCaoMoDongSoThangDTO bc = new BaoCaoMoDongSoThangDTO(dt);
+                        string query = string.Empty;
+
+
+                        #region Tính số sổ mở
+                        query = " SELECT COUNT(tblSoTietKiem.MaSoSTK) as SoMo "
+                            + " FROM tblSoTietKiem "
+                            + " WHERE CONVERT(date, tblSoTietKiem.NgayMoSo) = CONVERT(date, @NgayMoSo) "
+                            + " AND MaLTK = @MaLTK";
+
+
+                        using (SqlConnection con = new SqlConnection(ConnectionString))
                         {
-                            con.Open();
-                            SqlDataReader reader = null;
-                            reader = cmd.ExecuteReader();
-                            if (reader.HasRows == true)
+                            using (SqlCommand cmd = new SqlCommand())
                             {
-                                while (reader.Read())
+                                cmd.Connection = con;
+                                cmd.CommandType = System.Data.CommandType.Text;
+                                cmd.CommandText = query;
+                                cmd.Parameters.AddWithValue("@NgayMoSo", dt.ToString());
+                                cmd.Parameters.AddWithValue("@MaLTK", maltk);
+                                try
                                 {
-                                    try
+                                    con.Open();
+                                    SqlDataReader reader = null;
+                                    reader = cmd.ExecuteReader();
+                                    if (reader.HasRows == true)
                                     {
-                                        bc.ISoMo = int.Parse(reader["SoMo"].ToString());
+                                        while (reader.Read())
+                                        {
+                                            try
+                                            {
+                                                bc.ISoMo = int.Parse(reader["SoMo"].ToString());
+                                            }
+                                            catch
+                                            {
+                                                bc.ISoMo = 0;
+                                            }
+                                        }
                                     }
-                                    catch
-                                    {
-                                        bc.ISoMo = 0;
-                                    }
+                                    con.Close();
+                                    con.Dispose();
+                                }
+                                catch (Exception ex)
+                                {
+                                    con.Close();
+                                    return false;
                                 }
                             }
-                            con.Close();
-                            con.Dispose();
-                        }
-                        catch (Exception ex)
-                        {
-                            con.Close();
-                            return false;
-                        }
-                    }
-                }
-                #endregion
 
-                #region Tính số sổ đóng
-                query = "SELECT COUNT(tblPhieuRutTien.MaSoPRT) as SoDong"
-                    + " FROM tblPhieuRutTien "
-                    + " WHERE CONVERT(date, tblPhieuRutTien.NgayRut) = CONVERT(date, @NgayRut) ";
-                using (SqlConnection con = new SqlConnection(ConnectionString))
-                {
-                    using (SqlCommand cmd = new SqlCommand())
-                    {
-                        cmd.Connection = con;
-                        cmd.CommandType = System.Data.CommandType.Text;
-                        cmd.CommandText = query;
-                        cmd.Parameters.AddWithValue("@NgayRut", dt.ToString());
-                        try
+                        }
+                        #endregion
+
+                        #region Tính số sổ đóng
+                        query = "SELECT COUNT(tblPhieuRutTien.MaSoPRT) as SoDong"
+                            + " FROM tblPhieuRutTien, tblSoTietKiem "
+                            + " WHERE CONVERT(date, tblPhieuRutTien.NgayRut) = CONVERT(date, @NgayRut) "
+                            + " AND tblPhieuRutTien.MaSoSTK = tblSoTietKiem.MaSoSTK "
+                            + " AND tblSoTietKiem.SoTienGoiSTK = 0"
+                            + " AND tblSoTietKiem.MaLTK = @MaLTK";
+
+                        using (SqlConnection con = new SqlConnection(ConnectionString))
                         {
-                            con.Open();
-                            SqlDataReader reader = null;
-                            reader = cmd.ExecuteReader();
-                            if (reader.HasRows == true)
+                            using (SqlCommand cmd = new SqlCommand())
                             {
-                                while (reader.Read())
+                                cmd.Connection = con;
+                                cmd.CommandType = System.Data.CommandType.Text;
+                                cmd.CommandText = query;
+                                cmd.Parameters.AddWithValue("@NgayRut", dt.ToString());
+                                cmd.Parameters.AddWithValue("@MaLTK", maltk);
+                                try
                                 {
-                                    try
+                                    con.Open();
+                                    SqlDataReader reader = null;
+                                    reader = cmd.ExecuteReader();
+                                    if (reader.HasRows == true)
                                     {
-                                        bc.ISoDong = int.Parse(reader["SoDong"].ToString());
+                                        while (reader.Read())
+                                        {
+                                            try
+                                            {
+                                                bc.ISoDong = int.Parse(reader["SoDong"].ToString());
+                                            }
+                                            catch
+                                            {
+                                                bc.ISoDong = 0;
+                                            }
+                                        }
                                     }
-                                    catch
-                                    {
-                                        bc.ISoDong = 0;
-                                    }
+                                    con.Close();
+                                    con.Dispose();
+                                }
+                                catch (Exception ex)
+                                {
+                                    con.Close();
+                                    return false;
                                 }
                             }
-                            con.Close();
-                            con.Dispose();
+
                         }
-                        catch (Exception ex)
+                        #endregion
+
+                        #region Tính số sổ chênh lệch
+
+                        bc.IChenhLechSo = bc.ISoMo - bc.ISoDong;
+
+                        #endregion
+
+                        #region Cập nhật thông tin sổ vào database
+                        query = "UPDATE tblBaoCaoMoDongSoThang "
+                           + " SET SoMo = @SoMo, SoDong = @SoDong, ChenhLechSo = @ChenhLechSo "
+                           + " WHERE CONVERT(date, tblBaoCaoMoDongSoThang.NgayBCMDST) = CONVERT(date, @NgayBC) "
+                           + " AND MaLTK = @MaLTK";
+                        using (SqlConnection con = new SqlConnection(ConnectionString))
                         {
-                            con.Close();
-                            return false;
+                            using (SqlCommand cmd = new SqlCommand())
+                            {
+                                cmd.Connection = con;
+                                cmd.CommandType = System.Data.CommandType.Text;
+                                cmd.CommandText = query;
+                                cmd.Parameters.AddWithValue("@SoMo", bc.ISoMo);
+                                cmd.Parameters.AddWithValue("@SoDong", bc.ISoDong);
+                                cmd.Parameters.AddWithValue("@ChenhLechSo", bc.IChenhLechSo);
+                                cmd.Parameters.AddWithValue("@NgayBC", dt.ToString());
+                                cmd.Parameters.AddWithValue("@MaLTK", maltk);
+                                try
+                                {
+                                    con.Open();
+                                    cmd.ExecuteNonQuery();
+                                    con.Close();
+                                    con.Dispose();
+                                }
+                                catch (Exception ex)
+                                {
+                                    con.Close();
+                                    return false;
+                                }
+                            }
+
                         }
+                        #endregion
                     }
                 }
-                #endregion
-
-                #region Tính số sổ chênh lệch
-
-                bc.IChenhLechSo = bc.ISoMo - bc.ISoDong;
-
-                #endregion
-
-                #region Cập nhật thông tin sổ vào database
-                query = "UPDATE tblBaoCaoMoDongSoThang "
-                   + " SET SoMo = @SoMo, SoDong = @SoDong, ChenhLechSo = @ChenhLechSo "
-                   + " WHERE CONVERT(date, tblBaoCaoMoDongSoThang.NgayBCMDST) = CONVERT(date, @NgayBC) ";
-                using (SqlConnection con = new SqlConnection(ConnectionString))
-                {
-                    using (SqlCommand cmd = new SqlCommand())
-                    {
-                        cmd.Connection = con;
-                        cmd.CommandType = System.Data.CommandType.Text;
-                        cmd.CommandText = query;
-                        cmd.Parameters.AddWithValue("@SoMo", bc.ISoMo);
-                        cmd.Parameters.AddWithValue("@SoDong", bc.ISoDong);
-                        cmd.Parameters.AddWithValue("@ChenhLechSo", bc.IChenhLechSo);
-                        cmd.Parameters.AddWithValue("@NgayBC", dt.ToString());
-                        try
-                        {
-                            con.Open();
-                            cmd.ExecuteNonQuery();
-                            con.Close();
-                            con.Dispose();
-                        }
-                        catch (Exception ex)
-                        {
-                            con.Close();
-                            return false;
-                        }
-                    }
-                }
-                #endregion
             }
             #endregion
             return true;
         }//hàm cập nhật báo cáo tháng
-        public List<BaoCaoMoDongSoThangDTO> getBaoCaoThang(int iThang, int iNam)
+        public List<BaoCaoMoDongSoThangDTO> getBaoCaoThang(int iThang, int iNam, string strMaLTK)
         {
             string query = string.Empty;
             query += "SELECT [NgayBCMDST], [SoMo], [SoDong], [ChenhLechSo] ";
             query += "FROM [tblBaoCaoMoDongSoThang] ";
-            query += "WHERE ThangBCMDST = @Thang AND NamBCMDST = @Nam";
+            query += "WHERE ThangBCMDST = @Thang AND NamBCMDST = @Nam AND MaLTk = @MaLTK";
 
             List<BaoCaoMoDongSoThangDTO> listBaoCao = new List<BaoCaoMoDongSoThangDTO>();
 
@@ -260,6 +293,8 @@ namespace QLSTKDAL
                     cmd.CommandText = query;
                     cmd.Parameters.AddWithValue("@Thang", iThang);
                     cmd.Parameters.AddWithValue("@Nam", iNam);
+                    cmd.Parameters.AddWithValue("@MaLTK", strMaLTK);
+
                     try
                     {
                         con.Open();
@@ -299,6 +334,51 @@ namespace QLSTKDAL
             ada.Fill(dt);
             newMaSo = dt.Rows[0][0].ToString();
             return newMaSo;
+        }
+        private bool isCoSan()
+        {
+            string query = string.Empty;
+            query += "SELECT COUNT(*) as Tong ";
+            query += "FROM [tblBaoCaoMoDongSoThang] ";
+            query += "WHERE CONVERT(date, NgayBCMDST) = CONVERT(date, @NgayBCDS)";
+            int count = 0;
+            using (SqlConnection con = new SqlConnection(ConnectionString))
+            {
+                using (SqlCommand cmd = new SqlCommand())
+                {
+                    cmd.Connection = con;
+                    cmd.CommandType = System.Data.CommandType.Text;
+                    cmd.CommandText = query;
+                    cmd.Parameters.AddWithValue("@NgayBCDS", DateTime.Now);
+
+                    try
+                    {
+                        con.Open();
+                        SqlDataReader reader = null;
+                        reader = cmd.ExecuteReader();
+                        if (reader.HasRows == true)
+                        {
+                            while (reader.Read())
+                            {
+                                BaoCaoDoanhSoNgayDTO bc = new BaoCaoDoanhSoNgayDTO();
+                                count = int.Parse(reader["Tong"].ToString());
+                            }
+                        }
+
+                        con.Close();
+                        con.Dispose();
+                    }
+                    catch (Exception ex)
+                    {
+                        con.Close();
+                        return false;
+                    }
+                }
+                
+            }
+            if (count > 0)
+                return true;
+            return false;
         }
     }
     

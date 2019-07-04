@@ -28,18 +28,18 @@ namespace QLSTK
 
         private void btnTraCuu_Click(object sender, EventArgs e)
         {
-            
+            Load_Data();
         }
         private void Load_Data()
         {
             List<BaoCaoMoDongSoThangDTO> listBaoCao;
             try
             {
-                listBaoCao = bcBUS.getListBaoCaoThang(int.Parse(cmbThang.Text), int.Parse(cmbNam.Text));
+                listBaoCao = bcBUS.getListBaoCaoThang(int.Parse(cmbThang.Text), int.Parse(cmbNam.Text), cmbLoaiTietKiem.Text);
             }
             catch
             {
-                listBaoCao = bcBUS.getListBaoCaoThang(DateTime.Now.Month, DateTime.Now.Year);
+                listBaoCao = bcBUS.getListBaoCaoThang(DateTime.Now.Month, DateTime.Now.Year, cmbLoaiTietKiem.Text);
                 cmbThang.Text = DateTime.Now.Month.ToString();
                 cmbNam.Text = DateTime.Now.Year.ToString();
             }
@@ -88,6 +88,24 @@ namespace QLSTK
             clChenhLechSo.HeaderText = "Chênh lệch";
             clChenhLechSo.DataPropertyName = "IChenhLechSo";
             dgvBaoCao.Columns.Add(clChenhLechSo);
+
+
+
+            int sum = 0;
+            for (int i = 0; i < dgvBaoCao.Rows.Count; ++i)
+            {
+                sum += Convert.ToInt32(dgvBaoCao.Rows[i].Cells[3].Value);
+            }
+            txtTongThuNgay.Text = sum.ToString();
+
+            for (int i = 0; i < dgvBaoCao.Rows.Count; ++i)
+            {
+                sum += Convert.ToInt32(dgvBaoCao.Rows[i].Cells[4].Value);
+            }
+            txtTongChiNgay.Text = sum.ToString();
+
+            txtChenhLech.Text = (int.Parse(txtTongChiNgay.Text) - int.Parse(txtTongThuNgay.Text)).ToString();
+
 
             CurrencyManager myCurrencyManager = (CurrencyManager)this.BindingContext[dgvBaoCao.DataSource];// ho tro binding du lieu
             myCurrencyManager.Refresh();

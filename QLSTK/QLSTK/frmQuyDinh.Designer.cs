@@ -90,6 +90,7 @@
             this.grbQuyDinh1.TabIndex = 1;
             this.grbQuyDinh1.TabStop = false;
             this.grbQuyDinh1.Text = "Quy định 1";
+            this.grbQuyDinh1.Enter += new System.EventHandler(this.grbQuyDinh1_Enter);
             // 
             // txtTienGuiToiThieu
             // 

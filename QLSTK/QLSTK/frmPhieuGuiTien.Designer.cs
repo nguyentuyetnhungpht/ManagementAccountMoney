@@ -73,6 +73,7 @@
             this.txtSoTienGui.Name = "txtSoTienGui";
             this.txtSoTienGui.Size = new System.Drawing.Size(176, 26);
             this.txtSoTienGui.TabIndex = 17;
+            this.txtSoTienGui.Leave += new System.EventHandler(this.txtSoTienGui_Leave);
             // 
             // txtNgayGui
             // 
@@ -93,6 +94,9 @@
             this.cmbKhachHang.Name = "cmbKhachHang";
             this.cmbKhachHang.Size = new System.Drawing.Size(176, 28);
             this.cmbKhachHang.TabIndex = 15;
+            this.cmbKhachHang.SelectedIndexChanged += new System.EventHandler(this.cmbKhachHang_SelectedIndexChanged);
+            this.cmbKhachHang.SelectionChangeCommitted += new System.EventHandler(this.cmbKhachHang_SelectionChangeCommitted);
+            this.cmbKhachHang.ValueMemberChanged += new System.EventHandler(this.cmbKhachHang_ValueMemberChanged);
             // 
             // cmbMaSoSTK
             // 

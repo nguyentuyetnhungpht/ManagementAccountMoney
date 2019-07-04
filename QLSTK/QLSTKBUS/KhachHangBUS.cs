@@ -38,5 +38,9 @@ namespace QLSTKBUS
         {
             return khDAL.newMaSo();
         }
+        public List<KhachHangDTO> selectListLTK()
+        {
+            return khDAL.selecListKhachHang();
+        }
     }
 }

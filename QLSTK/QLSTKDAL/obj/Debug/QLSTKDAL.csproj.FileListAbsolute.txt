@@ -16,3 +16,12 @@ C:\Users\Linh Satoh\Desktop\QLSTK\QLSTKDAL\obj\Debug\QLSTKDAL.csproj.CoreCompile
 C:\Users\Linh Satoh\Desktop\QLSTK\QLSTKDAL\obj\Debug\QLSTKDAL.csproj.CopyComplete
 C:\Users\Linh Satoh\Desktop\QLSTK\QLSTKDAL\obj\Debug\QLSTKDAL.dll
 C:\Users\Linh Satoh\Desktop\QLSTK\QLSTKDAL\obj\Debug\QLSTKDAL.pdb
+C:\Users\Linh Satoh\Downloads\QLSTK\QLSTKDAL\bin\Debug\QLSTKDAL.dll
+C:\Users\Linh Satoh\Downloads\QLSTK\QLSTKDAL\bin\Debug\QLSTKDAL.pdb
+C:\Users\Linh Satoh\Downloads\QLSTK\QLSTKDAL\bin\Debug\QLSTKDTO.dll
+C:\Users\Linh Satoh\Downloads\QLSTK\QLSTKDAL\bin\Debug\QLSTKDTO.pdb
+C:\Users\Linh Satoh\Downloads\QLSTK\QLSTKDAL\obj\Debug\QLSTKDAL.csprojAssemblyReference.cache
+C:\Users\Linh Satoh\Downloads\QLSTK\QLSTKDAL\obj\Debug\QLSTKDAL.csproj.CoreCompileInputs.cache
+C:\Users\Linh Satoh\Downloads\QLSTK\QLSTKDAL\obj\Debug\QLSTKDAL.csproj.CopyComplete
+C:\Users\Linh Satoh\Downloads\QLSTK\QLSTKDAL\obj\Debug\QLSTKDAL.dll
+C:\Users\Linh Satoh\Downloads\QLSTK\QLSTKDAL\obj\Debug\QLSTKDAL.pdb

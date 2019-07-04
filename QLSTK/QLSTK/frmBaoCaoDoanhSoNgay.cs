@@ -84,7 +84,20 @@ namespace QLSTK
             dgvBaoCao.Columns.Add(clChenhLechTien);
 
 
+            int sum = 0;
+            for (int i = 0; i < dgvBaoCao.Rows.Count; ++i)
+            {
+                sum += Convert.ToInt32(dgvBaoCao.Rows[i].Cells[3].Value);
+            }
+            txtTongThuNgay.Text = sum.ToString();
 
+            for (int i = 0; i < dgvBaoCao.Rows.Count; ++i)
+            {
+                sum += Convert.ToInt32(dgvBaoCao.Rows[i].Cells[4].Value);
+            }
+            txtTongChiNgay.Text = sum.ToString();
+
+            txtChenhLech.Text = (double.Parse(txtTongThuNgay.Text) - double.Parse(txtTongChiNgay.Text)).ToString();
 
             CurrencyManager myCurrencyManager = (CurrencyManager)this.BindingContext[dgvBaoCao.DataSource];// ho tro binding du lieu
             myCurrencyManager.Refresh();

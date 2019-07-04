@@ -49,8 +49,7 @@
             this.txtMaxSoDu = new System.Windows.Forms.TextBox();
             this.dgvSoTietKiem = new System.Windows.Forms.DataGridView();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.cmsSuaSTK = new System.Windows.Forms.ToolStripMenuItem();
-            this.cmsXoaSTK = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsThongTinSoTietKiem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSoTietKiem)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -233,28 +232,21 @@
             this.dgvSoTietKiem.Name = "dgvSoTietKiem";
             this.dgvSoTietKiem.Size = new System.Drawing.Size(633, 164);
             this.dgvSoTietKiem.TabIndex = 30;
+            this.dgvSoTietKiem.RowPostPaint += new System.Windows.Forms.DataGridViewRowPostPaintEventHandler(this.dgvSoTietKiem_RowPostPaint);
             // 
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cmsSuaSTK,
-            this.cmsXoaSTK});
+            this.tsThongTinSoTietKiem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(159, 48);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(191, 26);
             // 
-            // cmsSuaSTK
+            // tsThongTinSoTietKiem
             // 
-            this.cmsSuaSTK.Name = "cmsSuaSTK";
-            this.cmsSuaSTK.Size = new System.Drawing.Size(180, 22);
-            this.cmsSuaSTK.Text = "Sửa sổ tiết kiệm";
-            this.cmsSuaSTK.Click += new System.EventHandler(this.cmsSuaSTK_Click);
-            // 
-            // cmsXoaSTK
-            // 
-            this.cmsXoaSTK.Name = "cmsXoaSTK";
-            this.cmsXoaSTK.Size = new System.Drawing.Size(180, 22);
-            this.cmsXoaSTK.Text = "Xóa sổ tiết kiệm";
-            this.cmsXoaSTK.Click += new System.EventHandler(this.cmsXoaSTK_Click);
+            this.tsThongTinSoTietKiem.Name = "tsThongTinSoTietKiem";
+            this.tsThongTinSoTietKiem.Size = new System.Drawing.Size(190, 22);
+            this.tsThongTinSoTietKiem.Text = "Thông tin sổ tiết kiệm";
+            this.tsThongTinSoTietKiem.Click += new System.EventHandler(this.cmsXoaSTK_Click);
             // 
             // frmTraCuu
             // 
@@ -311,7 +303,6 @@
         private System.Windows.Forms.TextBox txtMaxSoDu;
         private System.Windows.Forms.DataGridView dgvSoTietKiem;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem cmsSuaSTK;
-        private System.Windows.Forms.ToolStripMenuItem cmsXoaSTK;
+        private System.Windows.Forms.ToolStripMenuItem tsThongTinSoTietKiem;
     }
 }

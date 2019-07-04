@@ -110,38 +110,39 @@ namespace QLSTKDAL
 
         public List<KhachHangDTO> selecListKhachHang()
         {
-            return null;
-        }
-        public KhachHangDTO getKhachHang(string maKH)
-        {
             string query = string.Empty;
             query += "SELECT [MaKH], [HoTenKH], [DiaChi], [CMND]";
-            query += " FROM [tblKhachHang]";
-            query += " WHERE ([MaKH] = @maKH";
-            KhachHangDTO kh = new KhachHangDTO();
+            query += "FROM [tblKhachHang]";
+
+            List<KhachHangDTO> lsKhachHang = new List<KhachHangDTO>();
 
             using (SqlConnection con = new SqlConnection(ConnectionString))
             {
+
                 using (SqlCommand cmd = new SqlCommand())
                 {
                     cmd.Connection = con;
                     cmd.CommandType = System.Data.CommandType.Text;
                     cmd.CommandText = query;
-                    cmd.Parameters.AddWithValue("@maKH", maKH);
 
                     try
                     {
                         con.Open();
                         SqlDataReader reader = null;
                         reader = cmd.ExecuteReader();
-
                         if (reader.HasRows == true)
                         {
-                            kh.StrMaKH = reader["MaKH"].ToString();
-                            kh.StrHoTenKH = reader["HoTenKH"].ToString();
-                            kh.StrDiaChi = reader["DiaChi"].ToString();
-                            kh.StrCMND = reader["CMND"].ToString();
+                            while (reader.Read())
+                            {
+                                KhachHangDTO kh = new KhachHangDTO();
+                                kh.StrMaKH = reader["MaKH"].ToString();
+                                kh.StrHoTenKH = reader["HoTenKH"].ToString();
+                                kh.StrDiaChi = reader["DiaChi"].ToString();
+                                kh.StrCMND = reader["CMND"].ToString();
+                                lsKhachHang.Add(kh);
+                            }
                         }
+
                         con.Close();
                         con.Dispose();
                     }
@@ -152,6 +153,22 @@ namespace QLSTKDAL
                     }
                 }
             }
+            return lsKhachHang;
+        }
+        public KhachHangDTO getKhachHang(string maKH)
+        {
+            var table = new DataTable();
+            using (var da = new SqlDataAdapter("SELECT [MaKH], [HoTenKH], [DiaChi], [CMND] FROM [tblKhachHang] WHERE [MaKH] = '" + maKH +"'", connectionString))
+            {
+                da.Fill(table);
+            }
+            KhachHangDTO kh = new KhachHangDTO();
+
+            kh.StrMaKH = (table.Rows[0][0]).ToString();
+            kh.StrHoTenKH =(table.Rows[0][1]).ToString();
+            kh.StrDiaChi = (table.Rows[0][2]).ToString();
+            kh.StrCMND = (table.Rows[0][3]).ToString();
+
             return kh;
         }
         public string newMaSo()

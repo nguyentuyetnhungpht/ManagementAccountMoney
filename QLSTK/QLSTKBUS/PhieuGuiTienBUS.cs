@@ -11,7 +11,6 @@ namespace QLSTKBUS
     public class PhieuGuiTienBUS
     {
         private PhieuGuiTienDAL ltkDAL;
-        private BaoCaoDoanhSoNgayBUS bcdsBUS;
         public PhieuGuiTienBUS()
         {
             this.ltkDAL = new PhieuGuiTienDAL();

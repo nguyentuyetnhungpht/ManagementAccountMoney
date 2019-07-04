@@ -33,14 +33,14 @@
             this.btnLuuVaXuatPhieu = new System.Windows.Forms.Button();
             this.txtSoTienRut = new System.Windows.Forms.TextBox();
             this.txtNgayRut = new System.Windows.Forms.TextBox();
-            this.cmbKhachHang = new System.Windows.Forms.ComboBox();
             this.cmbMaSoSTK = new System.Windows.Forms.ComboBox();
             this.lbSoTienRut = new System.Windows.Forms.Label();
             this.lbNgayRut = new System.Windows.Forms.Label();
-            this.lbKhachHang = new System.Windows.Forms.Label();
             this.lbMaSoSTK = new System.Windows.Forms.Label();
             this.lblMaSo = new System.Windows.Forms.Label();
             this.txtMaSoPRT = new System.Windows.Forms.TextBox();
+            this.lbKhachHang = new System.Windows.Forms.Label();
+            this.cmbKhachHang = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // btnHuy
@@ -83,6 +83,7 @@
             this.txtSoTienRut.Name = "txtSoTienRut";
             this.txtSoTienRut.Size = new System.Drawing.Size(176, 26);
             this.txtSoTienRut.TabIndex = 28;
+            this.txtSoTienRut.Leave += new System.EventHandler(this.txtSoTienRut_Leave);
             // 
             // txtNgayRut
             // 
@@ -94,16 +95,6 @@
             this.txtNgayRut.Size = new System.Drawing.Size(176, 26);
             this.txtNgayRut.TabIndex = 27;
             // 
-            // cmbKhachHang
-            // 
-            this.cmbKhachHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbKhachHang.FormattingEnabled = true;
-            this.cmbKhachHang.Location = new System.Drawing.Point(202, 151);
-            this.cmbKhachHang.Margin = new System.Windows.Forms.Padding(2);
-            this.cmbKhachHang.Name = "cmbKhachHang";
-            this.cmbKhachHang.Size = new System.Drawing.Size(176, 28);
-            this.cmbKhachHang.TabIndex = 26;
-            // 
             // cmbMaSoSTK
             // 
             this.cmbMaSoSTK.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -113,6 +104,7 @@
             this.cmbMaSoSTK.Name = "cmbMaSoSTK";
             this.cmbMaSoSTK.Size = new System.Drawing.Size(176, 28);
             this.cmbMaSoSTK.TabIndex = 25;
+            this.cmbMaSoSTK.SelectedIndexChanged += new System.EventHandler(this.cmbMaSoSTK_SelectedIndexChanged);
             // 
             // lbSoTienRut
             // 
@@ -135,17 +127,6 @@
             this.lbNgayRut.Size = new System.Drawing.Size(68, 20);
             this.lbNgayRut.TabIndex = 23;
             this.lbNgayRut.Text = "Ngày rút";
-            // 
-            // lbKhachHang
-            // 
-            this.lbKhachHang.AutoSize = true;
-            this.lbKhachHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbKhachHang.Location = new System.Drawing.Point(78, 151);
-            this.lbKhachHang.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbKhachHang.Name = "lbKhachHang";
-            this.lbKhachHang.Size = new System.Drawing.Size(94, 20);
-            this.lbKhachHang.TabIndex = 22;
-            this.lbKhachHang.Text = "Khách hàng";
             // 
             // lbMaSoSTK
             // 
@@ -177,6 +158,27 @@
             this.txtMaSoPRT.Name = "txtMaSoPRT";
             this.txtMaSoPRT.Size = new System.Drawing.Size(176, 26);
             this.txtMaSoPRT.TabIndex = 33;
+            // 
+            // lbKhachHang
+            // 
+            this.lbKhachHang.AutoSize = true;
+            this.lbKhachHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbKhachHang.Location = new System.Drawing.Point(78, 151);
+            this.lbKhachHang.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbKhachHang.Name = "lbKhachHang";
+            this.lbKhachHang.Size = new System.Drawing.Size(94, 20);
+            this.lbKhachHang.TabIndex = 22;
+            this.lbKhachHang.Text = "Khách hàng";
+            // 
+            // cmbKhachHang
+            // 
+            this.cmbKhachHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbKhachHang.FormattingEnabled = true;
+            this.cmbKhachHang.Location = new System.Drawing.Point(202, 151);
+            this.cmbKhachHang.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbKhachHang.Name = "cmbKhachHang";
+            this.cmbKhachHang.Size = new System.Drawing.Size(176, 28);
+            this.cmbKhachHang.TabIndex = 26;
             // 
             // frmPhieuRutTien
             // 
@@ -211,13 +213,13 @@
         private System.Windows.Forms.Button btnLuuVaXuatPhieu;
         private System.Windows.Forms.TextBox txtSoTienRut;
         private System.Windows.Forms.TextBox txtNgayRut;
-        private System.Windows.Forms.ComboBox cmbKhachHang;
         private System.Windows.Forms.ComboBox cmbMaSoSTK;
         private System.Windows.Forms.Label lbSoTienRut;
         private System.Windows.Forms.Label lbNgayRut;
-        private System.Windows.Forms.Label lbKhachHang;
         private System.Windows.Forms.Label lbMaSoSTK;
         private System.Windows.Forms.Label lblMaSo;
         private System.Windows.Forms.TextBox txtMaSoPRT;
+        private System.Windows.Forms.Label lbKhachHang;
+        private System.Windows.Forms.ComboBox cmbKhachHang;
     }
 }

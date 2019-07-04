@@ -85,6 +85,7 @@
             this.txtCMND.Location = new System.Drawing.Point(116, 182);
             this.txtCMND.Margin = new System.Windows.Forms.Padding(2);
             this.txtCMND.Name = "txtCMND";
+            this.txtCMND.ReadOnly = true;
             this.txtCMND.Size = new System.Drawing.Size(159, 20);
             this.txtCMND.TabIndex = 33;
             // 
@@ -101,6 +102,7 @@
             this.txtDiaChi.Location = new System.Drawing.Point(116, 220);
             this.txtDiaChi.Margin = new System.Windows.Forms.Padding(2);
             this.txtDiaChi.Name = "txtDiaChi";
+            this.txtDiaChi.ReadOnly = true;
             this.txtDiaChi.Size = new System.Drawing.Size(159, 20);
             this.txtDiaChi.TabIndex = 31;
             // 

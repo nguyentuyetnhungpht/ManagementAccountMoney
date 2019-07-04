@@ -191,5 +191,10 @@ namespace QLSTK
         {
             string loaiKyhan = cmbLoaiKyHan.SelectedValue.ToString();
         }
+
+        private void grbQuyDinh1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
