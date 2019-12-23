@@ -52,6 +52,7 @@ namespace QLSTKDAL
 
                     try
                     {
+                        
                         con.Open();
                         cmd.ExecuteNonQuery();
                         con.Close();
